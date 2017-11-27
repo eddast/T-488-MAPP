@@ -1,0 +1,4 @@
+IOSWeek1.Droid.MainActivity, IOSWeek1.Android;md53ef9d89cddce3d9e0fde74d5d6d2ffb6.MainActivity
+IOSWeek1.Droid.MainActivity, IOSWeek1.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53ef9d89cddce3d9e0fde74d5d6d2ffb6.MainActivity
+IOSWeek1.Droid.MainActivity;md53ef9d89cddce3d9e0fde74d5d6d2ffb6.MainActivity
+iosweek1.droid.MainActivity;md53ef9d89cddce3d9e0fde74d5d6d2ffb6.MainActivity
