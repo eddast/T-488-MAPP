@@ -22,9 +22,14 @@ namespace IOSWeek1.iOS
 
             // Once cell disappears from the screen, it's reused for memory management purposes
             var cell = tableView.DequeueReusableCell((NSString)this.movieListCellId);
+            
+            // If there are no cells to reuse, we create a new cell
             if (cell == null) {
                 cell = new UITableViewCell(UITableViewCellStyle.Default, this.movieListCellId);
-            } cell.TextLabel.Text = this._movieList[indexPath.Row];
+            }
+            
+            // Cell labelled as list index string
+            cell.TextLabel.Text = this._movieList[indexPath.Row];
 
             return cell;
         }
