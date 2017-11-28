@@ -20,6 +20,7 @@ namespace IOSWeek1.iOS
         // Design cells for table in table view
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath) {
 
+            // Once cell disappears from the screen, it's reused for memory management purposes
             var cell = tableView.DequeueReusableCell((NSString)this.movieListCellId);
             if (cell == null) {
                 cell = new UITableViewCell(UITableViewCellStyle.Default, this.movieListCellId);
