@@ -22,3 +22,27 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\IOSWeek1
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\IOSWeek1Solution\IOSWeek1\IOSWeek1.Android\obj\Debug\res\drawable-xxxhdpi\icon.png
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\IOSWeek1Solution\IOSWeek1\IOSWeek1.Android\obj\Debug\R.cs.flag
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\IOSWeek1Solution\IOSWeek1\IOSWeek1.Android\obj\Debug\uploadflags.txt
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\IOSWeek1.Android.dll
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\IOSWeek1.Android.pdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\IOSWeek1.Android.apk
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\IOSWeek1.Android-Signed.apk
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\IOSWeek1.dll
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\DM.MovieApi.dll
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\IOSWeek1.pdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\DM.MovieApi.pdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\DM.MovieApi.xml
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\IOSWeek1.Android.csprojResolveAssemblyReference.cache
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\IOSWeek1.Android.dll
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\IOSWeek1.Android.pdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\android\bin\IOSWeek1.Android.apk
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\res\layout\main.xml
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\res\values\strings.xml
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\res\drawable-mdpi\icon.png
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\res\drawable-xxxhdpi\icon.png
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\R.cs.flag
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\uploadflags.txt
