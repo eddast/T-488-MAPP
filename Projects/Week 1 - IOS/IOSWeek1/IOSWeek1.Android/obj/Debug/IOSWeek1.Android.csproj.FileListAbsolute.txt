@@ -46,3 +46,9 @@ C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\res\drawable-xxxhdpi\icon.png
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\R.cs.flag
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\uploadflags.txt
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\IOSWeek1.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\DM.MovieApi.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\bin\Debug\IOSWeek1.Android.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\android\assets\DM.MovieApi.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\android\assets\IOSWeek1.Android.dll.mdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1.Android\obj\Debug\android\assets\IOSWeek1.dll.mdb

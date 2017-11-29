@@ -9,7 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSWeek1.iOS", "IOSWeek1\IO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSWeek1", "IOSWeek1\IOSWeek1\IOSWeek1.csproj", "{5FD40872-09FC-46C4-892D-084C419EE126}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MovieDownload", "IOSWeek1\MovieDownload\MovieDownload.shproj", "{8E0A00B1-D0E6-48F6-AA04-26171F002437}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		IOSWeek1\MovieDownload\MovieDownload.projitems*{7403762d-d0aa-424b-8380-586d8aba1491}*SharedItemsImports = 4
+		IOSWeek1\MovieDownload\MovieDownload.projitems*{8e0a00b1-d0e6-48f6-aa04-26171f002437}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM

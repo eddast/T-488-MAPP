@@ -68,6 +68,7 @@
       <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
@@ -131,14 +132,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IOSMainViewController.cs" />
-    <Compile Include="IOSMainViewController.designer.cs">
+    <Compile Include="Controllers\IOSMainViewController.cs" />
+    <Compile Include="Controllers\IOSMainViewController.designer.cs">
       <DependentUpon>IOSMainViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\MovieDisplayScreenController.cs" />
+    <Compile Include="Controllers\MovieListController.cs" />
+    <Compile Include="Controllers\MovieListDataSource.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="MovieListController.cs" />
-    <Compile Include="MovieListDataSource.cs" />
+    <Compile Include="View\MovieCell.cs" />
+    <Compile Include="View\MovieCell.designer.cs">
+      <DependentUpon>MovieCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IOSWeek1\IOSWeek1.csproj">
@@ -146,5 +152,6 @@
       <Name>IOSWeek1</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\MovieDownload\MovieDownload.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

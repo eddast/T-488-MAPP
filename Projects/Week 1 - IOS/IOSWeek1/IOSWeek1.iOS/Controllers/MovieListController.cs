@@ -11,9 +11,9 @@ namespace IOSWeek1.iOS
 {
     public class MovieListController : UITableViewController
     {
-        private readonly List<string> _movieList;
+        private List<MovieModel> _movieModelList;
 
-        public MovieListController( List<string> movieList ){ this._movieList = movieList; }
+        public MovieListController( List<MovieModel> movieModelList ){ _movieModelList = movieModelList; }
 
         // Movie list view: displays title
         // has a table view rendered in MovieListDataSource given list
@@ -21,8 +21,11 @@ namespace IOSWeek1.iOS
 
             base.ViewDidLoad();
             this.Title = "Movie list";
-            this.TableView.Source = new MovieListDataSource( this._movieList );
+            this.TableView.Source = new MovieListDataSource(_movieModelList, _onSelectedMovies);
+        }
+
+        private void _onSelectedMovies(int row) {
+            this.NavigationController.PushViewController(new MovieDisplayScreenController(_movieModelList[row].movie), true);
         }
     }
-
 }

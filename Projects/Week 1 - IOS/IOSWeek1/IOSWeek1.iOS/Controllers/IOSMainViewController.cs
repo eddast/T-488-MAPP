@@ -6,6 +6,8 @@ using System;
 using IOSWeek1;
 using UIKit;
 using System.Collections.Generic;
+using IOSWeek1.MovieDownload;
+using System.Threading;
 
 namespace IOSWeek1.iOS
 {
@@ -13,9 +15,12 @@ namespace IOSWeek1.iOS
     {
         // Set initial coordinate values for item placement
         private const double StartX = 20, StartY = 80, Height = 50;
+        private IReadOnlyList<MovieInfo> movieList;
+        private List<MovieModel> movieModelList;
 
-        public override void ViewDidLoad()
-        {
+        public override void ViewDidLoad() {
+
+            movieModelList = new List<MovieModel>();
 
             // Call base view and white background set (in case it's not default)
             base.ViewDidLoad(); this.View.BackgroundColor = UIColor.White;
@@ -33,8 +38,7 @@ namespace IOSWeek1.iOS
         // Prompts user to enter movie title words
         private UILabel PromptLabel()
         {
-            var promptLabel = new UILabel()
-            {
+            var promptLabel = new UILabel() {
                 Frame = new CGRect(StartX, StartY, this.View.Bounds.Width - 2 * StartX, Height),
                 Text = "Enter words in movie title: "
             };
@@ -44,8 +48,7 @@ namespace IOSWeek1.iOS
 
         // Add text field to enter words in movie
         // Then add text field to view
-        private UITextField MovieField()
-        {
+        private UITextField MovieField() {
             var movieField = new UITextField()
             {
                 Frame = new CGRect(StartX, StartY + Height, this.View.Bounds.Width - 2 * StartX, Height),
@@ -56,8 +59,7 @@ namespace IOSWeek1.iOS
         }
 
         // Placeholder result set and added to view
-        private UILabel MovieLabelResult()
-        {
+        private UILabel MovieLabelResult() {
             var movieLabelResult = new UILabel()
             {
                 Frame = new CGRect(StartX, StartY + 3 * Height, this.View.Bounds.Width - 2 * StartX, Height),
@@ -68,8 +70,7 @@ namespace IOSWeek1.iOS
         }
 
         // Adds a search button for movie field value
-        private UIButton SearchMovieButton(UITextField movieField)
-        {
+        private UIButton SearchMovieButton(UITextField movieField) {
             var searchMovieButton = UIButton.FromType(UIButtonType.RoundedRect);
             searchMovieButton.Frame = new CGRect(StartX, StartY + 2 * Height, this.View.Bounds.Width - 2 * StartX, Height);
             searchMovieButton.SetTitle("Get movie", UIControlState.Normal);
@@ -78,11 +79,9 @@ namespace IOSWeek1.iOS
         }
 
         // Adds function to button and returns it
-        private UIButton AddButtonFunction(UIButton searchMovieButton, UITextField movieField)
-        {
+        private UIButton AddButtonFunction(UIButton searchMovieButton, UITextField movieField) {
             searchMovieButton.TouchUpInside += async (sender, args) =>
             {
-
                 // Minimize keyboard on click, disable button
                 // and add load spinner to indicate background process
                 movieField.ResignFirstResponder();
@@ -95,42 +94,41 @@ namespace IOSWeek1.iOS
                 MovieDbFactory.RegisterSettings(set);
                 var movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
 
-                // Allocate a list that will contain movie titles
-                List<string> movieTitles = new List<string>();
-
                 // If input isn't null, resolve query
                 // Otherwise return empty list of movieTitles
-                if (movieField.Text != "" && movieField.Text != null)
-                {
-
+                List<string> movieCreditList = new List<string>();
+                if (movieField.Text != "" && movieField.Text != null) {
                     // Conduct query and await response
-                    // If query returns no result, movieTitles becomes a null list
-                    ApiSearchResponse<MovieInfo> response = await movieApi.SearchByTitleAsync(movieField.Text);
-                    var movieList = response.Results;
-                    if (response.Results.Count != 0)
-                    {
-
-                        // Extract string equivalent of titles to use for next view
-                        foreach (MovieInfo info in movieList)
-                        {
-                            movieTitles.Add(info.Title);
+                    // If query returns no result, movieList becomes a null list
+                    ApiSearchResponse<MovieInfo> response_movies = await movieApi.SearchByTitleAsync(movieField.Text);
+                    movieList = response_movies.Results;
+                    foreach (MovieInfo movie in movieList) {
+                        ImageDownloader imgdl = new ImageDownloader(new StorageClient());
+                        string localFilePath = imgdl.LocalPathForFilename(movie.PosterPath);
+                        await imgdl.DownloadImage(movie.PosterPath, localFilePath, CancellationToken.None);
+                        ApiQueryResponse<MovieCredit> response_cast = await movieApi.GetCreditsAsync(movie.Id);
+                        string movie_cast = "";
+                        for (int i = 0; i < response_cast.Item.CastMembers.Count; i++) {
+                            if (i != 0) { movie_cast = movie_cast + ", "; }
+                            movie_cast = movie_cast + response_cast.Item.CastMembers[i].Name;
                         }
+                        MovieModel moviemodel = new MovieModel(movie, movie_cast, localFilePath);
+                        movieModelList.Add(moviemodel);
                     }
-                    else { movieTitles = null; }
-                }
-                else { movieTitles = null; }
+                    if (response_movies.Results.Count == 0) { movieModelList = null;  }
+                } else { movieModelList = null; }
 
                 // Once the MovieListController has been added to NavigationController
                 // The load spinner stops animating and thereby hides and button is clickable again
-                this.NavigationController.PushViewController(new MovieListController(movieTitles), true);
+                this.NavigationController.PushViewController(new MovieListController(movieModelList), true);
                 loadSpinner.StopAnimating(); searchMovieButton.Enabled = true;
             };
 
             return searchMovieButton;
         }
 
-        private UIActivityIndicatorView LoadSpinner( )
-        {
+        // Creates and omptimizes spinner displayed while query is processed
+        private UIActivityIndicatorView LoadSpinner( ) {
             var loadSpinner = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.Gray);
             loadSpinner.Frame = new CGRect(StartX, StartY + 3 * Height, this.View.Bounds.Width - 2 * StartX, Height);
             loadSpinner.AutoresizingMask = UIViewAutoresizing.All; this.View.AddSubview(loadSpinner);
