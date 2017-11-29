@@ -7,17 +7,16 @@ using IOSWeek1;
 using UIKit;
 using System.Collections.Generic;
 
-namespace IOSWeek1.iOS
+namespace IOSWeek1.iOS.Controllers
 {
     public class NameViewController : UIViewController
     {
-
         // Set initial coordinate values for item placement
         private const double StartX = 20, StartY = 80, Height = 50;
 
-        private List<string> _namelist;
+        private List<Person> _personlist;
 
-        public NameViewController(List<string> namelist) { this._namelist = namelist; }
+        public NameViewController(List<Person> personlist) { this._personlist = personlist; }
 
         public override void ViewDidLoad() {
 
@@ -34,7 +33,7 @@ namespace IOSWeek1.iOS
             var nameField = NameField( );
 
             // Placeholder result set and added to view
-            var greetingLabel = GreetingLabel();
+            var greetingLabel = GreetingLabel( );
 
             // Adds a greet button and name button to next screen
             // Add function to buttons via lambda expression
@@ -63,7 +62,7 @@ namespace IOSWeek1.iOS
 
             navigateButton.TouchUpInside += (sender, args) => {
                 nameField.ResignFirstResponder(); // minimize keyboard
-                this.NavigationController.PushViewController(new NameListController( this._namelist ), true );
+                this.NavigationController.PushViewController(new NameListController( this._personlist ), true );
             };
 
             return navigateButton;
@@ -86,8 +85,7 @@ namespace IOSWeek1.iOS
 
             greetButton.TouchUpInside += (sender, args) => {
                 nameField.ResignFirstResponder(); // minimize keyboard
-                greetingLabel.Text = "Hello " + nameField.Text + ", you've been added to the name list";
-                this._namelist.Add( nameField.Text );
+                greetingLabel.Text = "Hello " + nameField.Text;
             };
 
             return greetButton;

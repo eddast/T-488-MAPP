@@ -73,11 +73,6 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\IOSWeek1\IOSWeek1.csproj">
-      <Name>IOSWeek1</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
@@ -128,18 +123,28 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NameListDataSource.cs" />
-    <Compile Include="NameViewController.cs" />
-    <Compile Include="NameViewController.designer.cs">
+    <Compile Include="Controllers\NameListDataSource.cs" />
+    <Compile Include="Controllers\NameViewController.cs" />
+    <Compile Include="Controllers\NameViewController.designer.cs">
       <DependentUpon>NameViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="People.cs" />
-    <Compile Include="NameListController.cs" />
-    <Compile Include="NameListController.designer.cs">
+    <Compile Include="Controllers\NameListController.cs" />
+    <Compile Include="Controllers\NameListController.designer.cs">
       <DependentUpon>NameListController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\PersonCell.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IOSWeek1\IOSWeek1.csproj">
+      <Project>{5fd40872-09fc-46c4-892d-084c419ee126}</Project>
+      <Name>IOSWeek1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\edda_steinunn.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

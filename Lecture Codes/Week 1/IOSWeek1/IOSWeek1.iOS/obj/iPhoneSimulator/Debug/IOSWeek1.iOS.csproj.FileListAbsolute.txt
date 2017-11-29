@@ -1,6 +1,7 @@
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Lecture Codes\Week 1\IOSWeek1\IOSWeek1.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Lecture Codes\Week 1\IOSWeek1\IOSWeek1.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Lecture Codes\Week 1\IOSWeek1\IOSWeek1.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Lecture Codes\Week 1\IOSWeek1\IOSWeek1.iOS\obj\iPhoneSimulator\Debug\optimized\edda_steinunn.png
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Lecture Codes\Week 1\IOSWeek1\IOSWeek1.iOS\obj\iPhoneSimulator\Debug\optimized\
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Lecture Codes\Week 1\IOSWeek1\IOSWeek1.iOS\obj\iPhoneSimulator\Debug\IOSWeek1.iOS.csprojResolveAssemblyReference.cache
 C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Lecture Codes\Week 1\IOSWeek1\IOSWeek1.iOS\bin\iPhoneSimulator\Debug\IOSWeek1.iOS.exe
