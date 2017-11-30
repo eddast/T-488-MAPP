@@ -17,8 +17,15 @@ namespace IOSWeek1.iOS.Controllers
         {
             base.ViewDidLoad();
             this.TabBar.BackgroundColor = UIColor.LightGray;
-            this.TabBar.TintColor = UIColor.Orange;
             this.SelectedIndex = 0;
+            this.TabBar.TintColor = UIColor.Green;
+
+            this.ViewControllerSelected += (sender, e) =>
+            {
+                if (this.SelectedIndex == 1) {
+                    this.TabBar.TintColor = UIColor.Orange;
+                } else { this.TabBar.TintColor = UIColor.Green;  }
+            };
         }
     }
 }

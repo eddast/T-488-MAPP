@@ -14,11 +14,14 @@ namespace IOSWeek1.iOS.Controllers
     public class TopMoviesController : UITableViewController
     {
         private List<MovieModel> topMovieModelList;
+        public bool userNavigatedFromAnotherTab = true;
 
         public TopMoviesController() {
             this.TabBarItem = new UITabBarItem(UITabBarSystemItem.TopRated, 1);
             this.View.BackgroundColor = UIColor.White;
             topMovieModelList = new List<MovieModel>();
+            userNavigatedFromAnotherTab = true;
+
         }
 
         public override void ViewDidAppear(bool animated) {
@@ -26,11 +29,17 @@ namespace IOSWeek1.iOS.Controllers
             base.ViewDidAppear(animated);
             Title = "Top Rated"; this.View.BackgroundColor = UIColor.White;
 
-            if (topMovieModelList.Count == 0) {
+            this.ParentViewController.TabBarController.ViewControllerSelected += (sender, e) =>
+            {
+                if (ParentViewController.TabBarController.SelectedIndex == 0) { userNavigatedFromAnotherTab = true; }
+            };
+
+            if (userNavigatedFromAnotherTab) {
                 
                 this.TableView.Source = new MovieListDataSource(null, _onSelectedMovies);
                 this.TableView.ReloadData();
                 GenerateTopMoviesViewAsync();
+                userNavigatedFromAnotherTab = false;
             }
         }
 

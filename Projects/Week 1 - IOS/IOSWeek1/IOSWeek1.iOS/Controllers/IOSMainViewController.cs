@@ -111,8 +111,7 @@ namespace IOSWeek1.iOS
                         
                         ImageDownloader imgdl = new ImageDownloader(new StorageClient());
                         string localFilePath = imgdl.LocalPathForFilename(movie.PosterPath);
-                        if (localFilePath != "")
-                        {
+                        if (localFilePath != "") {
                             await imgdl.DownloadImage(movie.PosterPath, localFilePath, CancellationToken.None);
                         }
 
