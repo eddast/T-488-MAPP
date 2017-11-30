@@ -7,9 +7,10 @@ namespace IOSWeek1.iOS
 {
     public class MovieDisplayScreenController : UIViewController
     {
-        private MovieInfo _movie;
+        private UIImageView _imageView;
+        private MovieModel _movie;
 
-        public MovieDisplayScreenController(MovieInfo movie) { this._movie = movie; }
+        public MovieDisplayScreenController(MovieModel movie) { this._movie = movie; }
 
         public override void ViewDidLoad()
         {
@@ -19,34 +20,41 @@ namespace IOSWeek1.iOS
             int StartX = 50; int StartY = 100;
 
             var movieTitle = new UILabel() {
-                Frame = new CGRect(StartX, StartY, this.View.Bounds.Width-100, 40),
-                Text = _movie.Title,
-                TextColor = UIColor.FromRGB(38, 127, 0),
-            }; var movieInfo = new UILabel() {
-                Frame = new CGRect(StartX, StartY + 40, this.View.Bounds.Width - 100, 20),
-                BackgroundColor = UIColor.FromRGB(43, 150, 0),
-                Text = get_movie_genres(),
-                TextColor = UIColor.FromRGB(38, 127, 0),
-            }; var movieDescription = new UITextView () {
-                Frame = new CGRect(StartX, StartY + 60, this.View.Bounds.Width - 100, 300),
-                BackgroundColor = UIColor.FromRGB(43, 150, 0),
-                Text = _movie.Overview,
-                TextColor = UIColor.FromRGB(38, 127, 0),
+                Frame = new CGRect(StartX, StartY, this.View.Bounds.Width-100, 30),
+                Text = _movie.movie.Title.ToUpper(),
+                Font = UIFont.FromName("Helvetica-Bold", 22f),
+                TextColor = UIColor.FromRGB(0, 122, 255),
             };
-            this.View.AddSubviews( new UIView[] { movieTitle, movieInfo, movieDescription });
+            var movieInfo = new UILabel() {
+                Frame = new CGRect(StartX, StartY + 40, this.View.Bounds.Width - 100, 20),
+                Text = _movie.runtime + " mins | " + get_movie_genres(),
+                Font = UIFont.FromName("Helvetica", 13f),
+                TextColor = UIColor.FromRGB(153, 153, 102),
+            };
+            var movieDescription = new UITextView () {
+                Frame = new CGRect(StartX + 90, StartY + 80, this.View.Bounds.Width - 200, 300),
+                Text = _movie.movie.Overview
+            };
+            this._imageView = new UIImageView() {
+                Frame = new CGRect(StartX - 30, StartY + 90, 100, 100),
+            }; this._imageView.Image = UIImage.FromFile(_movie.posterPath);
+
+
+            this.View.AddSubviews( new UIView[] { _imageView, movieTitle, movieInfo, movieDescription });
         }
 
+        // Gets movie genres from the MoveInfo object
         private string get_movie_genres( ) {
 
-            var genres = _movie.Genres;
+            var genres = _movie.movie.Genres;
             string Genres = ""; int iteration = 0;
+
             foreach (DM.MovieApi.MovieDb.Genres.Genre genre in genres) {
-                if (iteration != 0) { Genres = Genres + ", " + genre.ToString(); }
-                else { Genres = Genres + genre.ToString(); } iteration++;
+                if (iteration != 0) { Genres = Genres + ", " + genre.Name; }
+                else { Genres = Genres + genre.Name; } iteration++;
             }
 
             return Genres;
         }
-       
     }
 }

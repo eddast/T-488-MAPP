@@ -33,6 +33,8 @@ namespace IOSWeek1.iOS
             // If there are no cells to reuse, we create a new cell
             if (cell == null) { cell = new MovieCells(this.movieListCellId); }
 
+            // Extract appropriate values from movie model to pass
+            // Into detail view 
             var movie = this._movieModelList[indexPath.Row].movie;
             var movie_cast = this._movieModelList[indexPath.Row].cast;
             var posterPath = this._movieModelList[indexPath.Row].posterPath;
@@ -43,12 +45,14 @@ namespace IOSWeek1.iOS
         }
 
 
-        // Determines rows in section
+        // Determines number of rows in section
         public override nint RowsInSection(UITableView tableview, nint section) {
            if (_movieModelList == null) { return 0; }
            return this._movieModelList.Count;
         }
 
+        // Once row is selected, the passed in function onSelectedMovies
+        // Determines action, located in the controller
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath) {
 
             tableView.DeselectRow(indexPath, true);

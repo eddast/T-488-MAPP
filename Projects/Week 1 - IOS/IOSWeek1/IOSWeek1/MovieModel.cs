@@ -12,10 +12,11 @@ namespace IOSWeek1
         public MovieInfo movie;
         public string cast;
         public string posterPath;
+        public string runtime;
 
         public MovieModel() { }
-        public MovieModel ( MovieInfo movie, string cast, string posterPath) {
-            this.movie = movie; this.cast = cast; this.posterPath = posterPath;
+        public MovieModel ( MovieInfo movie, string cast, string posterPath, string runtime ) {
+            this.movie = movie; this.cast = cast; this.posterPath = posterPath; this.runtime = runtime;
         }
     }
 }

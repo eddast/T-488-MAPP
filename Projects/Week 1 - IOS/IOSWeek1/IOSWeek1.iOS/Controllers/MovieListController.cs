@@ -25,7 +25,7 @@ namespace IOSWeek1.iOS
         }
 
         private void _onSelectedMovies(int row) {
-            this.NavigationController.PushViewController(new MovieDisplayScreenController(_movieModelList[row].movie), true);
+            this.NavigationController.PushViewController(new MovieDisplayScreenController(_movieModelList[row]), true);
         }
     }
 }

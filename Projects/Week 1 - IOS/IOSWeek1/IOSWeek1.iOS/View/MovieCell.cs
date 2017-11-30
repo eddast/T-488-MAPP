@@ -21,25 +21,25 @@ namespace IOSWeek1.iOS.Views
         public MovieCells(NSString cellID) : base(UITableViewCellStyle.Default, cellID)
         {
             this.SelectionStyle = UITableViewCellSelectionStyle.Gray;
+            int imageSize = 45;
 
             this._imageView = new UIImageView() {
-                Frame = new CGRect(5, 5, 33, 33),
+                Frame = new CGRect(5, 5, imageSize, imageSize),
 
             };
             this._titleAndYear = new UILabel()
             {
-
-                Frame = new CGRect(100, 5, this.ContentView.Bounds.Width, 25),
-                Font = UIFont.FromName("AmericanTypewriter", 20f),
-                TextColor = UIColor.FromRGB(127, 51, 0),
+                Frame = new CGRect( 60, 5, this.ContentView.Bounds.Width, 20 ),
+                Font = UIFont.FromName( "Helvetica-Bold", 15f ),
+                TextColor = UIColor.FromRGB( 0, 122, 255 ),
                 BackgroundColor = UIColor.Clear
             };
 
             this._starring = new UILabel()
             {
-                Frame = new CGRect(5, 30, this.ContentView.Bounds.Width, 20),
-                Font = UIFont.FromName("AmericanTypewriter", 12f),
-                TextColor = UIColor.FromRGB(38, 127, 0),
+                Frame = new CGRect( 60, 25, this.ContentView.Bounds.Width, 20 ),
+                Font = UIFont.FromName( "Helvetica-Oblique", 13f ),
+                TextColor = UIColor.FromRGB( 153, 153, 102 ),
                 BackgroundColor = UIColor.Clear
             };
 
@@ -50,8 +50,8 @@ namespace IOSWeek1.iOS.Views
 
         public void UpdateCell(string name, string year, string cast, string imageName) 
         {
-            this._imageView.Image = UIImage.FromFile(imageName);
-            this._titleAndYear.Text = name + " (" + year + ")";
+            if (imageName != null) { this._imageView.Image = UIImage.FromFile(imageName); }
+            this._titleAndYear.Text = name.ToUpper() + " (" + year + ")";
             this._starring.Text = cast;
         }
     }

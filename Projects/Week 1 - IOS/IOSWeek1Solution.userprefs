@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{7403762D-D0AA-424B-8380-586D8ABA1491}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IOSWeek1/IOSWeek1.iOS/Main.cs">
+    <Files>
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/MovieDisplayScreenController.cs" Line="27" Column="15" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/View/MovieCell.cs" Line="41" Column="17" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/IOSMainViewController.cs" Line="98" Column="18" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/MovieListDataSource.cs" Line="34" Column="79" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/MovieListController.cs" Line="30" Column="6" />
+      <File FileName="IOSWeek1/IOSWeek1/MovieModel.cs" Line="15" Column="6" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Main.cs" Line="17" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.IOSWeek1.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.IOSWeek1.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.00112EC6-41A8-483A-B2D9-554A28018B66" />
+</Properties>
