@@ -21,7 +21,7 @@ namespace IOSWeek1.iOS
 
             var movieTitle = new UILabel() {
                 Frame = new CGRect(StartX, StartY, this.View.Bounds.Width-100, 30),
-                Text = _movie.movie.Title.ToUpper(),
+                Text = _movie.movie.Title.ToUpper() + " (" + _movie.movie.ReleaseDate.Year.ToString() + ")",
                 Font = UIFont.FromName("Helvetica-Bold", 22f),
                 TextColor = UIColor.FromRGB(0, 122, 255),
             };
@@ -31,8 +31,12 @@ namespace IOSWeek1.iOS
                 Font = UIFont.FromName("Helvetica", 13f),
                 TextColor = UIColor.FromRGB(153, 153, 102),
             };
+            var seperatorLine = new UILabel() {
+                Frame = new CGRect(StartX - 30, StartY + 70, this.View.Bounds.Width - 50, 1),
+                BackgroundColor = UIColor.FromRGB(222, 222, 222)
+            };
             var movieDescription = new UITextView () {
-                Frame = new CGRect(StartX + 90, StartY + 80, this.View.Bounds.Width - 200, 300),
+                Frame = new CGRect(StartX + 90, StartY + 80, this.View.Bounds.Width - 150, 300),
                 Text = _movie.movie.Overview
             };
             this._imageView = new UIImageView() {
@@ -40,7 +44,7 @@ namespace IOSWeek1.iOS
             }; this._imageView.Image = UIImage.FromFile(_movie.posterPath);
 
 
-            this.View.AddSubviews( new UIView[] { _imageView, movieTitle, movieInfo, movieDescription });
+            this.View.AddSubviews( new UIView[] { _imageView, movieTitle, movieInfo, seperatorLine, movieDescription });
         }
 
         // Gets movie genres from the MoveInfo object
