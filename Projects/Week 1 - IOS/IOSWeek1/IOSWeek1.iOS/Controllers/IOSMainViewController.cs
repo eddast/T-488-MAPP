@@ -13,6 +13,11 @@ namespace IOSWeek1.iOS
 {
     public class IOSMainViewController : UIViewController
     {
+        // Adding this controller to a new tab indicating search
+        public IOSMainViewController() {
+            this.TabBarItem = new UITabBarItem(UITabBarSystemItem.Search , 0);    
+        }
+
         // Set initial coordinate values for item placement
         private const double StartX = 20, StartY = 80, Height = 50;
 
@@ -132,7 +137,7 @@ namespace IOSWeek1.iOS
 
                 // Once the MovieListController has been added to NavigationController
                 // The load spinner stops animating and thereby hides and button is clickable again
-                this.NavigationController.PushViewController(new MovieListController(movieModelList), true);
+                this.NavigationController.PushViewController(new MovieListController(movieModelList, "Movie List"), true);
 
                 loadSpinner.StopAnimating(); searchMovieButton.Enabled = true; movieField.Text = "";
             };

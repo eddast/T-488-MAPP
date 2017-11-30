@@ -21,7 +21,7 @@ namespace IOSWeek1.iOS.Views
         public MovieCells(NSString cellID) : base(UITableViewCellStyle.Default, cellID)
         {
             this.SelectionStyle = UITableViewCellSelectionStyle.Gray;
-            int imageSize = 45;
+            int imageSize = 65;
 
             this._imageView = new UIImageView() {
                 Frame = new CGRect(5, 5, imageSize, imageSize),
@@ -29,15 +29,15 @@ namespace IOSWeek1.iOS.Views
             };
             this._titleAndYear = new UILabel()
             {
-                Frame = new CGRect( 60, 5, this.ContentView.Bounds.Width, 20 ),
-                Font = UIFont.FromName( "Helvetica-Bold", 15f ),
+                Frame = new CGRect( 75, 15, this.ContentView.Bounds.Width, 20 ),
+                Font = UIFont.FromName( "Helvetica-Bold", 17f ),
                 TextColor = UIColor.FromRGB( 0, 122, 255 ),
                 BackgroundColor = UIColor.Clear
             };
 
             this._starring = new UILabel()
             {
-                Frame = new CGRect( 60, 25, this.ContentView.Bounds.Width, 20 ),
+                Frame = new CGRect( 75, 40, this.ContentView.Bounds.Width, 20 ),
                 Font = UIFont.FromName( "Helvetica-Oblique", 13f ),
                 TextColor = UIColor.FromRGB( 153, 153, 102 ),
                 BackgroundColor = UIColor.Clear

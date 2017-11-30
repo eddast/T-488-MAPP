@@ -20,9 +20,14 @@ namespace IOSWeek1.iOS
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
             this.Window = new UIWindow(UIScreen.MainScreen.Bounds);
-            var people = new People ( );
-            var controller = new NameViewController( people.Person );
-            this.Window.RootViewController = new UINavigationController( controller );
+            var people = new People();
+            var personController = new NameViewController(people.Person);
+            var personNavigationController = new UINavigationController(new NameListController( personController ));
+            var TabBarController = new TabBarController()
+            {
+                ViewControllers = new UIViewController[] { personNavigationController }
+            };
+            this.Window.RootViewController = TabBarController;
             this.Window.MakeKeyAndVisible( );
             return true;
         }

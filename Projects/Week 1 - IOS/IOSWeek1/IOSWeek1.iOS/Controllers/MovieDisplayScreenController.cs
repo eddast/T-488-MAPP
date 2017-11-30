@@ -40,7 +40,7 @@ namespace IOSWeek1.iOS
                 Text = _movie.movie.Overview
             };
             this._imageView = new UIImageView() {
-                Frame = new CGRect(StartX - 30, StartY + 90, 100, 100),
+                Frame = new CGRect(StartX - 30, StartY + 90, 100, 150),
             }; this._imageView.Image = UIImage.FromFile(_movie.posterPath);
 
 

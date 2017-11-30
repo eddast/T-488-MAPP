@@ -135,6 +135,11 @@
       <DependentUpon>NameListController.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\PersonCell.cs" />
+    <Compile Include="Controllers\TabBarController.cs" />
+    <Compile Include="Views\PersonCollectionCell.cs" />
+    <Compile Include="Views\PersonCollectionCell.designer.cs">
+      <DependentUpon>PersonCollectionCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IOSWeek1\IOSWeek1.csproj">

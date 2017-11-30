@@ -1,0 +1,11 @@
+/Users/eddarunarsdottir/Documents/T-488-MAPP/Lecture Codes/Week 1/IOSWeek1/IOSWeek1/bin/Release/IOSWeek1.dll
+/Users/eddarunarsdottir/Documents/T-488-MAPP/Lecture Codes/Week 1/IOSWeek1/IOSWeek1/bin/Release/IOSWeek1.pdb
+/Users/eddarunarsdottir/Documents/T-488-MAPP/Lecture Codes/Week 1/IOSWeek1/IOSWeek1/bin/Release/DM.MovieApi.dll
+/Users/eddarunarsdottir/Documents/T-488-MAPP/Lecture Codes/Week 1/IOSWeek1/IOSWeek1/bin/Release/Newtonsoft.Json.dll
+/Users/eddarunarsdottir/Documents/T-488-MAPP/Lecture Codes/Week 1/IOSWeek1/IOSWeek1/bin/Release/DM.MovieApi.pdb
+/Users/eddarunarsdottir/Documents/T-488-MAPP/Lecture Codes/Week 1/IOSWeek1/IOSWeek1/bin/Release/DM.MovieApi.dll.mdb
+/Users/eddarunarsdottir/Documents/T-488-MAPP/Lecture Codes/Week 1/IOSWeek1/IOSWeek1/bin/Release/DM.MovieApi.xml
+/Users/eddarunarsdottir/Documents/T-488-MAPP/Lecture Codes/Week 1/IOSWeek1/IOSWeek1/bin/Release/Newtonsoft.Json.xml
+/Users/eddarunarsdottir/Documents/T-488-MAPP/Lecture Codes/Week 1/IOSWeek1/IOSWeek1/obj/Release/IOSWeek1.csproj.CoreCompileInputs.cache
+/Users/eddarunarsdottir/Documents/T-488-MAPP/Lecture Codes/Week 1/IOSWeek1/IOSWeek1/obj/Release/IOSWeek1.dll
+/Users/eddarunarsdottir/Documents/T-488-MAPP/Lecture Codes/Week 1/IOSWeek1/IOSWeek1/obj/Release/IOSWeek1.pdb

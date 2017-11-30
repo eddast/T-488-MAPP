@@ -145,6 +145,8 @@
     <Compile Include="View\MovieCell.designer.cs">
       <DependentUpon>MovieCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\TopMoviesController.cs" />
+    <Compile Include="Controllers\TabBarController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IOSWeek1\IOSWeek1.csproj">

@@ -12,15 +12,16 @@ namespace IOSWeek1.iOS
     public class MovieListController : UITableViewController
     {
         private List<MovieModel> _movieModelList;
+        private string _title;
 
-        public MovieListController( List<MovieModel> movieModelList ){ _movieModelList = movieModelList; }
+        public MovieListController( List<MovieModel> movieModelList, string title ){ _movieModelList = movieModelList; _title = title; }
 
         // Movie list view: displays title
         // has a table view rendered in MovieListDataSource given list
         public override void ViewDidLoad() {
 
             base.ViewDidLoad();
-            this.Title = "Movie list";
+            this.Title = _title;
             this.TableView.Source = new MovieListDataSource(_movieModelList, _onSelectedMovies);
         }
 

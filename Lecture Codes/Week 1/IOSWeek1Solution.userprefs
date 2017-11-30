@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{7403762D-D0AA-424B-8380-586D8ABA1491}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IOSWeek1/IOSWeek1.iOS/Views/PersonCollectionCell.cs">
+    <Files>
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/TabBarController.cs" Line="10" Column="10" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/NameViewController.cs" Line="1" Column="1" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/AppDelegate.cs" Line="29" Column="15" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/NameListController.cs" Line="11" Column="92" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Views/PersonCell.cs" Line="52" Column="10" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Views/PersonCollectionCell.cs" Line="39" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.IOSWeek1.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/eddarunarsdottir/Documents/T-488-MAPP/Lecture Codes/Week 1/IOSWeek1/IOSWeek1.iOS/Controllers/TabBarController.cs" relfile="IOSWeek1/IOSWeek1.iOS/Controllers/TabBarController.cs" line="8" column="36" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.IOSWeek1.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.00112EC6-41A8-483A-B2D9-554A28018B66" />
+</Properties>

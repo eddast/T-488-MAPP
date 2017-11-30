@@ -17,7 +17,6 @@ namespace IOSWeek1.iOS
         public readonly List<MovieModel> _movieModelList;
         public readonly NSString movieListCellId = new NSString("MovieListCell");
         private readonly Action<int> _onSelectedMovies;
-
         public MovieListDataSource(List<MovieModel> movieModelList, Action<int> onSelectedMovies) {
             _movieModelList = movieModelList;
             _onSelectedMovies = onSelectedMovies;
@@ -26,6 +25,8 @@ namespace IOSWeek1.iOS
         // Design cells for table in table view
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
+            // Set cell height
+            tableView.RowHeight = 80;
 
             // Once cell disappears from the screen, it's reused for memory management purposes
             var cell = (MovieCells)tableView.DequeueReusableCell(this.movieListCellId);
@@ -34,7 +35,7 @@ namespace IOSWeek1.iOS
             if (cell == null) { cell = new MovieCells(this.movieListCellId); }
 
             // Extract appropriate values from movie model to pass
-            // Into detail view 
+            // Into detail view
             var movie = this._movieModelList[indexPath.Row].movie;
             var movie_cast = this._movieModelList[indexPath.Row].cast;
             var posterPath = this._movieModelList[indexPath.Row].posterPath;

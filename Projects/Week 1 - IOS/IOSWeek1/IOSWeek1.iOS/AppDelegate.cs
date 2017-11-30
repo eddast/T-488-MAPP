@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using UIKit;
+using IOSWeek1.iOS.Controllers;
 
 namespace IOSWeek1.iOS
 {
@@ -21,9 +22,20 @@ namespace IOSWeek1.iOS
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
             this.Window = new UIWindow(UIScreen.MainScreen.Bounds);
-            var controller = new IOSMainViewController( );
-            this.Window.RootViewController = new UINavigationController(controller);
+
+            var searchController = new IOSMainViewController();
+            var searchNavigationController = new UINavigationController(searchController);
+
+            var topMoviesController = new TopMoviesController();
+            var topMoviesNavigationController = new UINavigationController(topMoviesController);
+
+            var tabBarController = new TabBarController() {
+                ViewControllers = new UIViewController[] { searchNavigationController, topMoviesNavigationController }
+            };
+
+            this.Window.RootViewController = tabBarController;
             this.Window.MakeKeyAndVisible();
+
             return true;
         }
 
