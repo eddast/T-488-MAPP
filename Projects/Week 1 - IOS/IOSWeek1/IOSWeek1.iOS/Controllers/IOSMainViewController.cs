@@ -74,11 +74,11 @@ namespace IOSWeek1.iOS
 
         // Adds function to button and returns it
         private UIButton AddButtonFunction(UIButton searchMovieButton, UITextField movieField) {
-
-            List<MovieModel>movieModelList = new List<MovieModel>();
             
             searchMovieButton.TouchUpInside += async (sender, args) =>
             {
+                List<MovieModel> movieModelList = new List<MovieModel>();
+
                 // Minimize keyboard on click, disable button
                 // and add load spinner to indicate background process
                 movieField.ResignFirstResponder();
@@ -106,7 +106,10 @@ namespace IOSWeek1.iOS
                         
                         ImageDownloader imgdl = new ImageDownloader(new StorageClient());
                         string localFilePath = imgdl.LocalPathForFilename(movie.PosterPath);
-                        await imgdl.DownloadImage(movie.PosterPath, localFilePath, CancellationToken.None);
+                        if (localFilePath != "")
+                        {
+                            await imgdl.DownloadImage(movie.PosterPath, localFilePath, CancellationToken.None);
+                        }
 
                         ApiQueryResponse<MovieCredit> response_cast = await movieApi.GetCreditsAsync(movie.Id);
                         string movie_cast = "";
@@ -131,7 +134,7 @@ namespace IOSWeek1.iOS
                 // The load spinner stops animating and thereby hides and button is clickable again
                 this.NavigationController.PushViewController(new MovieListController(movieModelList), true);
 
-                loadSpinner.StopAnimating(); searchMovieButton.Enabled = true;
+                loadSpinner.StopAnimating(); searchMovieButton.Enabled = true; movieField.Text = "";
             };
 
             return searchMovieButton;

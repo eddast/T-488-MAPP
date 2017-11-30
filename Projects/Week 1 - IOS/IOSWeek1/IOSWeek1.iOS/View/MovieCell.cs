@@ -50,7 +50,7 @@ namespace IOSWeek1.iOS.Views
 
         public void UpdateCell(string name, string year, string cast, string imageName) 
         {
-            if (imageName != null) { this._imageView.Image = UIImage.FromFile(imageName); }
+            if (imageName != null && imageName != "") { this._imageView.Image = UIImage.FromFile(imageName); }
             this._titleAndYear.Text = name.ToUpper() + " (" + year + ")";
             this._starring.Text = cast;
         }

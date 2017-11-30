@@ -8,16 +8,6 @@ C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/IOSWeek1
 C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/IOSWeek1Solution/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.dll
 C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/IOSWeek1Solution/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.pdb
 C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/IOSWeek1Solution/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.csprojResolveAssemblyReference.cache
-C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/IOSWeek1.dll
-C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/IOSWeek1.pdb
-C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/DM.MovieApi.dll
-C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/Newtonsoft.Json.dll
-C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/DM.MovieApi.pdb
-C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/DM.MovieApi.xml
-C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/Newtonsoft.Json.xml
-C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.dll
-C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.pdb
-C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.csprojResolveAssemblyReference.cache
 /Users/eddarunarsdottir/Downloads/T-488-MAPP-master/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/IOSWeek1.dll
 /Users/eddarunarsdottir/Downloads/T-488-MAPP-master/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/IOSWeek1.pdb
 /Users/eddarunarsdottir/Downloads/T-488-MAPP-master/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/DM.MovieApi.dll
@@ -30,3 +20,13 @@ C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects
 /Users/eddarunarsdottir/Downloads/T-488-MAPP-master/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.csproj.CoreCompileInputs.cache
 /Users/eddarunarsdottir/Downloads/T-488-MAPP-master/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.dll
 /Users/eddarunarsdottir/Downloads/T-488-MAPP-master/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.pdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1\bin\Debug\IOSWeek1.dll
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1\bin\Debug\IOSWeek1.pdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1\bin\Debug\DM.MovieApi.dll
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1\bin\Debug\DM.MovieApi.pdb
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1\bin\Debug\DM.MovieApi.xml
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1\obj\Debug\IOSWeek1.csprojResolveAssemblyReference.cache
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1\obj\Debug\IOSWeek1.dll
+C:\Users\Edda Steinunn\Documents\Visual Studio 2017\Projects\T-488-MAPP\Projects\Week 1 - IOS\IOSWeek1\IOSWeek1\obj\Debug\IOSWeek1.pdb
