@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace IOSWeek1
 {
+    // Models a movie object with necessary information:
+    // MovieInfo object, starring cast, poster path and runtime
     public class MovieModel
     {
         public MovieInfo movie;

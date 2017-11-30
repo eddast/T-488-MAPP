@@ -25,7 +25,10 @@ namespace IOSWeek1.iOS
             this.TableView.Source = new MovieListDataSource(_movieModelList, _onSelectedMovies);
         }
 
+        // Implementation of onSelected cell function
+        // To keep it in controller (logic part)
         private void _onSelectedMovies(int row) {
+            
             this.NavigationController.PushViewController(new MovieDisplayScreenController(_movieModelList[row]), true);
         }
     }

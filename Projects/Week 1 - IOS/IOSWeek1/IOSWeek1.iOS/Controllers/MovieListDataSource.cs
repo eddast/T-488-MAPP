@@ -17,7 +17,9 @@ namespace IOSWeek1.iOS
         public readonly List<MovieModel> _movieModelList;
         public readonly NSString movieListCellId = new NSString("MovieListCell");
         private readonly Action<int> _onSelectedMovies;
+
         public MovieListDataSource(List<MovieModel> movieModelList, Action<int> onSelectedMovies) {
+            
             _movieModelList = movieModelList;
             _onSelectedMovies = onSelectedMovies;
         }
@@ -25,22 +27,21 @@ namespace IOSWeek1.iOS
         // Design cells for table in table view
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
-            // Set cell height
-            tableView.RowHeight = 80;
+            // Cell height set to fixed value
+            tableView.RowHeight = 95;
 
             // Once cell disappears from the screen, it's reused for memory management purposes
+            // If there are no cells to reuse, we create a new, empty cell
             var cell = (MovieCells)tableView.DequeueReusableCell(this.movieListCellId);
+            if (cell == null) { cell = new MovieCells(this.movieListCellId, (int)tableView.RowHeight); }
 
-            // If there are no cells to reuse, we create a new cell
-            if (cell == null) { cell = new MovieCells(this.movieListCellId); }
-
-            // Extract appropriate values from movie model to pass
-            // Into detail view
+            // Extract appropriate values from movie model
+            // Update cell accordingly
             var movie = this._movieModelList[indexPath.Row].movie;
             var movie_cast = this._movieModelList[indexPath.Row].cast;
             var posterPath = this._movieModelList[indexPath.Row].posterPath;
-
             cell.UpdateCell(movie.Title, movie.ReleaseDate.Year.ToString(), movie_cast, posterPath);
+
 
             return cell;
         }
@@ -48,8 +49,9 @@ namespace IOSWeek1.iOS
 
         // Determines number of rows in section
         public override nint RowsInSection(UITableView tableview, nint section) {
-           if (_movieModelList == null) { return 0; }
-           return this._movieModelList.Count;
+            
+           if (_movieModelList == null) return 0;
+           else return this._movieModelList.Count;
         }
 
         // Once row is selected, the passed in function onSelectedMovies

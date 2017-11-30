@@ -13,33 +13,47 @@ namespace IOSWeek1.iOS.Controllers
 {
     public class TopMoviesController : UITableViewController
     {
-        private List<MovieModel> topMovieModelList;
-        public bool userNavigatedFromAnotherTab = true;
+        private List<MovieModel> _topMovieModelList;
+        private bool _userNavigatedFromAnotherTab;
 
-        public TopMoviesController() {
+        public TopMoviesController()
+        {
+            // Initialize variables and indicate tab item
             this.TabBarItem = new UITabBarItem(UITabBarSystemItem.TopRated, 1);
             this.View.BackgroundColor = UIColor.White;
-            topMovieModelList = new List<MovieModel>();
-            userNavigatedFromAnotherTab = true;
+            _topMovieModelList = new List<MovieModel>();
+            _userNavigatedFromAnotherTab = true;
 
         }
 
-        public override void ViewDidAppear(bool animated) {
-            
-            base.ViewDidAppear(animated);
-            Title = "Top Rated"; this.View.BackgroundColor = UIColor.White;
+        public override void ViewWillAppear(bool animated)
+        {
+            // Initialize view, background and title
+            base.ViewWillAppear(animated);
+            this.Title = "Top Rated";
+            this.View.BackgroundColor = UIColor.White;
 
-            this.ParentViewController.TabBarController.ViewControllerSelected += (sender, e) =>
-            {
-                if (ParentViewController.TabBarController.SelectedIndex == 0) { userNavigatedFromAnotherTab = true; }
+            // Function listenes to the event of user clicking any tab
+            // If that tab is not the tab containing current view (index 1)
+            // We deduce that user will be navigating from another tab once he returns from view
+            this.ParentViewController.TabBarController.ViewControllerSelected += (sender, e) => {
+                
+                if (ParentViewController.TabBarController.SelectedIndex != 1) {
+                    
+                    _userNavigatedFromAnotherTab = true;
+                }
             };
 
-            if (userNavigatedFromAnotherTab) {
-                
+            // If user navigates to view from another tab
+            // view is cleared (data and source), then reloaded
+            // In case movie list is empty, reload (should not happen)
+            if (_userNavigatedFromAnotherTab || _topMovieModelList.Count == 0) {
+
+                _topMovieModelList = new List<MovieModel>();
                 this.TableView.Source = new MovieListDataSource(null, _onSelectedMovies);
                 this.TableView.ReloadData();
                 GenerateTopMoviesViewAsync();
-                userNavigatedFromAnotherTab = false;
+                _userNavigatedFromAnotherTab = false;
             }
         }
 
@@ -47,7 +61,7 @@ namespace IOSWeek1.iOS.Controllers
         {
             var loadSpinner = LoadSpinner(); View.AddSubview(loadSpinner);
 
-            topMovieModelList = new List<MovieModel>();
+            _topMovieModelList = new List<MovieModel>();
 
             // Register settings with MovieDBSettings class
             // Create query API and search by movieField value
@@ -85,29 +99,34 @@ namespace IOSWeek1.iOS.Controllers
                 string runtime = tm_movie.Item.Runtime.ToString();
 
                 MovieModel topmoviemodel = new MovieModel(topmovie, movie_cast, localFilePath, runtime);
-                topMovieModelList.Add(topmoviemodel);
-
+                _topMovieModelList.Add(topmoviemodel);
             }
-            // Once the MovieListController has been added to NavigationController
-            // The load spinner stops animating and thereby hides and button is clickable again
-            //this.NavigationController.PushViewController(new MovieListController(topMovieModelList, "Movie List"), false);
-            this.TableView.Source = new MovieListDataSource(topMovieModelList, _onSelectedMovies);
+
+            // Movie list is ready
+            this.TableView.Source = new MovieListDataSource(_topMovieModelList, _onSelectedMovies);
             this.TableView.ReloadData();
             loadSpinner.StopAnimating();
         }
 
         // Creates and omptimizes spinner displayed while query is processed
         private UIActivityIndicatorView LoadSpinner() {
+
+            int spinnerWidth = 50; int spinnerHeight = 50;
+            int spinnerX = (int) this.View.Bounds.Width/2 - spinnerWidth/2;
+            int spinnerY = 30;
             var loadSpinner = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.Gray);
-            loadSpinner.Frame = new CGRect(100, 100, this.View.Bounds.Width / 2, 30);
+            loadSpinner.Frame = new CGRect(spinnerX, spinnerY, spinnerWidth, spinnerHeight);
             loadSpinner.AutoresizingMask = UIViewAutoresizing.All; this.View.AddSubview(loadSpinner);
             loadSpinner.StartAnimating();
 
             return loadSpinner;
         }
 
+        // Implementation of onSelected cell function
+        // To keep it in controller (logic part)
         private void _onSelectedMovies(int row) {
-            this.NavigationController.PushViewController(new MovieDisplayScreenController( topMovieModelList[row]), true);
+            
+            this.NavigationController.PushViewController(new MovieDisplayScreenController( _topMovieModelList[row]), true);
         }
     }
 

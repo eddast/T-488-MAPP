@@ -8,6 +8,7 @@ using UIKit;
 using System.Collections.Generic;
 using IOSWeek1.MovieDownload;
 using System.Threading;
+using System.IO;
 
 namespace IOSWeek1.iOS
 {
@@ -70,6 +71,7 @@ namespace IOSWeek1.iOS
 
         // Adds a search button for movie field value
         private UIButton SearchMovieButton(UITextField movieField) {
+            
             var searchMovieButton = UIButton.FromType(UIButtonType.RoundedRect);
             searchMovieButton.Frame = new CGRect(StartX, StartY + 2 * Height, this.View.Bounds.Width - 2 * StartX, Height);
             searchMovieButton.SetTitle("Get movie", UIControlState.Normal);
@@ -111,7 +113,7 @@ namespace IOSWeek1.iOS
                         
                         ImageDownloader imgdl = new ImageDownloader(new StorageClient());
                         string localFilePath = imgdl.LocalPathForFilename(movie.PosterPath);
-                        if (localFilePath != "") {
+                        if (localFilePath != "" && !File.Exists(localFilePath)) {
                             await imgdl.DownloadImage(movie.PosterPath, localFilePath, CancellationToken.None);
                         }
 
@@ -146,6 +148,7 @@ namespace IOSWeek1.iOS
 
         // Creates and omptimizes spinner displayed while query is processed
         private UIActivityIndicatorView LoadSpinner( ) {
+            
             var loadSpinner = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.Gray);
             loadSpinner.Frame = new CGRect(StartX, StartY + 3 * Height, this.View.Bounds.Width - 2 * StartX, Height);
             loadSpinner.AutoresizingMask = UIViewAutoresizing.All; this.View.AddSubview(loadSpinner);
