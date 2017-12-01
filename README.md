@@ -25,4 +25,4 @@ This tab loads top rated movies from the external web service and initially disp
 
 ### Known Limitations
 
-Due to lack of time and too specified service model of the external web service's API, the potential cross-platform shareable code of this model could not be placed into the portable class library. This was because the image downloader service (located in the MovieDownload namespace) was included in this service model and could not reside in the PCL due to platform-specific references. I will attempt to solve this before starting week two's Android project.
+Due to lack of time and too specified service model of the external web service's API, the potential cross-platform shareable code of this model could not be placed into the portable class library. This was because the image downloader service (located in the MovieDownload namespace) was included in this service model and could not reside in the PCL due to platform-specific references. I will attempt to seperate the image downloader service from the API service model and solve this before starting week two's Android project.
