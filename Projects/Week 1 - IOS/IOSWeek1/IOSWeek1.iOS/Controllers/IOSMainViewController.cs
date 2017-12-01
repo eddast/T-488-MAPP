@@ -9,11 +9,14 @@ using System.Collections.Generic;
 using IOSWeek1.MovieDownload;
 using System.Threading;
 using System.IO;
+using IOSWeek1.Services;
 
 namespace IOSWeek1.iOS
 {
     public class IOSMainViewController : UIViewController
     {
+        IApiMovieRequest _movieApi;
+
         // Adding this controller to a new tab indicating search
         public IOSMainViewController() {
             this.TabBarItem = new UITabBarItem(UITabBarSystemItem.Search , 0);    
@@ -96,44 +99,30 @@ namespace IOSWeek1.iOS
                 // Create query API and search by movieField value
                 MovieDBSettings set = new MovieDBSettings();
                 MovieDbFactory.RegisterSettings(set);
-                var movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
-
-                // If input isn't null, resolve query
-                // Otherwise return empty list of movieTitles
-                List<string> movieCreditList = new List<string>();
+                _movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
 
                 if (movieField.Text != "" && movieField.Text != null) {
                     
                     // Conduct query and await response
                     // If query returns no result, movieList becomes a null list
-                    ApiSearchResponse<MovieInfo> response_m = await movieApi.SearchByTitleAsync(movieField.Text);
+                    ApiSearchResponse<MovieInfo> response_m = await _movieApi.SearchByTitleAsync(movieField.Text);
                     IReadOnlyList<MovieInfo> movieList = response_m.Results;
 
                     foreach (MovieInfo movie in movieList) {
                         
-                        ImageDownloader imgdl = new ImageDownloader(new StorageClient());
-                        string localFilePath = imgdl.LocalPathForFilename(movie.PosterPath);
-                        if (localFilePath != "" && !File.Exists(localFilePath)) {
-                            await imgdl.DownloadImage(movie.PosterPath, localFilePath, CancellationToken.None);
-                        }
-
-                        ApiQueryResponse<MovieCredit> response_cast = await movieApi.GetCreditsAsync(movie.Id);
-                        string movie_cast = "";
-
-                        for (int i = 0; i < 3; i++) {
-
-                            if (i == response_cast.Item.CastMembers.Count) { break; }
-                            if (i != 0) { movie_cast = movie_cast + ", "; }
-                            movie_cast = movie_cast + response_cast.Item.CastMembers[i].Name;
-                        }
-
-                        ApiQueryResponse<Movie> m_movie = await movieApi.FindByIdAsync(movie.Id);
-                        string runtime = m_movie.Item.Runtime.ToString();
+                        // Get poster path, starring cast and movie runtime
+                        // Then create a model with those values and add it to list
+                        MovieDBService server = new MovieDBService();
+                        var localFilePath = await server.DownloadPosterAsync(movie.PosterPath);
+                        var movieCast = await server.GetThreeCastMembersAsync(movie.Id);
+                        var runtime = await server.GetRuntimeAsync(movie.Id);
                                                                                 
-                        MovieModel moviemodel = new MovieModel(movie, movie_cast, localFilePath, runtime );
-                        movieModelList.Add(moviemodel);
+                        MovieModel movieModel = new MovieModel(movie, movieCast, localFilePath, runtime );
+                        movieModelList.Add(movieModel);
 
-                    } if (response_m.Results.Count == 0) { movieModelList = null;  }
+                    }
+                    if (response_m.Results.Count == 0) { movieModelList = null;  }
+
                 } else { movieModelList = null; }
 
                 // Once the MovieListController has been added to NavigationController

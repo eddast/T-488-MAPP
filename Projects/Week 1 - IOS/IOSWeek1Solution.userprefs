@@ -1,15 +1,26 @@
 ﻿<Properties StartupConfiguration="{7403762D-D0AA-424B-8380-586D8ABA1491}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="IOSWeek1/IOSWeek1.iOS/Controllers/MovieDisplayScreenController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IOSWeek1/IOSWeek1.iOS/Main.cs">
     <Files>
       <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/IOSMainViewController.cs" Line="30" Column="45" />
-      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" Line="125" Column="9" />
-      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/MovieDisplayScreenController.cs" Line="30" Column="54" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" Line="110" Column="1" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/MovieDisplayScreenController.cs" Line="118" Column="30" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Services/MovieDBService.cs" Line="14" Column="33" />
+      <File FileName="IOSWeek1/MovieDownload/ImageDownloader.cs" Line="1" Column="1" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/MovieListDataSource.cs" Line="55" Column="1" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/AppDelegate.cs" Line="41" Column="1" />
+      <File FileName="IOSWeek1/IOSWeek1/MovieModel.cs" Line="22" Column="1" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Main.cs" Line="18" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.ItemProperties.IOSWeek1.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" relfile="IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" line="25" column="1" />
+      <Breakpoint enabled="false" file="/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" relfile="IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" line="36" column="1" />
+      <Breakpoint file="/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" relfile="IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" line="105" column="1" />
+      <Breakpoint file="/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" relfile="IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" line="104" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
