@@ -100,6 +100,7 @@ namespace IOSWeek1.iOS
                 // and add load spinner to indicate background process
                 movieField.ResignFirstResponder();
                 searchMovieButton.Enabled = false;
+                searchMovieButton.BackgroundColor = UIColor.LightGray;
                 var loadSpinner = LoadSpinner();
 
                 if (movieField.Text != "" && movieField.Text != null) {
@@ -114,7 +115,10 @@ namespace IOSWeek1.iOS
                 // The load spinner stops animating and thereby hides and button is clickable again
                 this.NavigationController.PushViewController(new MovieListController(movieModelList, "Movie List"), true);
 
-                loadSpinner.StopAnimating(); searchMovieButton.Enabled = true; movieField.Text = "";
+                loadSpinner.StopAnimating();
+                searchMovieButton.Enabled = true;
+                searchMovieButton.BackgroundColor = UIColor.FromRGB(5, 93, 207);
+                movieField.Text = "";
             };
 
             return searchMovieButton;
