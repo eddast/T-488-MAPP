@@ -9,6 +9,7 @@ namespace IOSWeek1.iOS.Controllers
     {
         private List<MovieModel> _topMovieModelList;
         private bool _userNavigatedFromAnotherTab;
+        private bool _atRoot;
 
         public TopMoviesController()
         {
@@ -17,7 +18,7 @@ namespace IOSWeek1.iOS.Controllers
             this.View.BackgroundColor = UIColor.White;
             _topMovieModelList = new List<MovieModel>();
             _userNavigatedFromAnotherTab = true;
-
+            _atRoot = true;
         }
 
         public override void ViewDidAppear(bool animated)
@@ -35,13 +36,17 @@ namespace IOSWeek1.iOS.Controllers
                 if (ParentViewController.TabBarController.SelectedIndex != 1) {
                     
                     _userNavigatedFromAnotherTab = true;
+                } else {
+                    if (this.NavigationController.ViewControllers.Length <= 1) {
+                        _atRoot = true;
+                    } else { _atRoot = false; }
                 }
             };
 
             // If user navigates to view from another tab
             // view is cleared (data and source), then reloaded
             // In case movie list is empty, reload (should not happen)
-            if (_userNavigatedFromAnotherTab || _topMovieModelList.Count == 0) {
+            if ( (_userNavigatedFromAnotherTab && _atRoot) || _topMovieModelList.Count == 0) {
                 
                 _topMovieModelList = new List<MovieModel>();
                 this.TableView.Source = new MovieListDataSource(null, _onSelectedMovies);
