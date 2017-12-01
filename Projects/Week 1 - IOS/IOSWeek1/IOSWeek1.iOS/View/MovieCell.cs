@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Foundation;
+﻿using Foundation;
 using UIKit;
-using DM.MovieApi;
-using DM.MovieApi.ApiResponse;
-using DM.MovieApi.MovieDb;
-using DM.MovieApi.MovieDb.Movies;
 using CoreGraphics;
 
 namespace IOSWeek1.iOS.Views

@@ -1,15 +1,7 @@
 ﻿using CoreGraphics;
-using DM.MovieApi;
-using DM.MovieApi.ApiResponse;
-using DM.MovieApi.MovieDb.Movies;
-using System;
-using IOSWeek1;
 using UIKit;
 using System.Collections.Generic;
-using IOSWeek1.MovieDownload;
 using IOSWeek1.Services;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace IOSWeek1.iOS.Controllers
 {

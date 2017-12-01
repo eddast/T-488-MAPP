@@ -1,6 +1,4 @@
 ﻿using CoreGraphics;
-using DM.MovieApi.MovieDb.Movies;
-using System.Collections.Generic;
 using UIKit;
 
 namespace IOSWeek1.iOS
