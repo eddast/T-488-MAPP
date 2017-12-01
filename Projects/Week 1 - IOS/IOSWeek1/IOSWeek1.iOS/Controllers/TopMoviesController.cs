@@ -65,23 +65,22 @@ namespace IOSWeek1.iOS.Controllers
                 this.TableView.ReloadData();
                 loadSpinner.StopAnimating();*/
 
-                var TopMovies = GenerateTopMoviesViewAsync1();
+                var TopMovies = GenerateTopMoviesViewAsync();
                 _userNavigatedFromAnotherTab = false;
 
             }
         }
 
-        public async System.Threading.Tasks.Task<List<MovieModel>> GenerateTopMoviesViewAsync1()
+        public async System.Threading.Tasks.Task<List<MovieModel>> GenerateTopMoviesViewAsync()
         {
+            List<MovieModel> movieList = new List<MovieModel>();
+
             var loadSpinner = LoadSpinner();
             View.AddSubview(loadSpinner);
 
-            // Register settings with MovieDBSettings class
-            // Create query API and search by movieField value
-            MovieDBSettings _settings = new MovieDBSettings();
+            var _settings = new MovieDBSettings();
             MovieDbFactory.RegisterSettings(_settings);
             _movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
-            List<MovieModel> movieList = new List<MovieModel>();
 
             // Conduct query and await response
             // If query returns no result, movieList becomes a null list
@@ -89,6 +88,7 @@ namespace IOSWeek1.iOS.Controllers
             IReadOnlyList<MovieInfo> movieInfoList = response_m.Results;
 
             foreach (MovieInfo movie in movieInfoList) {
+                
                 // Get poster path, starring cast and movie runtime
                 // Then create a model with those values and add it to list
                 MovieDBService server = new MovieDBService();

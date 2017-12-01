@@ -85,8 +85,7 @@ namespace IOSWeek1.iOS
         // Adds function to button and returns it
         private UIButton AddButtonFunction(UIButton searchMovieButton, UITextField movieField) {
             
-            searchMovieButton.TouchUpInside += async (sender, args) =>
-            {
+            searchMovieButton.TouchUpInside += async (sender, args) => {
                 List<MovieModel> movieModelList = new List<MovieModel>();
 
                 // Minimize keyboard on click, disable button
@@ -95,33 +94,11 @@ namespace IOSWeek1.iOS
                 searchMovieButton.Enabled = false;
                 var loadSpinner = LoadSpinner();
 
-                // Register settings with MovieDBSettings class
-                // Create query API and search by movieField value
-                MovieDBSettings set = new MovieDBSettings();
-                MovieDbFactory.RegisterSettings(set);
-                _movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
-
                 if (movieField.Text != "" && movieField.Text != null) {
-                    
-                    // Conduct query and await response
-                    // If query returns no result, movieList becomes a null list
-                    ApiSearchResponse<MovieInfo> response_m = await _movieApi.SearchByTitleAsync(movieField.Text);
-                    IReadOnlyList<MovieInfo> movieList = response_m.Results;
 
-                    foreach (MovieInfo movie in movieList) {
-                        
-                        // Get poster path, starring cast and movie runtime
-                        // Then create a model with those values and add it to list
-                        MovieDBService server = new MovieDBService();
-                        var localFilePath = await server.DownloadPosterAsync(movie.PosterPath);
-                        var movieCast = await server.GetThreeCastMembersAsync(movie.Id);
-                        var runtime = await server.GetRuntimeAsync(movie.Id);
-                                                                                
-                        MovieModel movieModel = new MovieModel(movie, movieCast, localFilePath, runtime );
-                        movieModelList.Add(movieModel);
-
-                    }
-                    if (response_m.Results.Count == 0) { movieModelList = null;  }
+                    // Initiate movie server to query web service
+                    MovieDBService server = new MovieDBService();
+                    movieModelList = await server.GetMovieListByTitleAsync(movieField.Text);
 
                 } else { movieModelList = null; }
 

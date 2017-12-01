@@ -24,6 +24,60 @@ namespace IOSWeek1.Services
             movieList = new List<MovieModel>();
         }
 
+        public async System.Threading.Tasks.Task<List<MovieModel>> GetMovieListByTitleAsync(string title)
+        {
+            List <MovieModel> movieModelList = new List<MovieModel>();
+
+            // Conduct query and await response
+            // If query returns no result, movieList becomes a null list
+            ApiSearchResponse<MovieInfo> response_m = await _movieApi.SearchByTitleAsync(title);
+            IReadOnlyList<MovieInfo> movieInfoList = response_m.Results;
+
+            if ( response_m.Results.Count == 0 ) { return null; }
+
+            foreach (MovieInfo movie in movieInfoList)
+            {
+
+                // Get poster path, starring cast and movie runtime
+                // Then create a model with those values and add it to list
+                var localFilePath = await DownloadPosterAsync(movie.PosterPath);
+                var movieCast = await GetThreeCastMembersAsync(movie.Id);
+                var runtime = await GetRuntimeAsync(movie.Id);
+
+                MovieModel movieModel = new MovieModel(movie, movieCast, localFilePath, runtime);
+                movieModelList.Add(movieModel);
+            }
+
+
+            return movieModelList;
+        }
+
+        /*public async System.Threading.Tasks.Task<List<MovieModel>> GetTopRatedMoviesListAsync()
+        {
+            List<MovieModel> movieModelList = new List<MovieModel>();
+
+            // Conduct query and await response
+            // If query returns no result, movieList becomes a null list
+            var response_m = await _movieApi.GetTopRatedAsync();
+            IReadOnlyList<MovieInfo> movieInfoList = response_m.Results;
+
+            foreach (MovieInfo movie in movieInfoList)
+            {
+
+                // Get poster path, starring cast and movie runtime
+                // Then create a model with those values and add it to list
+                MovieDBService server = new MovieDBService();
+                var localFilePath = await server.DownloadPosterAsync(movie.PosterPath);
+                var movieCast = await server.GetThreeCastMembersAsync(movie.Id);
+                var runtime = await server.GetRuntimeAsync(movie.Id);
+                MovieModel topRatedMovie = new MovieModel(movie, movieCast,
+                                                          localFilePath, runtime);
+                movieModelList.Add(topRatedMovie);
+            }
+
+            return movieModelList;
+        }*/
+
         // Get local filepath and download image from API
         public async System.Threading.Tasks.Task<string> DownloadPosterAsync(string posterPath)
         {

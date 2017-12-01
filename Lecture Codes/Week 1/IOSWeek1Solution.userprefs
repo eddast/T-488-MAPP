@@ -6,7 +6,7 @@
       <File FileName="IOSWeek1/IOSWeek1.iOS/AppDelegate.cs" Line="29" Column="15" />
       <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/NameListController.cs" Line="11" Column="92" />
       <File FileName="IOSWeek1/IOSWeek1.iOS/Views/PersonCell.cs" Line="52" Column="10" />
-      <File FileName="IOSWeek1/IOSWeek1.iOS/Views/PersonCollectionCell.cs" Line="39" Column="28" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Views/PersonCollectionCell.cs" Line="24" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
