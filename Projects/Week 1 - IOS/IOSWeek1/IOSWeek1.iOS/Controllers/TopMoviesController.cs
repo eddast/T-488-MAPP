@@ -31,15 +31,19 @@ namespace IOSWeek1.iOS.Controllers
             // Function listenes to the event of user clicking any tab
             // If that tab is not the tab containing current view (index 1)
             // We deduce that user will be navigating from another tab once he returns from view
-            this.ParentViewController.TabBarController.ViewControllerSelected += (sender, e) => {
+            this.ParentViewController.TabBarController.ViewControllerSelected += (sender, args) => {
                 
                 if (ParentViewController.TabBarController.SelectedIndex != 1) {
                     
                     _userNavigatedFromAnotherTab = true;
+
                 } else {
                     if (this.NavigationController.ViewControllers.Length <= 1) {
                         _atRoot = true;
-                    } else { _atRoot = false; }
+
+                    } else {
+                        _atRoot = false;
+                    }
                 }
             };
 

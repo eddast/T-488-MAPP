@@ -39,8 +39,7 @@ namespace IOSWeek1.MovieDownload
                                  FileShare.None,
                                  short.MaxValue,
                                  true);
-            try
-            {
+            try {
                 await this._imageStorage.DownloadAsync(remoteFilePath, fileStream, token);
             }
             catch (Exception ex)
@@ -49,13 +48,11 @@ namespace IOSWeek1.MovieDownload
             }
         }
 
-        public async Task<string> DownloadMovieImageAsync(MovieInfo movieInfo)
+        public async Task<string> DownloadMovieImageAsync(string path)
         {
-            var posterPath = movieInfo.PosterPath;
-            var localPosterPath = this.LocalPathForFilename(posterPath);
-            if (localPosterPath != "" && localPosterPath != null && !File.Exists(localPosterPath))
-            {
-                await this.DownloadImage(posterPath, localPosterPath, new CancellationToken());
+            var localPosterPath = this.LocalPathForFilename(path);
+            if (localPosterPath != "" && localPosterPath != null && !File.Exists(localPosterPath)) {
+                await this.DownloadImage(path, localPosterPath, new CancellationToken());
             }
 
 

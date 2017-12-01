@@ -77,9 +77,11 @@ namespace IOSWeek1.iOS
         }
         // Adds a search button for movie field value
         private UIButton SearchMovieButton(UITextField movieField) {
+
+            StartY = StartY + 2 * Height + 20;
             
             var searchMovieButton = UIButton.FromType(UIButtonType.RoundedRect);
-            searchMovieButton.Frame = new CGRect(this.View.Bounds.Width/2-100/2, StartY + 2 * Height + 20, 100, Height);
+            searchMovieButton.Frame = new CGRect(this.View.Bounds.Width/2-100/2, StartY, 100, Height);
             searchMovieButton.SetTitle("Get movie", UIControlState.Normal);
             searchMovieButton.SetTitleColor(UIColor.White, UIControlState.Normal);
             searchMovieButton.BackgroundColor = UIColor.FromRGB(5, 93, 207);
@@ -122,7 +124,7 @@ namespace IOSWeek1.iOS
         private UIActivityIndicatorView LoadSpinner( ) {
             
             var loadSpinner = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.Gray);
-            loadSpinner.Frame = new CGRect(StartX, StartY + 3 * Height, this.View.Bounds.Width - 2 * StartX, Height);
+            loadSpinner.Frame = new CGRect(StartX, StartY + Height, this.View.Bounds.Width - 2 * StartX, Height);
             loadSpinner.AutoresizingMask = UIViewAutoresizing.All; this.View.AddSubview(loadSpinner);
             loadSpinner.StartAnimating();
 

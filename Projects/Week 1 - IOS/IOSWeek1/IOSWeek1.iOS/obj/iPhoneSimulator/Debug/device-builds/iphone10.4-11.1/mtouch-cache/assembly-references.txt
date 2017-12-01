@@ -1,12 +1,15 @@
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/bin/iPhoneSimulator/Debug/IOSWeek1.iOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/mscorlib.dll
-/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/packages/TheMovieDbWrapper.0.8.2/lib/netstandard1.1/DM.MovieApi.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/System.Core.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/System.Net.Http.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/System.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Mono.Security.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/System.Xml.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/System.Core.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/IOSWeek1.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/System.ComponentModel.Composition.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/packages/TheMovieDbWrapper.0.8.2/lib/netstandard1.1/DM.MovieApi.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Runtime.InteropServices.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Collections.Concurrent.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Reflection.dll
@@ -33,7 +36,4 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Reflection.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Text.Encoding.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Microsoft.CSharp.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/System.Net.Http.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Net.Primitives.dll
-/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/IOSWeek1.dll

@@ -14,13 +14,14 @@ namespace IOSWeek1.iOS
 
         // Movie model being displayed and poster imageview object
         private UIImageView _imageView;
+        private UIImageView _imageBackdropView;
         private MovieModel _movie;
 
 
         public MovieDisplayScreenController(MovieModel movie) {
 
             // Initialize position values and movie model
-            _subviewX = 20; _subviewY = 100;
+            _subviewX = 20; _subviewY = 265;
             _standardSpacing = 10;
             _estHeadingWidth = 30;
             _estInfoWidth = 20;
@@ -40,11 +41,30 @@ namespace IOSWeek1.iOS
             var _seperatorLine = _SeperatorLine();
             var _movieDescription = _MovieDescription();
             this._imageView = _ImageView();
-            this.View.AddSubviews( new UIView[] { _imageView,
+            this._imageBackdropView = _ImageBackdropView();
+            this.View.AddSubviews( new UIView[] { _imageBackdropView,
+                                                  _imageView,
                                                   _movieTitle,
                                                   _movieInfo,
                                                   _seperatorLine,
                                                   _movieDescription });
+        }
+
+        // Generates frame and image of backdrop image
+        private UIImageView _ImageBackdropView()
+        {
+            var imageView = new UIImageView()
+            {
+                Frame = new CGRect(0, 50,
+                                   this.View.Bounds.Width, 200),
+                
+            };
+            if (_movie.backdropPath != null && _movie.backdropPath != ""){
+                imageView.Image = UIImage.FromFile(_movie.backdropPath);
+            }
+
+
+            return imageView;
         }
 
         // Formats movie title in movie detail view

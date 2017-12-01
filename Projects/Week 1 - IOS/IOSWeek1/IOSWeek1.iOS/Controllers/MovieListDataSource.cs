@@ -35,7 +35,8 @@ namespace IOSWeek1.iOS
             var movie = this._movieModelList[indexPath.Row].movie;
             var movie_cast = this._movieModelList[indexPath.Row].cast;
             var posterPath = this._movieModelList[indexPath.Row].posterPath;
-            cell.UpdateCell(movie.Title, movie.ReleaseDate.Year.ToString(), movie_cast, posterPath);
+            var backdropPath = this._movieModelList[indexPath.Row].backdropPath;
+            cell.UpdateCell(movie.Title, movie.ReleaseDate.Year.ToString(), movie_cast, posterPath, backdropPath);
 
 
             return cell;

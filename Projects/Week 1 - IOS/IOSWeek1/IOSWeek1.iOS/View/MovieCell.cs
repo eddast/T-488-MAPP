@@ -14,7 +14,7 @@ namespace IOSWeek1.iOS.Views
         private double _cellTextPositionX;
 
         // Subviews that make up a movie cell
-        UIImageView _imageView;
+        UIImageView _imagePosterView;
         UILabel _titleAndYear;
         UILabel _starring;
 
@@ -33,10 +33,10 @@ namespace IOSWeek1.iOS.Views
 
             // Generate view components and add them to subview
             // All empty, but modifiable with the UpdateCell function
-            this._imageView = _ImageView();
+            this._imagePosterView = _ImageView();
             this._titleAndYear = _TitleAndYear();
             this._starring = _Starring();
-            this.ContentView.AddSubviews(new UIView[] { this._imageView,
+            this.ContentView.AddSubviews(new UIView[] { this._imagePosterView,
                                                         this._titleAndYear,
                                                         this._starring });
 
@@ -46,11 +46,11 @@ namespace IOSWeek1.iOS.Views
 
         // Modifies values of a cell based on movie name, release year, cast members
         // Sets image to the image corresponding to parameter poster path
-        public void UpdateCell(string name, string year, string cast, string posterPath)
+        public void UpdateCell(string name, string year, string cast, string posterPath, string borderPath)
         {
             if (posterPath != null && posterPath != "") {
                 
-                this._imageView.Image = UIImage.FromFile(posterPath);
+                this._imagePosterView.Image = UIImage.FromFile(posterPath);
             }
             this._titleAndYear.Text = name.ToUpper() + " (" + year + ")";
             this._starring.Text = cast;
