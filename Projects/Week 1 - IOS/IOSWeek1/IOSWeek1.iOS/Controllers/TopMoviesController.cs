@@ -17,8 +17,6 @@ namespace IOSWeek1.iOS.Controllers
     {
         private List<MovieModel> _topMovieModelList;
         private bool _userNavigatedFromAnotherTab;
-        IApiMovieRequest _movieApi;
-
 
         public TopMoviesController()
         {
@@ -59,43 +57,27 @@ namespace IOSWeek1.iOS.Controllers
 
                 var TopMovies = GenerateTopMoviesViewAsync();
                 _userNavigatedFromAnotherTab = false;
-
             }
         }
 
+        // Uses MovieDBService object to fetch top rated movies
+        // Meanwhile displays a spinner
+        // Then alters tableViewSource to display top rated movies
         public async System.Threading.Tasks.Task<List<MovieModel>> GenerateTopMoviesViewAsync()
-        {
-            List<MovieModel> movieList = new List<MovieModel>();
-
+        {   
             var loadSpinner = LoadSpinner();
             View.AddSubview(loadSpinner);
 
-            var _settings = new MovieDBSettings();
-            MovieDbFactory.RegisterSettings(_settings);
-            _movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
-
-            // Conduct query and await response
-            // If query returns no result, movieList becomes a null list
-            var response_m = await _movieApi.GetTopRatedAsync();
-            IReadOnlyList<MovieInfo> movieInfoList = response_m.Results;
-
-            foreach (MovieInfo movie in movieInfoList) {
-                
-                // Get poster path, starring cast and movie runtime
-                // Then create a model with those values and add it to list
-                MovieDBService server = new MovieDBService();
-                var localFilePath = await server.DownloadPosterAsync(movie.PosterPath);
-                var movieCast = await server.GetThreeCastMembersAsync(movie.Id);
-                var runtime = await server.GetRuntimeAsync(movie.Id);
-                MovieModel topRatedMovie = new MovieModel(movie, movieCast,
-                                                          localFilePath, runtime);
-                movieList.Add(topRatedMovie);
-            }
+            MovieDBService server = new MovieDBService();
+            List<MovieModel> movieList = await server.GetTopMoviesViewAsync();
 
             this.TableView.Source = new MovieListDataSource(movieList, _onSelectedMovies);
             this.TableView.ReloadData();
+
             loadSpinner.StopAnimating();
+
             _topMovieModelList = movieList;
+
 
             return movieList;
         }

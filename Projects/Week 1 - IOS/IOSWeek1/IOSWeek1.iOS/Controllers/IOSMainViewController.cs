@@ -15,8 +15,6 @@ namespace IOSWeek1.iOS
 {
     public class IOSMainViewController : UIViewController
     {
-        IApiMovieRequest _movieApi;
-
         // Adding this controller to a new tab indicating search
         public IOSMainViewController() {
             this.TabBarItem = new UITabBarItem(UITabBarSystemItem.Search , 0);    

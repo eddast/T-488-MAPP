@@ -12,7 +12,6 @@ namespace IOSWeek1.Services
     {
         private MovieDBSettings _settings;
         private IApiMovieRequest _movieApi;
-        public List<MovieModel> movieList;
 
         public MovieDBService() {
             
@@ -21,22 +20,40 @@ namespace IOSWeek1.Services
             _settings = new MovieDBSettings();
             MovieDbFactory.RegisterSettings(_settings);
             _movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
-            movieList = new List<MovieModel>();
         }
 
+        // Returns movie model list with appropriate info searhing by title substring
         public async System.Threading.Tasks.Task<List<MovieModel>> GetMovieListByTitleAsync(string title)
         {
-            List <MovieModel> movieModelList = new List<MovieModel>();
-
             // Conduct query and await response
             // If query returns no result, movieList becomes a null list
             ApiSearchResponse<MovieInfo> response_m = await _movieApi.SearchByTitleAsync(title);
             IReadOnlyList<MovieInfo> movieInfoList = response_m.Results;
-
             if ( response_m.Results.Count == 0 ) { return null; }
+            List<MovieModel> movieList = await getMovieModelListByMovieInfoAsync(movieInfoList);
 
-            foreach (MovieInfo movie in movieInfoList)
-            {
+
+            return movieList;
+        }
+
+        public async System.Threading.Tasks.Task<List<MovieModel>> GetTopMoviesViewAsync()
+        {
+            // Conduct query and await response
+            // If query returns no result, movieList becomes a null list
+            var response_m = await _movieApi.GetTopRatedAsync();
+            IReadOnlyList<MovieInfo> movieInfoList = response_m.Results;
+            List<MovieModel> movieModelList = await getMovieModelListByMovieInfoAsync(movieInfoList);
+
+
+            return movieModelList;
+        }
+
+        // retrieves movie model information from movie info
+        private async System.Threading.Tasks.Task<List<MovieModel>> getMovieModelListByMovieInfoAsync(IReadOnlyList<MovieInfo> movieInfoList)
+        {
+            List<MovieModel> movieModelList = new List<MovieModel>();
+
+            foreach (MovieInfo movie in movieInfoList) {
 
                 // Get poster path, starring cast and movie runtime
                 // Then create a model with those values and add it to list
@@ -52,34 +69,8 @@ namespace IOSWeek1.Services
             return movieModelList;
         }
 
-        /*public async System.Threading.Tasks.Task<List<MovieModel>> GetTopRatedMoviesListAsync()
-        {
-            List<MovieModel> movieModelList = new List<MovieModel>();
-
-            // Conduct query and await response
-            // If query returns no result, movieList becomes a null list
-            var response_m = await _movieApi.GetTopRatedAsync();
-            IReadOnlyList<MovieInfo> movieInfoList = response_m.Results;
-
-            foreach (MovieInfo movie in movieInfoList)
-            {
-
-                // Get poster path, starring cast and movie runtime
-                // Then create a model with those values and add it to list
-                MovieDBService server = new MovieDBService();
-                var localFilePath = await server.DownloadPosterAsync(movie.PosterPath);
-                var movieCast = await server.GetThreeCastMembersAsync(movie.Id);
-                var runtime = await server.GetRuntimeAsync(movie.Id);
-                MovieModel topRatedMovie = new MovieModel(movie, movieCast,
-                                                          localFilePath, runtime);
-                movieModelList.Add(topRatedMovie);
-            }
-
-            return movieModelList;
-        }*/
-
         // Get local filepath and download image from API
-        public async System.Threading.Tasks.Task<string> DownloadPosterAsync(string posterPath)
+        private async System.Threading.Tasks.Task<string> DownloadPosterAsync(string posterPath)
         {
             ImageDownloader imgdl = new ImageDownloader(new StorageClient());
             string localFilePath = imgdl.LocalPathForFilename(posterPath);
@@ -93,7 +84,7 @@ namespace IOSWeek1.Services
         }
 
         // Extract three starring actors from MovieCredit object by movie ID
-        public async System.Threading.Tasks.Task<string> GetThreeCastMembersAsync(int id)
+        private async System.Threading.Tasks.Task<string> GetThreeCastMembersAsync(int id)
         {
             ApiQueryResponse<MovieCredit> responseCast = await _movieApi.GetCreditsAsync(id);
             string movieCast = "";
@@ -110,7 +101,7 @@ namespace IOSWeek1.Services
         }
 
         // Extract movie runtime from Movie object by movie ID
-        public async System.Threading.Tasks.Task<string> GetRuntimeAsync(int id)
+        private async System.Threading.Tasks.Task<string> GetRuntimeAsync(int id)
         {
             ApiQueryResponse<Movie> tm_movie = await _movieApi.FindByIdAsync(id);
             string runtime = tm_movie.Item.Runtime.ToString();
