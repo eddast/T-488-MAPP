@@ -16,5 +16,7 @@ Once view has loaded, user is navigated to the next screen (a view is placed on 
 ![alt text](https://image.ibb.co/izKmZb/Two.jpg)
 
 #### Second tab: Top Rated
-This tab loads top rated movies from the external web service and displays it in the same 
+
+This tab loads top rated movies from the external web service and initially displays a load spinner indicating background process. Once resources have been retrieved, the top rated movies are displayed in the same table view as the once that displays the search results but with one major difference - this view is not placed on the navigation stack like it does when search is conducted, but replaces the loading view. The table cells are clickable like in the search view and once clicked show movie details. Everytime a user navigates from this tab to another, and then back into this tab to the root view (table view), the information is retrived again meanwhile the same load screen with a load spinner is displayed:
+
 ![alt text](https://image.ibb.co/m3BB0G/Three.jpg)
