@@ -49,6 +49,7 @@ namespace IOSWeek1.iOS.Views
         public void UpdateCell(string name, string year, string cast, string posterPath)
         {
             if (posterPath != null && posterPath != "") {
+                
                 this._imageView.Image = UIImage.FromFile(posterPath);
             }
             this._titleAndYear.Text = name.ToUpper() + " (" + year + ")";
@@ -59,6 +60,7 @@ namespace IOSWeek1.iOS.Views
         private UIImageView _ImageView()
         {
             var imageView = new UIImageView() {
+                
                 Frame = new CGRect(_standardImageSpacing,
                                    _standardImageSpacing,
                                    imageWidth, imageHeight),
@@ -72,10 +74,11 @@ namespace IOSWeek1.iOS.Views
         private UILabel _TitleAndYear()
         {
             var titleAndYear = new UILabel() {
-                Frame = new CGRect((int)_cellTextPositionX, _standardSpacing * 2,
+                
+                Frame = new CGRect((int)_cellTextPositionX, _standardSpacing * 4,
                                    this.ContentView.Bounds.Width - _cellTextPositionX,
                                    _standardEstTextHeight),
-                Font = UIFont.FromName("Helvetica-Bold", 14f),
+                Font = UIFont.FromName("BanglaSangamMN-Bold", 14f),
                 TextColor = UIColor.FromRGB(0, 122, 255),
                 BackgroundColor = UIColor.Clear
             };
@@ -91,7 +94,7 @@ namespace IOSWeek1.iOS.Views
                 Frame = new CGRect((int)_cellTextPositionX, (_standardSpacing * 2) * 4,
                                    this.ContentView.Bounds.Width - _cellTextPositionX,
                                    _standardEstTextHeight),
-                Font = UIFont.FromName("Helvetica-Oblique", 12f),
+                Font = UIFont.FromName("BanglaSangamMN", 12f),
                 TextColor = UIColor.FromRGB(153, 153, 102),
                 BackgroundColor = UIColor.Clear
             };

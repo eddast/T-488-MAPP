@@ -59,7 +59,7 @@ namespace IOSWeek1.iOS
                                    this.View.Bounds.Width - (_subviewX + _standardSpacing),
                                    _estHeadingWidth),
                 Text = movieName + " " + movieYear,
-                Font = UIFont.FromName("Helvetica-Bold", 20f),
+                Font = UIFont.FromName("BanglaSangamMN-Bold", 20f),
                 TextColor = UIColor.FromRGB(0, 122, 255),
             };
 
@@ -78,7 +78,7 @@ namespace IOSWeek1.iOS
                                    this.View.Bounds.Width - _subviewX,
                                    _estInfoWidth),
                 Text = _movie.runtime + " mins | " + get_movie_genres(),
-                Font = UIFont.FromName("Helvetica", 13f),
+                Font = UIFont.FromName("BanglaSangamMN", 13f),
                 TextColor = UIColor.FromRGB(153, 153, 102),
             };
 

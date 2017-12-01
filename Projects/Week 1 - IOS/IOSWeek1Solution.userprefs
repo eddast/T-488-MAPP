@@ -1,9 +1,30 @@
 ﻿<Properties StartupConfiguration="{7403762D-D0AA-424B-8380-586D8ABA1491}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="IOSWeek1/IOSWeek1.iOS/Services/MovieDBService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IOSWeek1/IOSWeek1.iOS/Controllers/IOSMainViewController.cs">
     <Files>
-      <File FileName="IOSWeek1/MovieDownload/ImageDownloader.cs" Line="63" Column="10" />
-      <File FileName="IOSWeek1/IOSWeek1.iOS/Services/MovieDBService.cs" Line="75" Column="14" />
+      <File FileName="IOSWeek1/MovieDownload/ImageDownloader.cs" Line="17" Column="10" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/IOSMainViewController.cs" Line="85" Column="59" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Controllers/MovieDisplayScreenController.cs" Line="81" Column="55" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/Main.cs" Line="23" Column="1" />
+      <File FileName="IOSWeek1/IOSWeek1.iOS/View/MovieCell.cs" Line="52" Column="17" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="IOSWeek1Solution" expanded="True">
+            <Node name="IOSWeek1" expanded="True">
+              <Node name="References" expanded="True" />
+            </Node>
+            <Node name="IOSWeek1.iOS" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="IOSMainViewController.cs" selected="True" />
+              </Node>
+              <Node name="View" expanded="True" />
+            </Node>
+            <Node name="MovieDownload" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.ItemProperties.IOSWeek1.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />

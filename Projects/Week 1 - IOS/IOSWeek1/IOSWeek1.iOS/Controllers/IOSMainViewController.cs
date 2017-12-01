@@ -7,35 +7,59 @@ namespace IOSWeek1.iOS
 {
     public class IOSMainViewController : UIViewController
     {
+        // Set initial coordinate values for item placement
+        private double StartX, StartY, Height;
+
         // Adding this controller to a new tab indicating search
         public IOSMainViewController() {
-            this.TabBarItem = new UITabBarItem(UITabBarSystemItem.Search , 0);    
+            this.TabBarItem = new UITabBarItem(UITabBarSystemItem.Search , 0); 
+            StartX = 20; StartY = 80; Height = 50;
         }
-
-        // Set initial coordinate values for item placement
-        private const double StartX = 20, StartY = 80, Height = 50;
 
         public override void ViewDidLoad() {
 
             // Call base view and white background set (in case it's not default)
-            base.ViewDidLoad(); this.View.BackgroundColor = UIColor.White;
+            base.ViewDidLoad(); this.View.BackgroundColor = UIColor.White; Title = "Movie Search";
 
             // field label, input field and button make up the
             // main view main window screen. This is generated and added to subview
+            var headingLabel = HeadingLabel();
             var promptLabel = PromptLabel();
             var movieField = MovieField();
             var searchMovieButton = SearchMovieButton(movieField);
 
-            this.View.AddSubviews(new UIView[] { promptLabel, movieField, searchMovieButton });
+            this.View.AddSubviews(new UIView[] { headingLabel, promptLabel, movieField, searchMovieButton });
+        }
+
+        // Heading set
+        // Prompts user to enter movie title words
+        private UILabel HeadingLabel()
+        {
+            var headingLabel = new UILabel()
+            {
+                Frame = new CGRect(5, StartY,
+                                   this.View.Bounds.Width - StartX,
+                                   Height * 2),
+                TextAlignment = UITextAlignment.Center,
+                Text = "Movie Search".ToUpper(),
+                Font = UIFont.FromName("BanglaSangamMN-Bold", 30f),
+                TextColor = UIColor.FromRGB(0, 122, 255)
+            };
+
+            return headingLabel;
         }
 
         // User prompt label set
         // Prompts user to enter movie title words
         private UILabel PromptLabel()
         {
+            StartY += (Height * 2);
+
             var promptLabel = new UILabel() {
                 Frame = new CGRect(StartX, StartY, this.View.Bounds.Width - 2 * StartX, Height),
-                Text = "Enter words in movie title: "
+                Text = "Enter words in movie title: ",
+                TextAlignment = UITextAlignment.Center,
+                Font = UIFont.FromName("BanglaSangamMN", 15f)
             };
 
             return promptLabel;
@@ -51,23 +75,15 @@ namespace IOSWeek1.iOS
 
             return movieField;
         }
-
-        // Placeholder result set and added to view
-        private UILabel MovieLabelResult() {
-            var movieLabelResult = new UILabel() {
-                Frame = new CGRect(StartX, StartY + 3 * Height, this.View.Bounds.Width - 2 * StartX, Height),
-                Text = ""
-            };
-
-            return movieLabelResult;
-        }
-
         // Adds a search button for movie field value
         private UIButton SearchMovieButton(UITextField movieField) {
             
             var searchMovieButton = UIButton.FromType(UIButtonType.RoundedRect);
-            searchMovieButton.Frame = new CGRect(StartX, StartY + 2 * Height, this.View.Bounds.Width - 2 * StartX, Height);
+            searchMovieButton.Frame = new CGRect(this.View.Bounds.Width/2-100/2, StartY + 2 * Height + 20, 100, Height);
             searchMovieButton.SetTitle("Get movie", UIControlState.Normal);
+            searchMovieButton.SetTitleColor(UIColor.White, UIControlState.Normal);
+            searchMovieButton.BackgroundColor = UIColor.FromRGB(5, 93, 207);
+
 
             return AddButtonFunction(searchMovieButton, movieField);
         }
