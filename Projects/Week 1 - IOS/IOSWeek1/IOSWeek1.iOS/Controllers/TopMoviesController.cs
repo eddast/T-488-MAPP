@@ -57,14 +57,6 @@ namespace IOSWeek1.iOS.Controllers
                 this.TableView.Source = new MovieListDataSource(null, _onSelectedMovies);
                 this.TableView.ReloadData();
 
-                /*var loadSpinner = LoadSpinner();
-                View.AddSubview(loadSpinner);
-                MovieDBService topRatedMoviesFetcher = new MovieDBService();
-                var movieList = topRatedMoviesFetcher.GenerateTopMoviesViewAsync();
-                this.TableView.Source = new MovieListDataSource(movieList.Result, _onSelectedMovies);
-                this.TableView.ReloadData();
-                loadSpinner.StopAnimating();*/
-
                 var TopMovies = GenerateTopMoviesViewAsync();
                 _userNavigatedFromAnotherTab = false;
 
