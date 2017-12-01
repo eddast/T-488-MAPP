@@ -56,7 +56,7 @@ namespace IOSWeek1.Services
 
                 // Get poster path, starring cast and movie runtime
                 // Then create a model with those values and add it to list
-                var localFilePath = await DownloadPosterAsync(movie.PosterPath);
+                var localFilePath = await DownloadPosterAsync(movie);
                 var movieCast = await GetThreeCastMembersAsync(movie.Id);
                 var runtime = await GetRuntimeAsync(movie.Id);
 
@@ -69,17 +69,10 @@ namespace IOSWeek1.Services
         }
 
         // Get local filepath and download image from API
-        private async System.Threading.Tasks.Task<string> DownloadPosterAsync(string posterPath)
+        private async System.Threading.Tasks.Task<string> DownloadPosterAsync(MovieInfo movie)
         {
             ImageDownloader imgdl = new ImageDownloader(new StorageClient());
-            string localFilePath = imgdl.LocalPathForFilename(posterPath);
-            if (localFilePath != ""){
-                await imgdl.DownloadImage(posterPath, localFilePath, CancellationToken.None);
-                return localFilePath;
-            }
-
-
-            return "";
+            return await imgdl.DownloadMovieImageAsync(movie);
         }
 
         // Extract three starring actors from MovieCredit object by movie ID

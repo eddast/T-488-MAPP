@@ -7,7 +7,7 @@ namespace IOSWeek1.MovieDownload
     using System.IO;
     using System.Threading;
     using System.Threading.Tasks;
-    
+    using DM.MovieApi.MovieDb.Movies;
 
     public class ImageDownloader
     {
@@ -47,6 +47,19 @@ namespace IOSWeek1.MovieDownload
             {
                 Console.WriteLine(ex.ToString());
             }
+        }
+
+        public async Task<string> DownloadMovieImageAsync(MovieInfo movieInfo)
+        {
+            var posterPath = movieInfo.PosterPath;
+            var localPosterPath = this.LocalPathForFilename(posterPath);
+            if (localPosterPath != "" && localPosterPath != null && !File.Exists(localPosterPath))
+            {
+                await this.DownloadImage(posterPath, localPosterPath, new CancellationToken());
+            }
+
+
+            return localPosterPath;
         }
     }
 }

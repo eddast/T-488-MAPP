@@ -1,9 +1,9 @@
 # Version: 11.3.0.47 (xcode9.1: 51128b8c)
 # [first argument, ignore] # --cache
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mtouch/mtouch.exe \
-	'/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/mtouch-cache' \
+	'/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/mtouch-cache' \
 	--sim \
-	'/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/IOSWeek1.iOS.app' \
+	'/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/IOSWeek1.iOS.app' \
 	--executable \
 	IOSWeek1.iOS \
 	--debug \
@@ -19,16 +19,16 @@
 	--http-message-handler=HttpClientHandler \
 	--abi=x86_64 \
 	--symbollist \
-	'/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/mtouch-symbols.list' \
+	'/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/mtouch-symbols.list' \
 	--dsym=no \
 	-r \
-	'/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/packages/TheMovieDbWrapper.0.8.2/lib/netstandard1.1/DM.MovieApi.dll' \
+	'/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/packages/TheMovieDbWrapper.0.8.2/lib/netstandard1.1/DM.MovieApi.dll' \
 	-r \
-	'/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/IOSWeek1.dll' \
+	'/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/IOSWeek1.dll' \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
-	'/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll' \
+	'/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll' \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
@@ -314,11 +314,11 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
-	'/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/packages/TheMovieDbWrapper.0.8.2/lib/netstandard1.1/DM.MovieApi.dll' \
+	'/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/packages/TheMovieDbWrapper.0.8.2/lib/netstandard1.1/DM.MovieApi.dll' \
 	-r \
-	'/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/IOSWeek1.dll' \
+	'/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1/bin/Debug/IOSWeek1.dll' \
 	-r \
-	'/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll' \
+	'/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll' \
 	--target-framework \
 	'Xamarin.iOS,v1.0' \
-	'/Users/eddarunarsdottir/Documents/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/bin/iPhoneSimulator/Debug/IOSWeek1.iOS.exe' \
+	'/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 1 - IOS/IOSWeek1/IOSWeek1.iOS/bin/iPhoneSimulator/Debug/IOSWeek1.iOS.exe' \
