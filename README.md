@@ -3,7 +3,10 @@
 #### Includes course weekly projects under ./Projects and some code done in class from lecture material under ./Lecture Codes
 
 ## Week 1: Xamarin.iOS project - Visual Demonstration and Information
-In the first week of the coure T-488-MAPP an Xamarin.iOS project was implemented in C# via Visual Studio. The project's function was built throughout one week, with some new functionalities every day. This repository contains change history of this project throughout this entire week and prior functionalities that may have been omitted. The application is a tabbed application with two tabs and it fetches information about movies from an external web service and displays that information appropriately.
+In the first week of the coure T-488-MAPP an Xamarin.iOS project was implemented in C# via Visual Studio. The project's function was built throughout one week, with some new functionalities every day.  Git was used as a version control tool throughout the week, hence this repository contains change history of this project throughout this entire week, making prior functionalities that may have been omitted available.
+
+### Application Structure and Purpose
+The application is a tabbed application with two tabs and it fetches information about movies from an external web service and displays that information appropriately. Each tab contains a view with it's own navigation controller.
 
 ### First tab: Search
 The first tab is the tab user is automatically navigated to once app launches. The first tab prompts user to write in a query substring of some movie, then displays a button on which the user can click. Once clicked, the tab becomes unclickable - both literally and visually - and a load spinner appears to indicate background process. The screen remains in this state while resources (movie information) are retrieved from the server:
