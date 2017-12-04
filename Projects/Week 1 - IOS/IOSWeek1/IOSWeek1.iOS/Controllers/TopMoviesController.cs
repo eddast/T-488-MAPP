@@ -2,6 +2,7 @@
 using UIKit;
 using System.Collections.Generic;
 using IOSWeek1.Services;
+using IOSWeek1.MovieDownload;
 
 namespace IOSWeek1.iOS.Controllers
 {
@@ -72,6 +73,14 @@ namespace IOSWeek1.iOS.Controllers
             MovieDBService server = new MovieDBService();
             List<MovieModel> movieList = await server.GetTopMoviesViewAsync();
 
+            foreach (MovieModel movie in movieList) {
+                
+                var bdpath = DownloadPosterAsync(movie.movie.BackdropPath).Result;
+                var ppath = DownloadPosterAsync(movie.movie.PosterPath).Result;
+                movie.backdropPath = bdpath;
+                movie.posterPath = ppath;
+            }
+
             this.TableView.Source = new MovieListDataSource(movieList, _onSelectedMovies);
             this.TableView.ReloadData();
 
@@ -81,6 +90,12 @@ namespace IOSWeek1.iOS.Controllers
 
 
             return movieList;
+        }
+
+        private async System.Threading.Tasks.Task<string> DownloadPosterAsync(string path) {
+            
+            ImageDownloader imgdl = new ImageDownloader(new StorageClient());
+            return await imgdl.DownloadMovieImageAsync(path);
         }
 
         // Creates and omptimizes spinner displayed while query is processed

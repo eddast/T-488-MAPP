@@ -2,6 +2,7 @@
 using UIKit;
 using System.Collections.Generic;
 using IOSWeek1.Services;
+using IOSWeek1.MovieDownload;
 
 namespace IOSWeek1.iOS
 {
@@ -108,6 +109,13 @@ namespace IOSWeek1.iOS
                     // Initiate movie server to query web service
                     MovieDBService server = new MovieDBService();
                     movieModelList = await server.GetMovieListByTitleAsync(movieField.Text);
+                    foreach (MovieModel movie in movieModelList) {
+
+                        var bdpath = DownloadPosterAsync(movie.movie.BackdropPath).Result;
+                        var ppath = DownloadPosterAsync(movie.movie.PosterPath).Result;
+                        movie.backdropPath = bdpath;
+                        movie.posterPath = ppath;
+                    }
 
                 } else { movieModelList = null; }
 
@@ -122,6 +130,12 @@ namespace IOSWeek1.iOS
             };
 
             return searchMovieButton;
+        }
+
+        private async System.Threading.Tasks.Task<string> DownloadPosterAsync(string path) {
+
+            ImageDownloader imgdl = new ImageDownloader(new StorageClient());
+            return await imgdl.DownloadMovieImageAsync(path);
         }
 
         // Creates and omptimizes spinner displayed while query is processed
