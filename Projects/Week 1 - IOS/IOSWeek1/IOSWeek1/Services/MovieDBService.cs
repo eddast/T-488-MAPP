@@ -3,7 +3,6 @@ using System.Threading;
 using DM.MovieApi;
 using DM.MovieApi.ApiResponse;
 using DM.MovieApi.MovieDb.Movies;
-using IOSWeek1.MovieDownload;
 
 namespace IOSWeek1.Services
 {
@@ -56,12 +55,12 @@ namespace IOSWeek1.Services
 
                 // Get poster path, starring cast and movie runtime
                 // Then create a model with those values and add it to list
-                var localFilePath = await DownloadPosterAsync(movie.PosterPath);
-                var localFilePathBackdrop = await DownloadPosterAsync(movie.BackdropPath);
+                //var localFilePath = await DownloadPosterAsync(movie.PosterPath);
+                //var localFilePathBackdrop = await DownloadPosterAsync(movie.BackdropPath);
                 var movieCast = await GetThreeCastMembersAsync(movie.Id);
                 var runtime = await GetRuntimeAsync(movie.Id);
 
-                MovieModel movieModel = new MovieModel(movie, movieCast, localFilePath, localFilePathBackdrop, runtime);
+                MovieModel movieModel = new MovieModel(movie, movieCast, null, null, runtime);
                 movieModelList.Add(movieModel);
             }
 
@@ -69,12 +68,12 @@ namespace IOSWeek1.Services
             return movieModelList;
         }
 
-        // Get local filepath and download image from API
+        /*// Get local filepath and download image from API
         private async System.Threading.Tasks.Task<string> DownloadPosterAsync(string path)
         {
             ImageDownloader imgdl = new ImageDownloader(new StorageClient());
             return await imgdl.DownloadMovieImageAsync(path);
-        }
+        }*/
 
         // Extract three starring actors from MovieCredit object by movie ID
         private async System.Threading.Tasks.Task<string> GetThreeCastMembersAsync(int id)

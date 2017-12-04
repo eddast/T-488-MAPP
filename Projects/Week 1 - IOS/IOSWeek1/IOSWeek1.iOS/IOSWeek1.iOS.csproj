@@ -147,16 +147,12 @@
     </Compile>
     <Compile Include="Controllers\TopMoviesController.cs" />
     <Compile Include="Controllers\TabBarController.cs" />
-    <Compile Include="Services\MovieDBService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IOSWeek1\IOSWeek1.csproj">
       <Project>{5fd40872-09fc-46c4-892d-084c419ee126}</Project>
       <Name>IOSWeek1</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="..\MovieDownload\MovieDownload.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

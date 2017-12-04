@@ -34,6 +34,7 @@
     <Compile Include="MovieDBSettings.cs" />
     <Compile Include="MovieModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\MovieDBService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="DM.MovieApi, Version=0.8.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -45,6 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
