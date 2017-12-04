@@ -1,0 +1,5 @@
+/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld/bin/Debug/HelloWorld.dll
+/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld/bin/Debug/HelloWorld.pdb
+/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld/obj/Debug/HelloWorld.csproj.CoreCompileInputs.cache
+/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld/obj/Debug/HelloWorld.dll
+/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld/obj/Debug/HelloWorld.pdb
