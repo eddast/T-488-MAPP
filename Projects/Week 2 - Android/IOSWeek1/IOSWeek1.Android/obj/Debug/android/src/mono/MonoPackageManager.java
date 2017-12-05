@@ -108,7 +108,15 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "IOSWeek1.Android.dll" comes first in this list. */
 		"IOSWeek1.Android.dll",
 		"DM.MovieApi.dll",
+		"Glide.dll",
 		"Newtonsoft.Json.dll",
+		"Xamarin.Android.Support.Annotations.dll",
+		"Xamarin.Android.Support.Compat.dll",
+		"Xamarin.Android.Support.Core.UI.dll",
+		"Xamarin.Android.Support.Core.Utils.dll",
+		"Xamarin.Android.Support.Fragment.dll",
+		"Xamarin.Android.Support.Media.Compat.dll",
+		"Xamarin.Android.Support.v4.dll",
 		"IOSWeek1.dll",
 	};
 	public static final String[] Dependencies = new String[]{

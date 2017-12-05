@@ -1,23 +1,46 @@
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/HelloWorld.Android.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/HelloWorld.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/Java.Interop.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/Mono.Android.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Core.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Xml.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/mscorlib.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Runtime.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.ComponentModel.Composition.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Collections.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Diagnostics.Debug.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Threading.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Collections.Concurrent.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Reflection.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Linq.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Runtime.InteropServices.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Runtime.Extensions.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Reflection.Extensions.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Net.Http.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Runtime.Serialization.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.ServiceModel.Internals.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/Mono.Security.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/HelloWorld.Android.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/HelloWorld.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/Java.Interop.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/Microsoft.CSharp.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/Mono.Android.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Core.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.IO.Compression.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Net.Http.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Xml.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/mscorlib.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/Newtonsoft.Json.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Runtime.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.ComponentModel.Composition.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Collections.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Diagnostics.Debug.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Threading.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Collections.Concurrent.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Reflection.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Linq.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Runtime.InteropServices.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Runtime.Extensions.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Reflection.Extensions.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Runtime.Serialization.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.ServiceModel.Internals.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/Mono.Security.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Resources.ResourceManager.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.IO.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Runtime.Numerics.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Numerics.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Xml.XmlDocument.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Xml.XDocument.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Xml.Linq.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Globalization.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Threading.Tasks.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Runtime.Serialization.Primitives.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.ComponentModel.TypeConverter.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Dynamic.Runtime.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Linq.Expressions.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Runtime.Serialization.Formatters.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.ObjectModel.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Text.RegularExpressions.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Xml.ReaderWriter.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Text.Encoding.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Reflection.Primitives.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/assets/System.Text.Encoding.Extensions.dll

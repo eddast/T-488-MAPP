@@ -4,8 +4,9 @@
   <uses-sdk android:minSdkVersion="15" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="HelloWorld.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="HelloWorld" android:theme="@style/MyTheme" android:name="md5fd8ed8046cea676d1ed0ce1fd728c386.MainActivity" />
+  <application android:label="HelloWorld.Android" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="HelloWorld" android:theme="@style/MyTheme" android:name="md5fd8ed8046cea676d1ed0ce1fd728c386.MainActivity" />
+    <activity android:label="Name list" android:theme="@style/MyTheme" android:name="md5fd8ed8046cea676d1ed0ce1fd728c386.NameListActivity" />
     <activity android:icon="@drawable/icon" android:label="HelloWorld" android:theme="@style/MyTheme.Splash" android:name="md5fd8ed8046cea676d1ed0ce1fd728c386.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

@@ -1,33 +1,14 @@
 ﻿<Properties StartupConfiguration="{5EDDA305-58C3-4E34-BAF3-E1F498879E39}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld/HelloWorld.Android/SplashActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld/HelloWorld.Android/NameListAdapter.cs">
     <Files>
-      <File FileName="HelloWorld/HelloWorld.Android/MainActivity.cs" Line="13" Column="59" />
-      <File FileName="HelloWorld/HelloWorld.Android/Resources/values/styles.xml" Line="10" Column="1" />
-      <File FileName="HelloWorld/HelloWorld.Android/SplashActivity.cs" Line="4" Column="23" />
+      <File FileName="HelloWorld/HelloWorld.Android/NameListAdapter.cs" Line="48" Column="42" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="HelloWorld" expanded="True">
-            <Node name="HelloWorld.Android" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="drawable-hdpi" expanded="True" />
-                <Node name="layout" expanded="True" />
-                <Node name="values" expanded="True" />
-              </Node>
-              <Node name="SplashActivity.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.HelloWorld.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.HelloWorld.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

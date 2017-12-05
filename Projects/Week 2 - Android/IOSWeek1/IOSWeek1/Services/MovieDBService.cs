@@ -60,20 +60,13 @@ namespace IOSWeek1.Services
                 var movieCast = await GetThreeCastMembersAsync(movie.Id);
                 var runtime = await GetRuntimeAsync(movie.Id);
 
-                MovieModel movieModel = new MovieModel(movie, movieCast, null, null, runtime);
+                MovieModel movieModel = new MovieModel(movie, movieCast, runtime);
                 movieModelList.Add(movieModel);
             }
 
 
             return movieModelList;
         }
-
-        /*// Get local filepath and download image from API
-        private async System.Threading.Tasks.Task<string> DownloadPosterAsync(string path)
-        {
-            ImageDownloader imgdl = new ImageDownloader(new StorageClient());
-            return await imgdl.DownloadMovieImageAsync(path);
-        }*/
 
         // Extract three starring actors from MovieCredit object by movie ID
         private async System.Threading.Tasks.Task<string> GetThreeCastMembersAsync(int id)

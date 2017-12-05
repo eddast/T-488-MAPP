@@ -1,21 +1,41 @@
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/HelloWorld.Android.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/HelloWorld.Android.pdb
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/com.companyname.HelloWorld.apk
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/com.companyname.HelloWorld-Signed.apk
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/HelloWorld.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/HelloWorld.pdb
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/HelloWorld.Android.csprojResolveAssemblyReference.cache
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/HelloWorld.Android.csproj.CoreCompileInputs.cache
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/HelloWorld.Android.dll
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/HelloWorld.Android.pdb
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/bin/com.companyname.HelloWorld.apk
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/layout/main.xml
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/values/strings.xml
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/icon.png
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-mdpi/icon.png
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-xhdpi/icon.png
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-xxhdpi/icon.png
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-xxxhdpi/icon.png
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/R.cs.flag
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/uploadflags.txt
-/Users/eddarunarsdottir/Documents/Skólinn/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/values/styles.xml
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/HelloWorld.Android.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/HelloWorld.Android.pdb
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/com.companyname.HelloWorld.apk
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/com.companyname.HelloWorld-Signed.apk
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/HelloWorld.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/Newtonsoft.Json.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/HelloWorld.pdb
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/bin/Debug/Newtonsoft.Json.xml
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/HelloWorld.Android.csprojResolveAssemblyReference.cache
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/HelloWorld.Android.csproj.CoreCompileInputs.cache
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/HelloWorld.Android.dll
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/HelloWorld.Android.pdb
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/android/bin/com.companyname.HelloWorld.apk
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/layout/namelistitem.xml
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/layout/main.xml
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/values/strings.xml
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/icon.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-mdpi/icon.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-xhdpi/icon.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-xxhdpi/icon.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-xxxhdpi/icon.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/values/styles.xml
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-mdpi/splash.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/abraham_lincoln.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/bill_gates.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/charles_darwin.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/charles_de_gaulle.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/christopher_columbus.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/george_orwell.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/john_kennedy.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/mahatma_gandhi.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/margaret_thatcher.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/marilyn_monroe.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/martin_luther_king.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/mother_teresa.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/muhammad_ali.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/nelson_mandela.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/drawable-hdpi/winston_churchill.png
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/res/values/color.xml
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/R.cs.flag
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Lecture Codes/Week 2/HelloWorld/HelloWorld/HelloWorld.Android/obj/Debug/uploadflags.txt

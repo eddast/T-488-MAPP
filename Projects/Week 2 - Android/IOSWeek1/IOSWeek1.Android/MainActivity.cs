@@ -6,6 +6,9 @@ using Android.Widget;
 using Android.OS;
 using Android.Views.InputMethods;
 using IOSWeek1.Services;
+using Android.Content;
+using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace IOSWeek1.Droid
 {
@@ -23,15 +26,14 @@ namespace IOSWeek1.Droid
             // Keep track of view's objects 
             var movieField = this.FindViewById<TextView>(Resource.Id.movieField);
             var getMovieButton = this.FindViewById<Button>(Resource.Id.getMovieButton);
-            var resultDisplay = this.FindViewById<TextView>(Resource.Id.movieResultDisplay);
             var spinner = this.FindViewById<ProgressBar>(Resource.Id.spinner);
             spinner.Visibility = ViewStates.Invisible;
 
             // Function for button functionality
-            OnClickMovieButton(spinner, movieField, getMovieButton, resultDisplay);
+            OnClickMovieButton(spinner, movieField, getMovieButton);
 		}
 
-        private void OnClickMovieButton (ProgressBar spinner, TextView movieField, Button getMovieButton, TextView resultDisplay) {
+        private void OnClickMovieButton (ProgressBar spinner, TextView movieField, Button getMovieButton) {
             
             getMovieButton.Click += async (object sender, EventArgs e) => {
 
@@ -45,12 +47,18 @@ namespace IOSWeek1.Droid
 
                 // Use MovieDBService to display 
                 MovieDBService server = new MovieDBService();
-                var movies = await server.GetMovieListByTitleAsync(movieField.Text);
-                resultDisplay.Text = movies[0].movie.Title;
+                List<MovieModel> movies = new List<MovieModel>();
+                if (movieField.Text != "" && movieField.Text != null) {
+                    movies = await server.GetMovieListByTitleAsync(movieField.Text);
+                } 
+                var intent = new Intent(this, typeof(MovieListActivity));
+                intent.PutExtra("movieList", JsonConvert.SerializeObject(movies));
+                this.StartActivity(intent);
 
                 // Dismiss spinner and re-enable button
-                spinner.Visibility = ViewStates.Gone;
+                spinner.Visibility = ViewStates.Invisible;
                 getMovieButton.Enabled = true;
+                movieField.Text = "";
             };
         }
 	}

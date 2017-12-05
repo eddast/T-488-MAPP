@@ -108,6 +108,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "HelloWorld.Android.dll" comes first in this list. */
 		"HelloWorld.Android.dll",
 		"HelloWorld.dll",
+		"Newtonsoft.Json.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
