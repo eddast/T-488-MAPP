@@ -91,8 +91,8 @@ namespace IOSWeek1.Droid
 			// aapt resource value: 0x7f070007
 			public const int backdrop = 2131165191;
 			
-			// aapt resource value: 0x7f07000e
-			public const int cast = 2131165198;
+			// aapt resource value: 0x7f07000f
+			public const int cast = 2131165199;
 			
 			// aapt resource value: 0x7f070009
 			public const int details = 2131165193;
@@ -112,8 +112,8 @@ namespace IOSWeek1.Droid
 			// aapt resource value: 0x7f070003
 			public const int movieField = 2131165187;
 			
-			// aapt resource value: 0x7f07000d
-			public const int name = 2131165197;
+			// aapt resource value: 0x7f07000e
+			public const int name = 2131165198;
 			
 			// aapt resource value: 0x7f07000b
 			public const int overview = 2131165195;
@@ -121,8 +121,8 @@ namespace IOSWeek1.Droid
 			// aapt resource value: 0x7f07000a
 			public const int poster = 2131165194;
 			
-			// aapt resource value: 0x7f07000f
-			public const int posterView = 2131165199;
+			// aapt resource value: 0x7f07000d
+			public const int posterView = 2131165197;
 			
 			// aapt resource value: 0x7f070002
 			public const int promptLabel = 2131165186;

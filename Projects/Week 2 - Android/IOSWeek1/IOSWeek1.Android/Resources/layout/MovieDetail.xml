@@ -5,7 +5,6 @@
     android:layout_height="fill_parent"
     android:id="@+id/movieDetails">
     <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/backdrop" />
@@ -34,7 +33,6 @@
         android:layout_below="@id/title"
         android:layout_alignLeft="@id/title" />
     <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"

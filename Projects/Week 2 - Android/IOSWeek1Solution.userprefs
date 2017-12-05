@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{85DAE571-D44E-45AF-82F8-23D58408394F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="IOSWeek1/IOSWeek1.Android/MovieListActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListAdapter.cs" Line="55" Column="13" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListActivity.cs" Line="22" Column="36" />
       <File FileName="IOSWeek1/IOSWeek1.Android/MovieDetailActivity.cs" Line="21" Column="1" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListActivity.cs" Line="18" Column="13" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListAdapter.cs" Line="40" Column="86" />
       <File FileName="IOSWeek1/IOSWeek1.Android/Resources/values/color.xml" Line="6" Column="25" />
       <File FileName="IOSWeek1/IOSWeek1.Android/MainActivity.cs" Line="61" Column="38" />
       <File FileName="IOSWeek1/IOSWeek1.Android/Resources/drawable-hdpi/GetMoviesButton.xml" Line="21" Column="36" />
@@ -15,7 +15,6 @@
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" relfile="IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" line="19" column="1" />
       <Breakpoint enabled="false" file="/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" relfile="IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" line="29" column="1" />
-      <Breakpoint file="/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/MovieListActivity.cs" relfile="IOSWeek1/IOSWeek1.Android/MovieListActivity.cs" line="24" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

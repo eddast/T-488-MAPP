@@ -11,9 +11,9 @@
         android:id="@+id/textView1"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="Movie Search"
+        android:text="MOVIE SEARCH"
         android:fontFamily="BanglaSangamMN-Bold"
-        android:textSize="35dp"
+        android:textSize="30dp"
         android:textColor="@color/themeBlue"
         android:gravity="center"
         android:layout_marginTop="35dp" />
@@ -22,30 +22,33 @@
         android:layout_height="wrap_content"
         android:id="@+id/promptLabel"
         android:text="Enter words in a movie title:"
+        android:gravity="center"
         android:textSize="12dp"
         android:fontFamily="BanglaSangamMN"
         android:textColor="@color/themeGray"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="30dp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/movieField"
         android:shadowColor="@color/themeBlue"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:layout_marginTop="20dp" />
     <Button
         android:background="@drawable/GetMoviesButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/getMovieButton"
-        android:text="Get movie"
+        android:text="GET MOVIE"
+        android:textSize="15dp"
+        android:fontFamily="BanglaSangamMN"
         android:textColor="@color/themeWhite"
         android:layout_below="@id/movieField"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
         android:layout_marginTop="40dp" />
     <ProgressBar
         android:layout_width="match_parent"

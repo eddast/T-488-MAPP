@@ -2,29 +2,35 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/listItem"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp">
+    android:layout_height="10dip">
+    <ImageView
+        android:id="@+id/posterView"
+        android:layout_height="100dp"
+        android:layout_width="67dp"
+        android:layout_alignParentLeft="true" />
     <TextView
         android:text="Movie name"
+        android:maxLines="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif-monospace"
-        android:textSize="22dp"
+        android:fontFamily="BanglaSangamMN-Bold"
+        android:textSize="17dp"
         android:textColor="@color/themeBlue"
-        android:id="@+id/name" />
+        android:layout_toRightOf="@id/posterView"
+        android:id="@+id/name"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" />
     <TextView
         android:text="Movie cast"
+        android:maxLines="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:textSize="16dp"
+        android:fontFamily="BanglaSangamMN"
+        android:textSize="12dp"
         android:textColor="@color/themeGray"
         android:id="@+id/cast"
         android:layout_below="@id/name"
-        android:layout_alignRight="@id/name" />
-    <ImageView
-        android:id="@+id/posterView"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:layout_alignParentRight="true" />
+        android:layout_alignLeft="@id/name"
+        android:layout_marginTop="10dp" />
 </RelativeLayout>

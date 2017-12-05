@@ -22,17 +22,17 @@ public final class R {
     }
     public static final class id {
         public static final int backdrop=0x7f070007;
-        public static final int cast=0x7f07000e;
+        public static final int cast=0x7f07000f;
         public static final int details=0x7f070009;
         public static final int getMovieButton=0x7f070004;
         public static final int linearLayout1=0x7f070000;
         public static final int listItem=0x7f07000c;
         public static final int movieDetails=0x7f070006;
         public static final int movieField=0x7f070003;
-        public static final int name=0x7f07000d;
+        public static final int name=0x7f07000e;
         public static final int overview=0x7f07000b;
         public static final int poster=0x7f07000a;
-        public static final int posterView=0x7f07000f;
+        public static final int posterView=0x7f07000d;
         public static final int promptLabel=0x7f070002;
         public static final int spinner=0x7f070005;
         public static final int textView1=0x7f070001;
