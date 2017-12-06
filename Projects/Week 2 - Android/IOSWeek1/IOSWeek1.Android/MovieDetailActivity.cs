@@ -11,7 +11,7 @@ namespace IOSWeek1.Droid
     [Activity(Label = "Movie Information", Theme = "@style/LightTheme")]
     public class MovieDetailActivity : Activity
     {
-        MovieModel _movie;
+        private MovieModel _movie;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -22,6 +22,7 @@ namespace IOSWeek1.Droid
             var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
             this.SetActionBar(toolbar); this.ActionBar.Title = "Movie Information";
 
+            // Unbundle json bundle passed down from "parent" activity
             var jsonMovie = this.Intent.GetStringExtra("movie");
             _movie = JsonConvert.DeserializeObject<MovieModel>(jsonMovie);
 
@@ -36,6 +37,7 @@ namespace IOSWeek1.Droid
             GlideImageIntoImageView(_movie.backdropPath, backdropImage);
         }
 
+        // Uses glide to fetch URI asynchroniously when view loads
         private void GlideImageIntoImageView(string imagePathURI, ImageView imageView) {
             
             if (imagePathURI != "" && imagePathURI != null){
