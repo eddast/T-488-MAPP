@@ -17,21 +17,24 @@ namespace IOSWeek1.Droid
 	{
         private MovieDBService _server;
         public InputMethodManager manager;
+        public TextView movieField;
 
         public MovieSearchFragment(MovieDBService server)
         {
             this._server = server;
+            manager = null;
         }
 
-        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle bundle)
+        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             var rootView = inflater.Inflate(Resource.Layout.MovieSearch, container, false);
 
             // Keep track of view's objects 
-            var movieField = rootView.FindViewById<TextView>(Resource.Id.movieField);
+            movieField = rootView.FindViewById<TextView>(Resource.Id.movieField);
             var getMovieButton = rootView.FindViewById<Button>(Resource.Id.getMovieButton);
             var spinner = rootView.FindViewById<ProgressBar>(Resource.Id.spinner);
             spinner.Visibility = ViewStates.Invisible;
+            manager = (InputMethodManager)this.Context.GetSystemService(Context.InputMethodService);
 
             // Listens for clicks on "get movies" button in view
             OnClickMovieButton(spinner, movieField, getMovieButton);
@@ -48,7 +51,6 @@ namespace IOSWeek1.Droid
                 // Set button to disabled while processing request
                 spinner.Visibility = ViewStates.Visible;
                 getMovieButton.Enabled = false;
-                manager = (InputMethodManager)this.Context.GetSystemService(Context.InputMethodService);
                 manager.HideSoftInputFromWindow(movieField.WindowToken, 0);
 
                 // Get list of movies by query string user provided

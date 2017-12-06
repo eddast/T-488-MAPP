@@ -47,6 +47,17 @@ namespace IOSWeek1.Droid
         {
             viewPager.PageSelected += (sender, args) => {
 
+                // If position is not at movie search fragment
+                // Keyboard maximized due to that fragments input field should hide
+                if(args.Position != 0) {
+                    
+                    MovieSearchFragment movieSearchFragment = (MovieSearchFragment)fragments[0];
+                    if (movieSearchFragment.manager != null) {
+                        
+                        movieSearchFragment.manager.HideSoftInputFromWindow(movieSearchFragment.movieField.WindowToken, 0);
+                    }
+                }
+
                 // If a click triggered fragment position 1 (top rated movies fragments)
                 // The fragment list view is "reloaded"
                 if (args.Position == 1){
