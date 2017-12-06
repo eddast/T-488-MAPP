@@ -16,17 +16,18 @@ namespace IOSWeek1.Droid
     [Activity(Label = "Movie Inspector", Theme = "@style/LightTheme.Splash", MainLauncher = true, Icon = "@drawable/icon")]
     public class InitializerActivity : Activity
     {
-            protected override void OnCreate(Bundle savedInstanceState)
-            {
-                base.OnCreate(savedInstanceState);
+        // Initializes service model of the external API
+        // Bundles it and passes it into main activity (the toolbar setup)
+        // Then launches application and terminates itself
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState); // call base initially
 
-                var intent = new Intent(this, typeof(MainActivity));
-                MovieDBService server = new MovieDBService();
-                intent.PutExtra("movieDBservice", JsonConvert.SerializeObject(server));
-                this.StartActivity(intent);
+            var intent = new Intent(this, typeof(MainActivity));
+            MovieDBService server = new MovieDBService();
+            intent.PutExtra("movieDBservice", JsonConvert.SerializeObject(server));
 
-                this.Finish();
-            }
-
+            this.StartActivity(intent); this.Finish();
+        }
     }
 }
