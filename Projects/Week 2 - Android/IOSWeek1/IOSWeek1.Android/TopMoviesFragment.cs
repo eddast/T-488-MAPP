@@ -37,7 +37,7 @@ namespace IOSWeek1.Droid
             return _rootView;
         }
 
-        public async void GenerateTopMoviesViewAsync()
+        public async void ReloadAsync()
         {
             listView = _rootView.FindViewById<ListView>(Resource.Id.listView);
 

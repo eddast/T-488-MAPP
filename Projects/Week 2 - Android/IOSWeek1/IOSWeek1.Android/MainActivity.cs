@@ -1,16 +1,10 @@
-﻿using System;
-using System.Linq;
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V4.App;
 using Android.Support.V4.View;
-using Android.Views.InputMethods;
-using Newtonsoft.Json;
 using Fragment = Android.Support.V4.App.Fragment;
 using IOSWeek1.Services;
 
@@ -19,36 +13,46 @@ namespace IOSWeek1.Droid
     [Activity(Label = "Movie Inspector", Theme = "@style/LightTheme")]
     public class MainActivity : FragmentActivity
     {
+        // Initialize server model to pass down to fragments that need it
         public MovieDBService server = new MovieDBService();
 
-        protected override void OnCreate(Bundle bundle)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(bundle);
+            base.OnCreate(savedInstanceState); // call to base func
 
             // Set our view from the "main" layout resource
+            // Initiate tab fragments and their titles
             SetContentView(Resource.Layout.Main);
+            var fragments = new Fragment[] {    new MovieSearchFragment(server),
+                                                new TopMoviesFragment(server)  };
+            var titles = CharSequence.ArrayFromStringArray(new[] {  "Movie Search",
+                                                                    "Top Rated" });
 
-            var searchFragment = new MovieSearchFragment(server);
-            var topFragment = new TopMoviesFragment(server);
-            var fragments = new Fragment[] { searchFragment, topFragment  };
-
-            var titles = CharSequence.ArrayFromStringArray(new[] { "Movie Search", "Top Rated" });
-
-            var viewPager = FindViewById<ViewPager>(Resource.Id.viewpager);
+            // Bind fragments and titles to tabs to setup toolbar
+            ViewPager viewPager = FindViewById<ViewPager>(Resource.Id.viewpager);
             viewPager.Adapter = new TabsFragmentPagerAdapter(SupportFragmentManager, fragments, titles);
-
-            var tabLayout = this.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
+            TabLayout tabLayout = this.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
             tabLayout.SetupWithViewPager(viewPager);
 
+            // Set action bar to toolbar and set title
             var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
-            this.SetActionBar(toolbar);
-            this.ActionBar.Title = "Movie Inspector";
+            this.SetActionBar(toolbar); this.ActionBar.Title = "Movie Inspector";
 
+            // Listens to toolbar
+            FragmentClickListener(viewPager, fragments);
+        }
+
+        // Listens to toolbar for fragment (tab) click and takes necessary actions
+        private void FragmentClickListener(ViewPager viewPager, Fragment[] fragments)
+        {
             viewPager.PageSelected += (sender, args) => {
-                //Toast.MakeText(ApplicationContext, "YOU SWITCHED TABS!", ToastLength.Long).Show();
-                if( args.Position == 1 ) {
+
+                // If a click triggered fragment position 1 (top rated movies fragments)
+                // The fragment list view is "reloaded"
+                if (args.Position == 1){
+                    
                     TopMoviesFragment topMoviesFragment = (TopMoviesFragment)fragments[args.Position];
-                    topMoviesFragment.GenerateTopMoviesViewAsync();
+                    topMoviesFragment.ReloadAsync();
                 }
             };
         }
