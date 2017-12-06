@@ -103,5 +103,6 @@ C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/layout/toolbar.xml
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/layout/moviesearch.xml
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/layout/topratedmovies.xml
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/layout/searchresults.xml
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/R.cs.flag
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/uploadflags.txt

@@ -2,7 +2,7 @@ package md53ef9d89cddce3d9e0fde74d5d6d2ffb6;
 
 
 public class MovieListActivity
-	extends android.app.ListActivity
+	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
 {

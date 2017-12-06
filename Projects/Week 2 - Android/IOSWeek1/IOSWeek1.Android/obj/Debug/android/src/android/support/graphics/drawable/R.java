@@ -3040,13 +3040,13 @@ containing a value of this type.
         public static final int linearLayout1=0x7f0700a5;
         public static final int listItem=0x7f0700a1;
         public static final int listMode=0x7f07001c;
-        public static final int listView=0x7f0700c0;
+        public static final int listView=0x7f0700bf;
         public static final int list_item=0x7f070060;
-        public static final int loadingLayout=0x7f0700bf;
+        public static final int loadingLayout=0x7f0700c1;
         public static final int main_content=0x7f070099;
-        public static final int masked=0x7f0700c2;
+        public static final int masked=0x7f0700c3;
         public static final int media_actions=0x7f0700b1;
-        public static final int message=0x7f0700be;
+        public static final int message=0x7f0700c0;
         public static final int middle=0x7f070030;
         public static final int mini=0x7f070052;
         public static final int movieDetails=0x7f07009c;
@@ -3071,6 +3071,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f070007;
         public static final int promptLabel=0x7f0700a7;
         public static final int radio=0x7f070074;
+        public static final int resultLayout=0x7f0700be;
         public static final int right=0x7f070049;
         public static final int right_icon=0x7f0700b9;
         public static final int right_side=0x7f0700b5;
@@ -3140,7 +3141,7 @@ containing a value of this type.
         public static final int useLogo=0x7f070025;
         public static final int view_offset_helper=0x7f070016;
         public static final int viewpager=0x7f07009b;
-        public static final int visible=0x7f0700c1;
+        public static final int visible=0x7f0700c2;
         public static final int withText=0x7f07003b;
         public static final int wrap_content=0x7f07002d;
     }
@@ -3217,13 +3218,14 @@ containing a value of this type.
         public static final int notification_template_media_custom=0x7f030039;
         public static final int notification_template_part_chronometer=0x7f03003a;
         public static final int notification_template_part_time=0x7f03003b;
-        public static final int select_dialog_item_material=0x7f03003c;
-        public static final int select_dialog_multichoice_material=0x7f03003d;
-        public static final int select_dialog_singlechoice_material=0x7f03003e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03003f;
-        public static final int toolbar=0x7f030040;
-        public static final int tooltip=0x7f030041;
-        public static final int topratedmovies=0x7f030042;
+        public static final int searchresults=0x7f03003c;
+        public static final int select_dialog_item_material=0x7f03003d;
+        public static final int select_dialog_multichoice_material=0x7f03003e;
+        public static final int select_dialog_singlechoice_material=0x7f03003f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030040;
+        public static final int toolbar=0x7f030041;
+        public static final int tooltip=0x7f030042;
+        public static final int topratedmovies=0x7f030043;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f080000;

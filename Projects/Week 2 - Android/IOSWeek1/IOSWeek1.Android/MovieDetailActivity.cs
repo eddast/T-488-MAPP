@@ -17,33 +17,31 @@ namespace IOSWeek1.Droid
         {
             base.OnCreate(savedInstanceState);
 
-            // Set our view from the "main" layout resource
+            // Set toolbar title for view and dependent XML file
             SetContentView(Resource.Layout.MovieDetail);
+            var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
+            this.SetActionBar(toolbar); this.ActionBar.Title = "Movie Information";
 
-            var jsonStr = this.Intent.GetStringExtra("movie");
-            _movie = JsonConvert.DeserializeObject<MovieModel>(jsonStr);
+            var jsonMovie = this.Intent.GetStringExtra("movie");
+            _movie = JsonConvert.DeserializeObject<MovieModel>(jsonMovie);
 
+            // Format detail view information text views based on context's movie model
+            // Format view's images according to movie model's URI
             this.FindViewById<TextView>(Resource.Id.title).Text = _movie.title.ToUpper() + " (" + _movie.year + ")";
             this.FindViewById<TextView>(Resource.Id.details).Text = _movie.runtime + " mins | " + _movie.genres;
             this.FindViewById<TextView>(Resource.Id.overview).Text = _movie.movie.Overview;
-
-
             ImageView posterImage = this.FindViewById<ImageView>(Resource.Id.poster);
             ImageView backdropImage = this.FindViewById<ImageView>(Resource.Id.backdrop);
-
-            var ppath = _movie.posterPath;
-            if (ppath != "" && ppath != null) {
-                posterImage.SetImageResource(0);
-                Glide.With(this).Load("http://image.tmdb.org/t/p/original" + ppath).Into(posterImage);
-            }
-
-            var bpath = _movie.backdropPath;
-            if (bpath != "" && bpath != null) {
-                backdropImage.SetImageResource(0);
-                Glide.With(this).Load("http://image.tmdb.org/t/p/original" + bpath).Into(backdropImage);
-            }
-
+            GlideImageIntoImageView(_movie.posterPath, posterImage);
+            GlideImageIntoImageView(_movie.backdropPath, backdropImage);
         }
 
+        private void GlideImageIntoImageView(string imagePathURI, ImageView imageView) {
+            
+            if (imagePathURI != "" && imagePathURI != null){
+                
+                Glide.With(this).Load("http://image.tmdb.org/t/p/original" + imagePathURI).Into(imageView);
+            }
+        }
     }
 }

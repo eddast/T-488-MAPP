@@ -2615,26 +2615,26 @@ namespace IOSWeek1.Droid
 			// aapt resource value: 0x7f07001c
 			public const int listMode = 2131165212;
 			
-			// aapt resource value: 0x7f0700c0
-			public const int listView = 2131165376;
+			// aapt resource value: 0x7f0700bf
+			public const int listView = 2131165375;
 			
 			// aapt resource value: 0x7f070060
 			public const int list_item = 2131165280;
 			
-			// aapt resource value: 0x7f0700bf
-			public const int loadingLayout = 2131165375;
+			// aapt resource value: 0x7f0700c1
+			public const int loadingLayout = 2131165377;
 			
 			// aapt resource value: 0x7f070099
 			public const int main_content = 2131165337;
 			
-			// aapt resource value: 0x7f0700c2
-			public const int masked = 2131165378;
+			// aapt resource value: 0x7f0700c3
+			public const int masked = 2131165379;
 			
 			// aapt resource value: 0x7f0700b1
 			public const int media_actions = 2131165361;
 			
-			// aapt resource value: 0x7f0700be
-			public const int message = 2131165374;
+			// aapt resource value: 0x7f0700c0
+			public const int message = 2131165376;
 			
 			// aapt resource value: 0x7f070030
 			public const int middle = 2131165232;
@@ -2707,6 +2707,9 @@ namespace IOSWeek1.Droid
 			
 			// aapt resource value: 0x7f070074
 			public const int radio = 2131165300;
+			
+			// aapt resource value: 0x7f0700be
+			public const int resultLayout = 2131165374;
 			
 			// aapt resource value: 0x7f070049
 			public const int right = 2131165257;
@@ -2915,8 +2918,8 @@ namespace IOSWeek1.Droid
 			// aapt resource value: 0x7f07009b
 			public const int viewpager = 2131165339;
 			
-			// aapt resource value: 0x7f0700c1
-			public const int visible = 2131165377;
+			// aapt resource value: 0x7f0700c2
+			public const int visible = 2131165378;
 			
 			// aapt resource value: 0x7f07003b
 			public const int withText = 2131165243;
@@ -3161,25 +3164,28 @@ namespace IOSWeek1.Droid
 			public const int notification_template_part_time = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int select_dialog_item_material = 2130903100;
+			public const int SearchResults = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int select_dialog_multichoice_material = 2130903101;
+			public const int select_dialog_item_material = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int select_dialog_singlechoice_material = 2130903102;
+			public const int select_dialog_multichoice_material = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int support_simple_spinner_dropdown_item = 2130903103;
+			public const int select_dialog_singlechoice_material = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int toolbar = 2130903104;
+			public const int support_simple_spinner_dropdown_item = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int tooltip = 2130903105;
+			public const int toolbar = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int TopRatedMovies = 2130903106;
+			public const int tooltip = 2130903106;
+			
+			// aapt resource value: 0x7f030043
+			public const int TopRatedMovies = 2130903107;
 			
 			static Layout()
 			{
