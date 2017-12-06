@@ -1,13 +1,13 @@
 ﻿using System;
-using Android.App;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
-using Android.Views.InputMethods;
-using IOSWeek1.Services;
-using Android.Content;
-using Newtonsoft.Json;
 using System.Collections.Generic;
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Views;
+using Android.Views.InputMethods;
+using Android.Widget;
+using IOSWeek1.Services;
+using Newtonsoft.Json;
 using Fragment = Android.Support.V4.App.Fragment;
 
 namespace IOSWeek1.Droid
@@ -16,8 +16,12 @@ namespace IOSWeek1.Droid
     public class MovieSearchFragment : Fragment
 	{
         private MovieDBService _server;
+        public InputMethodManager manager;
 
-        public MovieSearchFragment(MovieDBService server) { this._server = server; }
+        public MovieSearchFragment(MovieDBService server)
+        {
+            this._server = server;
+        }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle bundle)
         {
@@ -29,29 +33,33 @@ namespace IOSWeek1.Droid
             var spinner = rootView.FindViewById<ProgressBar>(Resource.Id.spinner);
             spinner.Visibility = ViewStates.Invisible;
 
-            // Function for button functionality
+            // Listens for clicks on "get movies" button in view
             OnClickMovieButton(spinner, movieField, getMovieButton);
+
 
             return rootView;
 		}
 
-        private void OnClickMovieButton (ProgressBar spinner, TextView movieField, Button getMovieButton) {
-            
+        private void OnClickMovieButton (ProgressBar spinner, TextView movieField, Button getMovieButton)
+        {
             getMovieButton.Click += async (object sender, EventArgs e) => {
 
                 // Initiate spinner to indicate background activity
                 // Set button to disabled while processing request
-                // Hide device keyboard
                 spinner.Visibility = ViewStates.Visible;
                 getMovieButton.Enabled = false;
-                var manager = (InputMethodManager)this.Context.GetSystemService(Context.InputMethodService);
+                manager = (InputMethodManager)this.Context.GetSystemService(Context.InputMethodService);
                 manager.HideSoftInputFromWindow(movieField.WindowToken, 0);
 
-                // Use MovieDBService to display 
+                // Get list of movies by query string user provided
                 List<MovieModel> movies = new List<MovieModel>();
                 if (movieField.Text != "" && movieField.Text != null) {
+                    
                     movies = await _server.GetMovieListByTitleAsync(movieField.Text);
                 } 
+
+                // On click, start the movie result list activity
+                // Pass movie list found via json bundle
                 var intent = new Intent(this.Context, typeof(MovieListActivity));
                 intent.PutExtra("movieList", JsonConvert.SerializeObject(movies));
                 intent.PutExtra("movieDBservice", JsonConvert.SerializeObject(_server));
@@ -59,8 +67,7 @@ namespace IOSWeek1.Droid
 
                 // Dismiss spinner and re-enable button
                 spinner.Visibility = ViewStates.Invisible;
-                getMovieButton.Enabled = true;
-                movieField.Text = "";
+                getMovieButton.Enabled = true; movieField.Text = "";
             };
         }
 	}
