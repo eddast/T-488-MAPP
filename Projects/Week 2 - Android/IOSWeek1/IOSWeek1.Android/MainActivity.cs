@@ -28,7 +28,9 @@ namespace IOSWeek1.Droid
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            var fragments = new Fragment[] { new MovieSearchFragment(server), new TopMoviesFragment(server) };
+            var searchFragment = new MovieSearchFragment(server);
+            var topFragment = new TopMoviesFragment(server);
+            var fragments = new Fragment[] { searchFragment, topFragment  };
 
             var titles = CharSequence.ArrayFromStringArray(new[] { "Movie Search", "Top Rated" });
 
@@ -41,7 +43,14 @@ namespace IOSWeek1.Droid
             var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
             this.SetActionBar(toolbar);
             this.ActionBar.Title = "Movie Inspector";
+
+            viewPager.PageSelected += (sender, args) => {
+                //Toast.MakeText(ApplicationContext, "YOU SWITCHED TABS!", ToastLength.Long).Show();
+                if( args.Position == 1 ) {
+                    TopMoviesFragment topMoviesFragment = (TopMoviesFragment)fragments[args.Position];
+                    topMoviesFragment.GenerateTopMoviesViewAsync();
+                }
+            };
         }
     }
 }
-

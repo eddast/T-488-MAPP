@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="IOSWeek1/IOSWeek1.Android/MovieSearchFragment.cs" Line="26" Column="45" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListAdapter.cs" Line="35" Column="10" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/MainActivity.cs" Line="41" Column="65" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListActivity.cs" Line="30" Column="44" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/TopMoviesFragment.cs" Line="41" Column="73" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListAdapter.cs" Line="27" Column="1" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListActivity.cs" Line="25" Column="13" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MainActivity.cs" Line="50" Column="103" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/TopMoviesFragment.cs" Line="47" Column="83" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

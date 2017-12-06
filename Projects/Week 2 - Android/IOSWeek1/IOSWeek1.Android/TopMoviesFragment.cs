@@ -17,24 +17,20 @@ namespace IOSWeek1.Droid
     {
         private MovieDBService _server;
         private View _rootView;
-        private ListView _listView;
-        private List<MovieModel> _topMovies;
+        public ListView listView;
+        public List<MovieModel> topMovies = new List<MovieModel>();
 
         public TopMoviesFragment(MovieDBService server) { this._server = server; }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle bundle)
         {
-            //_topMovies = new List<MovieModel>();
             _rootView = inflater.Inflate(Resource.Layout.TopRatedMovies, container, false);
-            _listView = _rootView.FindViewById<ListView>(Resource.Id.listView);
-            //_spinner = _rootView.FindViewById<ProgressBar>(Resource.Id.spinner);
+            listView = _rootView.FindViewById<ListView>(Resource.Id.listView);
 
-            new Thread(GenerateTopMoviesViewAsync).Start();
-
-            this._listView.ItemClick += (sender, args) => {
+            this.listView.ItemClick += (sender, args) => {
 
                 var intent = new Intent(this.Context, typeof(MovieDetailActivity));
-                intent.PutExtra("movie", JsonConvert.SerializeObject(_topMovies[args.Position]));
+                intent.PutExtra("movie", JsonConvert.SerializeObject(topMovies[args.Position]));
                 this.StartActivity(intent);
             };
 
@@ -43,16 +39,19 @@ namespace IOSWeek1.Droid
 
         public async void GenerateTopMoviesViewAsync()
         {
+            listView = _rootView.FindViewById<ListView>(Resource.Id.listView);
+
             var spinner = _rootView.FindViewById<ProgressBar>(Resource.Id.spinner);
             Activity.RunOnUiThread(() => {
-                _topMovies = new List<MovieModel>();
+                topMovies = new List<MovieModel>();
+                listView.Adapter = new MovieListAdapter(this.Activity, topMovies);
                 spinner.Visibility = ViewStates.Visible;
             });
 
-            _topMovies = await _server.GetTopMoviesViewAsync();
+            topMovies = await _server.GetTopMoviesViewAsync();
 
             Activity.RunOnUiThread(() => {
-                _listView.Adapter = new MovieListAdapter(this.Activity, _topMovies);
+                listView.Adapter = new MovieListAdapter(this.Activity, topMovies);
                 spinner.Visibility = ViewStates.Gone;
             });
         }
