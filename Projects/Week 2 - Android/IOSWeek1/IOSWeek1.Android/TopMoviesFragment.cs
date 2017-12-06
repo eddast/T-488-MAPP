@@ -1,15 +1,11 @@
-﻿using Android.App;
-using Android.Views;
+﻿using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Android.Views.InputMethods;
 using IOSWeek1.Services;
 using Android.Content;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using Fragment = Android.Support.V4.App.Fragment;
-using ListFragment = Android.Support.V4.App.ListFragment;
-using System.Threading;
 
 namespace IOSWeek1.Droid
 {
@@ -52,24 +48,21 @@ namespace IOSWeek1.Droid
         // Reloads data in fragment's listview
         public async void ReloadAsync()
         {
-            _listView = _rootView.FindViewById<ListView>(Resource.Id.listView);
+            // Activate spinner to indicate background process
             var spinner = _rootView.FindViewById<ProgressBar>(Resource.Id.spinner);
+            spinner.Visibility = ViewStates.Visible;
 
-            // View element states and listview changes need to run on UI thread
-            Activity.RunOnUiThread(() => {
+            // Clear list and set up empty view while loading
+            _listView = _rootView.FindViewById<ListView>(Resource.Id.listView);
+            _topMovies.Clear();
+            _listView.Adapter = new MovieListAdapter(this.Activity, _topMovies);
 
-                _topMovies.Clear();
-                _listView.Adapter = new MovieListAdapter(this.Activity, _topMovies);
-                spinner.Visibility = ViewStates.Visible;
-            });
-
-            // Retrieve top movies from server object
+            // Retrieve top movies from server and set up list view accordingly
             _topMovies = await _server.GetTopMoviesViewAsync();
+            _listView.Adapter = new MovieListAdapter(this.Activity, _topMovies);
 
-            Activity.RunOnUiThread(() => {
-                _listView.Adapter = new MovieListAdapter(this.Activity, _topMovies);
-                spinner.Visibility = ViewStates.Gone;
-            });
+            // Dismiss spinner since process is done
+            spinner.Visibility = ViewStates.Gone;
         }
     }
 }
