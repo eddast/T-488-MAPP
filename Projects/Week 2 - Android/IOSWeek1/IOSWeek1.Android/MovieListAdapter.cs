@@ -1,22 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Android;
+﻿using System.Collections.Generic;
 using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Com.Bumptech.Glide;
-using IOSWeek1;
 
 namespace IOSWeek1.Droid
 {
     public class MovieListAdapter : BaseAdapter<MovieModel>
     {
-
         private readonly Activity _context;
         private readonly List<MovieModel> _movies;
 
@@ -26,44 +17,40 @@ namespace IOSWeek1.Droid
             this._movies = movies;
         }
 
-        public override long GetItemId(int position)
-        {
-            return position;
-        }
-
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            // re-use an existing view, if one is available
+            // Reuse existing view if available
+            // Otherwise create new
             var view = convertView;
-
             if (view == null) {
                 view = this._context.LayoutInflater.Inflate(Resource.Layout.MovieItem, null);
             }
 
-            var movie = this._movies[position];
-
-            var _name = view.FindViewById<TextView>(Resource.Id.name).Text =    movie.movie.Title.ToUpper() + " (" +
-                                                                                movie.movie.ReleaseDate.Year.ToString() + ")";
-            var _cast = view.FindViewById<TextView>(Resource.Id.cast).Text = movie.cast;
-
-
+            // Set list cell to movie in position of movie list
+            // Format text and image view according to movie information
+            MovieModel movie = this._movies[position];
+            string movieAndYear = movie.movie.Title.ToUpper() + " (" + movie.movie.ReleaseDate.Year.ToString() + ")";
+            view.FindViewById<TextView>(Resource.Id.name).Text = movieAndYear;
+            view.FindViewById<TextView>(Resource.Id.cast).Text = movie.cast;
             ImageView posterImage = view.FindViewById<ImageView>(Resource.Id.posterView);
-            var ppath = movie.movie.PosterPath;
-            if (ppath != "" && ppath != null) {
-                posterImage.SetImageResource(0);
-                Glide .With(_context).Load("http://image.tmdb.org/t/p/original" + movie.movie.PosterPath).Into(posterImage);
-            }
+            GlideImageIntoImageView(movie.posterPath, posterImage);
 
-            posterImage.Focusable = false;
-            posterImage.FocusableInTouchMode = false;
-            posterImage.Clickable = false;
-                  
 
             return view;
         }
 
-        public override int Count => this._movies.Count;
+        // Uses glide to fetch URI asynchroniously when view loads
+        private void GlideImageIntoImageView(string imagePathURI, ImageView imageView)
+        {
+            if (imagePathURI != "" && imagePathURI != null) {
 
+                Glide.With(_context).Load("http://image.tmdb.org/t/p/original" + imagePathURI).Into(imageView);
+            }
+        }
+
+        // Override necessary functions for a working fragment pager adapter
+        public override long GetItemId(int position) { return position; }
+        public override int Count => this._movies.Count;
         public override MovieModel this[int position] => this._movies[position];
     }
 }
