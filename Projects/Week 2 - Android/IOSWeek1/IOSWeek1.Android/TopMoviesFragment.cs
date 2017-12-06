@@ -17,41 +17,57 @@ namespace IOSWeek1.Droid
     {
         private MovieDBService _server;
         private View _rootView;
-        public ListView listView;
-        public List<MovieModel> topMovies = new List<MovieModel>();
+        private ListView _listView;
+        private List<MovieModel> _topMovies;
 
-        public TopMoviesFragment(MovieDBService server) { this._server = server; }
+        public TopMoviesFragment(MovieDBService server)
+        {
+            this._server = server;
+            this._topMovies = new List<MovieModel>();
+        }
 
+        // Initiate the fragment view and listen to cell clicks
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle bundle)
         {
             _rootView = inflater.Inflate(Resource.Layout.TopRatedMovies, container, false);
-            listView = _rootView.FindViewById<ListView>(Resource.Id.listView);
+            _listView = _rootView.FindViewById<ListView>(Resource.Id.listView);
+            ListenToCellClicks();
 
-            this.listView.ItemClick += (sender, args) => {
-
-                var intent = new Intent(this.Context, typeof(MovieDetailActivity));
-                intent.PutExtra("movie", JsonConvert.SerializeObject(topMovies[args.Position]));
-                this.StartActivity(intent);
-            };
 
             return _rootView;
         }
 
+        // Listens for cell click and starts the detail movie view activity
+        // passes down movie information in json bundle for detail view
+        public void ListenToCellClicks()
+        {
+            this._listView.ItemClick += (sender, args) => {
+
+                var intent = new Intent(this.Context, typeof(MovieDetailActivity));
+                intent.PutExtra("movie", JsonConvert.SerializeObject(_topMovies[args.Position]));
+                this.StartActivity(intent);
+            };
+        }
+
+        // Reloads data in fragment's listview
         public async void ReloadAsync()
         {
-            listView = _rootView.FindViewById<ListView>(Resource.Id.listView);
-
+            _listView = _rootView.FindViewById<ListView>(Resource.Id.listView);
             var spinner = _rootView.FindViewById<ProgressBar>(Resource.Id.spinner);
+
+            // View element states and listview changes need to run on UI thread
             Activity.RunOnUiThread(() => {
-                topMovies = new List<MovieModel>();
-                listView.Adapter = new MovieListAdapter(this.Activity, topMovies);
+
+                _topMovies.Clear();
+                _listView.Adapter = new MovieListAdapter(this.Activity, _topMovies);
                 spinner.Visibility = ViewStates.Visible;
             });
 
-            topMovies = await _server.GetTopMoviesViewAsync();
+            // Retrieve top movies from server object
+            _topMovies = await _server.GetTopMoviesViewAsync();
 
             Activity.RunOnUiThread(() => {
-                listView.Adapter = new MovieListAdapter(this.Activity, topMovies);
+                _listView.Adapter = new MovieListAdapter(this.Activity, _topMovies);
                 spinner.Visibility = ViewStates.Gone;
             });
         }
