@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{85DAE571-D44E-45AF-82F8-23D58408394F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="IOSWeek1/IOSWeek1.Android/MovieSearchFragment.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IOSWeek1/IOSWeek1/Services/MovieDBService.cs">
     <Files>
-      <File FileName="IOSWeek1/IOSWeek1.Android/MainActivity.cs" Line="53" Column="48" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/MovieSearchFragment.cs" Line="53" Column="17" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MainActivity.cs" Line="64" Column="21" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MovieSearchFragment.cs" Line="37" Column="101" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListActivity.cs" Line="21" Column="68" />
+      <File FileName="IOSWeek1/IOSWeek1/Services/MovieDBService.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

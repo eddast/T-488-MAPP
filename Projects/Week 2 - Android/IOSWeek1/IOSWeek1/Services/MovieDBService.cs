@@ -27,7 +27,6 @@ namespace IOSWeek1.Services
             // If query returns no result, movieList becomes a null list
             ApiSearchResponse<MovieInfo> response_m = await _movieApi.SearchByTitleAsync(title);
             IReadOnlyList<MovieInfo> movieInfoList = response_m.Results;
-            if ( response_m.Results.Count == 0 ) { return null; }
             List<MovieModel> movieList = await getMovieModelListByMovieInfoAsync(movieInfoList);
 
 
