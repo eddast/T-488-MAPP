@@ -75,6 +75,9 @@ namespace IOSWeek1.Droid
 			// aapt resource value: 0x7f020001
 			public const int Icon = 2130837505;
 			
+			// aapt resource value: 0x7f020002
+			public const int LaunchScreen = 2130837506;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -192,6 +195,9 @@ namespace IOSWeek1.Droid
 			
 			// aapt resource value: 0x7f060000
 			public const int LightTheme = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int LightTheme_Splash = 2131099649;
 			
 			static Style()
 			{

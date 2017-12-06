@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace IOSWeek1.Droid
 {
-    [Activity(Label = "Movie Information", MainLauncher = true, Theme = "@style/LightTheme", Icon = "@drawable/icon")]
+    [Activity(Label = "Movie Information", Theme = "@style/LightTheme")]
     public class MovieDetailActivity : Activity
     {
         MovieModel _movie;

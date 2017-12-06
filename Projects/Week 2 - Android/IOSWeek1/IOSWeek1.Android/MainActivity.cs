@@ -12,7 +12,7 @@ using System.Collections.Generic;
 
 namespace IOSWeek1.Droid
 {
-    [Activity (Label = "Movie Search", MainLauncher = true, Theme = "@style/LightTheme", Icon = "@drawable/icon")]
+    [Activity (Label = "Movie Search", Theme = "@style/LightTheme")]
 	public class MainActivity : Activity
 	{
 
