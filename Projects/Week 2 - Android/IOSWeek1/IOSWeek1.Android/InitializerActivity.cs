@@ -8,7 +8,8 @@ using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
-
+using IOSWeek1.Services;
+using Newtonsoft.Json;
 
 namespace IOSWeek1.Droid
 {
@@ -19,7 +20,11 @@ namespace IOSWeek1.Droid
             {
                 base.OnCreate(savedInstanceState);
 
-                this.StartActivity(typeof(MainActivity));
+                var intent = new Intent(this, typeof(MainActivity));
+                MovieDBService server = new MovieDBService();
+                intent.PutExtra("movieDBservice", JsonConvert.SerializeObject(server));
+                this.StartActivity(intent);
+
                 this.Finish();
             }
 

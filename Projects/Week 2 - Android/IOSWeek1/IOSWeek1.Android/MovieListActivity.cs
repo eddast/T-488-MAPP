@@ -3,6 +3,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using IOSWeek1.Droid;
+using IOSWeek1.Services;
 using Newtonsoft.Json;
 
 namespace IOSWeek1.Droid
@@ -16,8 +17,9 @@ namespace IOSWeek1.Droid
         {
             base.OnCreate(savedInstanceState);
 
-            var jsonStr = this.Intent.GetStringExtra("movieList");
-            this._movies = JsonConvert.DeserializeObject<List<MovieModel>>(jsonStr);
+            // Extract values passed down via Intent
+            var jsonMovies = this.Intent.GetStringExtra("movieList");
+            this._movies = JsonConvert.DeserializeObject<List<MovieModel>>(jsonMovies);
 
             this.ListAdapter = new MovieListAdapter(this, this._movies);
 

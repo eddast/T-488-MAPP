@@ -15,9 +15,14 @@ namespace IOSWeek1.Droid
     [Activity (Label = "Movie Search", Theme = "@style/LightTheme")]
 	public class MainActivity : Activity
 	{
+        private MovieDBService _server;
 
 		protected override void OnCreate (Bundle bundle)
 		{
+            // Extract the server passed down via Intent
+            var jsonMovieServer = this.Intent.GetStringExtra("movieDBservice");
+            this._server = JsonConvert.DeserializeObject<MovieDBService>(jsonMovieServer);
+
 			base.OnCreate (bundle);
 
 			// Set our view from the "main" layout resource
@@ -46,13 +51,13 @@ namespace IOSWeek1.Droid
                 manager.HideSoftInputFromWindow(movieField.WindowToken, 0);
 
                 // Use MovieDBService to display 
-                MovieDBService server = new MovieDBService();
                 List<MovieModel> movies = new List<MovieModel>();
                 if (movieField.Text != "" && movieField.Text != null) {
-                    movies = await server.GetMovieListByTitleAsync(movieField.Text);
+                    movies = await _server.GetMovieListByTitleAsync(movieField.Text);
                 } 
                 var intent = new Intent(this, typeof(MovieListActivity));
                 intent.PutExtra("movieList", JsonConvert.SerializeObject(movies));
+                intent.PutExtra("movieDBservice", JsonConvert.SerializeObject(_server));
                 this.StartActivity(intent);
 
                 // Dismiss spinner and re-enable button
