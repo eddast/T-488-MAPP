@@ -6,13 +6,17 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Support.Design.Widget;
+using Android.Support.V4.App;
+using Android.Support.V4.View;
 using Android.Views.InputMethods;
 using Newtonsoft.Json;
+using Fragment = Android.Support.V4.App.Fragment;
 
 namespace HelloWorld.Droid
 {
 	[Activity (Label = "HelloWorld", Theme="@style/MyTheme")]
-	public class MainActivity : Activity
+	public class MainActivity : FragmentActivity
 	{
 	    public static People People { get; set; }
 
@@ -23,31 +27,23 @@ namespace HelloWorld.Droid
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
-			// Get our button from the layout resource,
-			// and attach an event to it
-		    var nameEditText = this.FindViewById<EditText>(Resource.Id.nameEditText);
-		    var greetingButton = this.FindViewById<Button> (Resource.Id.greetingButton);
-		    var greetingTextView = this.FindViewById<TextView>(Resource.Id.greetingTextView);
-		    var nameListButton = this.FindViewById<Button>(Resource.Id.nameListButton);
-
-		    greetingButton.Click += (object sender, EventArgs e) =>
+		    var fragments = new Fragment[]
 		    {
-		        var manager = (InputMethodManager)this.GetSystemService(InputMethodService);
-		        manager.HideSoftInputFromWindow(nameEditText.WindowToken, 0);
-		        greetingTextView.Text = "Hello " + nameEditText.Text;
-                People.Persons.Add(new Person()
-                {
-                    Name = nameEditText.Text
-                });
+		        new NameInputFragment(People),
+                new OtherFragment(), 
 		    };
 
-		    nameListButton.Click += (sender, args) =>
-		    {
-		        var intent = new Intent(this, typeof(NameListActivity));
-		        intent.PutExtra("personList", JsonConvert.SerializeObject(People.Persons));
-                this.StartActivity(intent);
-		    };
+		    var titles = CharSequence.ArrayFromStringArray(new[] {"People", "Other"});
 
+		    var viewPager = FindViewById<ViewPager>(Resource.Id.viewpager);
+            viewPager.Adapter = new TabsFragmentPagerAdapter(SupportFragmentManager, fragments, titles);
+
+            var tabLayout = this.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
+            tabLayout.SetupWithViewPager(viewPager);
+
+		    var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
+            this.SetActionBar(toolbar);
+		    this.ActionBar.Title = "My Toolbar";
 		}
 	}
 }

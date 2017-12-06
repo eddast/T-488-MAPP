@@ -1,14 +1,18 @@
 ﻿<Properties StartupConfiguration="{5EDDA305-58C3-4E34-BAF3-E1F498879E39}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld/HelloWorld.Android/NameListAdapter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld/HelloWorld.Android/MainActivity.cs">
     <Files>
-      <File FileName="HelloWorld/HelloWorld.Android/NameListAdapter.cs" Line="48" Column="42" />
+      <File FileName="HelloWorld/HelloWorld.Android/NameListAdapter.cs" Line="1" Column="1" />
+      <File FileName="HelloWorld/HelloWorld.Android/Resources/values/styles.xml" Line="1" Column="1" />
+      <File FileName="HelloWorld/HelloWorld.Android/MainActivity.cs" Line="46" Column="19" />
+      <File FileName="HelloWorld/HelloWorld.Android/NameInputFragment.cs" Line="1" Column="1" />
+      <File FileName="HelloWorld/HelloWorld.Android/TabsFragmentPagerAdapter.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.HelloWorld.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.HelloWorld.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
