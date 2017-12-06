@@ -47,14 +47,17 @@ namespace IOSWeek1.Droid
 			// aapt resource value: 0x7f040000
 			public const int themeBlue = 2130968576;
 			
+			// aapt resource value: 0x7f040003
+			public const int themeGray = 2130968579;
+			
 			// aapt resource value: 0x7f040002
-			public const int themeGray = 2130968578;
+			public const int themeGreen = 2130968578;
 			
 			// aapt resource value: 0x7f040001
-			public const int themeGreen = 2130968577;
+			public const int themeLightBlue = 2130968577;
 			
-			// aapt resource value: 0x7f040003
-			public const int themeWhite = 2130968579;
+			// aapt resource value: 0x7f040004
+			public const int themeWhite = 2130968580;
 			
 			static Color()
 			{
@@ -70,13 +73,16 @@ namespace IOSWeek1.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int GetMoviesButton = 2130837504;
+			public const int editViewBorder = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int Icon = 2130837505;
+			public const int GetMoviesButton = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int LaunchScreen = 2130837506;
+			public const int Icon = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int LaunchScreen = 2130837507;
 			
 			static Drawable()
 			{

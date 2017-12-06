@@ -25,17 +25,19 @@
         android:gravity="center"
         android:textSize="12dp"
         android:fontFamily="BanglaSangamMN"
-        android:textColor="@color/themeGray"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="30dp" />
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:textSize="18dp"
         android:id="@+id/movieField"
         android:shadowColor="@color/themeBlue"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
+        android:background="@drawable/editViewBorder"
         android:layout_marginTop="20dp" />
     <Button
         android:background="@drawable/GetMoviesButton"

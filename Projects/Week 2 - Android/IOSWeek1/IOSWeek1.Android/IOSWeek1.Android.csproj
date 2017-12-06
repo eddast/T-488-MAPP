@@ -112,6 +112,7 @@
     <AndroidResource Include="Resources\drawable-hdpi\GetMoviesButton.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\LaunchScreen.png" />
     <AndroidResource Include="Resources\drawable-mdpi\LaunchScreen.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\editViewBorder.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />
