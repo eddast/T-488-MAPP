@@ -3861,6 +3861,9 @@ namespace IOSWeek1.Droid
 			// aapt resource value: 0x7f09018b
 			public const int LightTheme_Splash = 2131296651;
 			
+			// aapt resource value: 0x7f09018c
+			public const int LightTheme_Toolbar = 2131296652;
+			
 			// aapt resource value: 0x7f09001e
 			public const int Platform_AppCompat = 2131296286;
 			
@@ -3944,6 +3947,12 @@ namespace IOSWeek1.Droid
 			
 			// aapt resource value: 0x7f090038
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131296312;
+			
+			// aapt resource value: 0x7f09018d
+			public const int TabText_Toolbar = 2131296653;
+			
+			// aapt resource value: 0x7f09018e
+			public const int TabTextLayout_Toolbar = 2131296654;
 			
 			// aapt resource value: 0x7f0900cf
 			public const int TextAppearance_AppCompat = 2131296463;

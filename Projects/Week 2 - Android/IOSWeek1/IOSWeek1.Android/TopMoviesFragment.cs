@@ -16,6 +16,8 @@ namespace IOSWeek1.Droid
         private ListView _listView;
         private List<MovieModel> _topMovies;
 
+        public TopMoviesFragment(){ }
+
         public TopMoviesFragment(MovieDBService server)
         {
             this._server = server;

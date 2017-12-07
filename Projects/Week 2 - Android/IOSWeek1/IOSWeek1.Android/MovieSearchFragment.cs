@@ -19,6 +19,7 @@ namespace IOSWeek1.Droid
         public InputMethodManager manager;
         public TextView movieField;
 
+        public MovieSearchFragment(){}
         public MovieSearchFragment(MovieDBService server)
         {
             this._server = server;
@@ -49,6 +50,13 @@ namespace IOSWeek1.Droid
         {
             getMovieButton.Click += async (object sender, EventArgs e) => {
 
+                if(movieField.Text == "" || movieField.Text == null) {
+
+                    // Error message provided if no results were found
+                    Toast.MakeText(Context, "Please Provide A Query String", ToastLength.Long).Show();
+                    return;
+                }
+
                 // Initiate spinner to indicate background activity
                 // Set button to disabled while processing request
                 spinner.Visibility = ViewStates.Visible;
@@ -57,10 +65,7 @@ namespace IOSWeek1.Droid
 
                 // Get list of movies by query string user provided
                 List<MovieModel> movies = new List<MovieModel>();
-                if (movieField.Text != "" && movieField.Text != null) {
-                    
-                    movies = await _server.GetMovieListByTitleAsync(movieField.Text);
-                } 
+                movies = await _server.GetMovieListByTitleAsync(movieField.Text);
 
                 // On click, start the movie result list activity
                 // Pass movie list found via json bundle

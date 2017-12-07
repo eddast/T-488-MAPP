@@ -59,6 +59,7 @@
     <MtouchProfiling>true</MtouchProfiling>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchLink>Full</MtouchLink>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DM.MovieApi, Version=0.8.2.0, Culture=neutral, processorArchitecture=MSIL">

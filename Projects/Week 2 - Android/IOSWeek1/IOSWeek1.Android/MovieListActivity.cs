@@ -30,7 +30,7 @@ namespace IOSWeek1.Droid
             if (_movies.Count == 0) {
                 
                 // Feedback provided if no results were found
-                Toast.MakeText(ApplicationContext, "No results", ToastLength.Long).Show();
+                Toast.MakeText(ApplicationContext, "No Results Found", ToastLength.Long).Show();
             }
 
             // Set listview adapter to movie list adapter that builds up movie list

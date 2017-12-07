@@ -3446,6 +3446,7 @@ containing a value of this type.
         public static final int Base_Widget_Design_TabLayout=0x7f09016b;
         public static final int LightTheme=0x7f09018a;
         public static final int LightTheme_Splash=0x7f09018b;
+        public static final int LightTheme_Toolbar=0x7f09018c;
         public static final int Platform_AppCompat=0x7f09001e;
         public static final int Platform_AppCompat_Light=0x7f09001f;
         public static final int Platform_ThemeOverlay_AppCompat=0x7f09007f;
@@ -3474,6 +3475,8 @@ containing a value of this type.
         public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f090036;
         public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f090037;
         public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f090038;
+        public static final int TabText_Toolbar=0x7f09018d;
+        public static final int TabTextLayout_Toolbar=0x7f09018e;
         public static final int TextAppearance_AppCompat=0x7f0900cf;
         public static final int TextAppearance_AppCompat_Body1=0x7f0900d0;
         public static final int TextAppearance_AppCompat_Body2=0x7f0900d1;

@@ -33,6 +33,8 @@ namespace IOSWeek1.Droid
             viewPager.Adapter = new TabsFragmentPagerAdapter(SupportFragmentManager, fragments, titles);
             TabLayout tabLayout = this.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
             tabLayout.SetupWithViewPager(viewPager);
+            tabLayout.TabGravity = TabLayout.GravityFill;
+            tabLayout.TabMode = TabLayout.ModeFixed;
 
             // Set action bar to toolbar and set title
             var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
