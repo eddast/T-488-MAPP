@@ -28,6 +28,7 @@ This tab loads top rated movies from the external web service and initially disp
 Due to lack of time and too specified service model of the external web service's API, the potential cross-platform shareable code of this model could not be placed into the portable class library. This was because the image downloader service (located in the MovieDownload namespace) was included in this service model and could not reside in the PCL due to platform-specific references. I will attempt to seperate the image downloader service from the API service model and solve this before starting week two's Android project. _(Edit: Fixed 03.12.17)_
 
 ## Week 2: Xamarin.Droid project - Visual Demonstration and Information
+Note that images displaying app's functionality below are from tests conducted on an actual android phone (Samsung Galaxy Alpha) and not by an emulator.
 
 ### Application Structure and Purpose
 The application has essentially the same function as week one's iOS app with minor changes: again a tabbed application was created with two tabs whose purpose is to fetch information about movies from an external web service and displays that information appropriately. Toolbar was used to generate the tab bar function and fragments were loaded into each tabs by a main fragment activity.
@@ -49,11 +50,11 @@ This tab loads top rated movies from the external web service and initially disp
 ### Some enhancements from the iOS app
 Three major enhancements emerge in the android app: the method of retrieving images, the user interface and the user experience.
 - **Glide** was now used to retrieve images (movie posters and movie backdrop images) which increases efficiency greatly as it asynchorniously retrieves images as activity is displayed on screen, thus reducing loading time a bit.
-- The **User Experience** is much better in the andorid app than in the iOS app. A "logo" was designed for the app used as app logo and launch screen and a fixed color pallette was used for the overall look of the app. The color pallette used is shown in the logo which represents a VHS and in addition to this a launch screen was provided, conforming to the pallette and including the logo. See launch screen and logo below (pallette is included in the logo):
+- The **User Experience** is much better in the andorid app than in the iOS app. In addition to naming the app a "logo" representing a VHS was designed and used as app logo. Additionally a fixed color pallette was used for the overall look of the app (the color pallette used is included in the logo) and in addition to this a launch screen was provided, conforming to the pallette and including the logo. See launch screen with logo below (pallette is included in the logo):
 
-// MYND
+![alt text](https://image.ibb.co/cz00Kb/Launch_Screen.png)
 
-These changes made a an obvious difference in the app appearence from the very raw monochromatic look of the iOS app.
+These changes made a an obvious difference in the app appearence from the very raw and default look of the iOS app.
 
 - The **User Interface** was greatly enchanced. Now error messages are displayed when user inputs no string and when user receives no results. Also, user can click on an information icon in the initial screen of the app for information on it's functionality:
 
