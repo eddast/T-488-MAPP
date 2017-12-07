@@ -65,3 +65,4 @@ C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.csproj.CoreCompileInputs.cache
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.dll
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.pdb
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1/obj/Debug/IOSWeek1.csprojResolveAssemblyReference.cache

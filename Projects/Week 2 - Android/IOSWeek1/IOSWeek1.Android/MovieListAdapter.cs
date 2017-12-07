@@ -30,8 +30,11 @@ namespace IOSWeek1.Droid
             // Format text and image view according to movie information
             MovieModel movie = this._movies[position];
             string movieAndYear = movie.movie.Title.ToUpper() + " (" + movie.movie.ReleaseDate.Year.ToString() + ")";
-            view.FindViewById<TextView>(Resource.Id.name).Text = movieAndYear;
-            view.FindViewById<TextView>(Resource.Id.cast).Text = movie.cast;
+            var movieYearText = view.FindViewById<TextView>(Resource.Id.name);
+            movieYearText.Text = movieAndYear;
+            movieYearText.SetTypeface(null, Android.Graphics.TypefaceStyle.Bold);
+            var movieCast = view.FindViewById<TextView>(Resource.Id.cast).Text = movie.cast;
+            movieYearText.SetTypeface(null, Android.Graphics.TypefaceStyle.Bold);
             ImageView posterImage = view.FindViewById<ImageView>(Resource.Id.posterView);
             GlideImageIntoImageView(movie.posterPath, posterImage);
 

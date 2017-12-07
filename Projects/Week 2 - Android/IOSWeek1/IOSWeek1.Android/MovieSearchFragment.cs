@@ -29,8 +29,10 @@ namespace IOSWeek1.Droid
         {
             var rootView = inflater.Inflate(Resource.Layout.MovieSearch, container, false);
 
-            // Keep track of view's objects 
+            // Optimize and keep track of view's objects 
             movieField = rootView.FindViewById<TextView>(Resource.Id.movieField);
+            var heading = rootView.FindViewById<TextView>(Resource.Id.heading);
+            heading.SetTypeface(null, Android.Graphics.TypefaceStyle.Bold);
             var getMovieButton = rootView.FindViewById<Button>(Resource.Id.getMovieButton);
             var spinner = rootView.FindViewById<ProgressBar>(Resource.Id.spinner);
             spinner.Visibility = ViewStates.Invisible;

@@ -2230,26 +2230,26 @@ namespace IOSWeek1.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f02006e
-			public const int avd_hide_password_1 = 2130837614;
-			
-			// aapt resource value: 0x7f02006f
-			public const int avd_hide_password_2 = 2130837615;
-			
 			// aapt resource value: 0x7f020070
-			public const int avd_hide_password_3 = 2130837616;
+			public const int avd_hide_password_1 = 2130837616;
+			
+			// aapt resource value: 0x7f020071
+			public const int avd_hide_password_2 = 2130837617;
+			
+			// aapt resource value: 0x7f020072
+			public const int avd_hide_password_3 = 2130837618;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f020071
-			public const int avd_show_password_1 = 2130837617;
-			
-			// aapt resource value: 0x7f020072
-			public const int avd_show_password_2 = 2130837618;
-			
 			// aapt resource value: 0x7f020073
-			public const int avd_show_password_3 = 2130837619;
+			public const int avd_show_password_1 = 2130837619;
+			
+			// aapt resource value: 0x7f020074
+			public const int avd_show_password_2 = 2130837620;
+			
+			// aapt resource value: 0x7f020075
+			public const int avd_show_password_3 = 2130837621;
 			
 			// aapt resource value: 0x7f020055
 			public const int design_bottom_navigation_item_background = 2130837589;
@@ -2273,58 +2273,64 @@ namespace IOSWeek1.Droid
 			public const int editViewBorder = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int GetMoviesButton = 2130837596;
+			public const int filmIcon = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int Icon = 2130837597;
+			public const int GetMoviesButton = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int LaunchScreen = 2130837598;
+			public const int Icon = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int navigation_empty_icon = 2130837599;
+			public const int LaunchScreen = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int notification_action_background = 2130837600;
+			public const int navigation_empty_icon = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int notification_bg = 2130837601;
+			public const int notification_action_background = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int notification_bg_low = 2130837602;
+			public const int notification_bg = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int notification_bg_low_normal = 2130837603;
+			public const int notification_bg_low = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int notification_bg_low_pressed = 2130837604;
+			public const int notification_bg_low_normal = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int notification_bg_normal = 2130837605;
+			public const int notification_bg_low_pressed = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int notification_bg_normal_pressed = 2130837606;
+			public const int notification_bg_normal = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int notification_icon_background = 2130837607;
-			
-			// aapt resource value: 0x7f02006c
-			public const int notification_template_icon_bg = 2130837612;
-			
-			// aapt resource value: 0x7f02006d
-			public const int notification_template_icon_low_bg = 2130837613;
+			public const int notification_bg_normal_pressed = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int notification_tile_bg = 2130837608;
+			public const int notification_icon_background = 2130837608;
+			
+			// aapt resource value: 0x7f02006e
+			public const int notification_template_icon_bg = 2130837614;
+			
+			// aapt resource value: 0x7f02006f
+			public const int notification_template_icon_low_bg = 2130837615;
 			
 			// aapt resource value: 0x7f020069
-			public const int notify_panel_notification_icon_bg = 2130837609;
+			public const int notification_tile_bg = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int tooltip_frame_dark = 2130837610;
+			public const int notify_panel_notification_icon_bg = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int tooltip_frame_light = 2130837611;
+			public const int search = 2130837611;
+			
+			// aapt resource value: 0x7f02006c
+			public const int tooltip_frame_dark = 2130837612;
+			
+			// aapt resource value: 0x7f02006d
+			public const int tooltip_frame_light = 2130837613;
 			
 			static Drawable()
 			{
@@ -2566,6 +2572,9 @@ namespace IOSWeek1.Droid
 			
 			// aapt resource value: 0x7f07000a
 			public const int ghost_view = 2131165194;
+			
+			// aapt resource value: 0x7f0700a6
+			public const int heading = 2131165350;
 			
 			// aapt resource value: 0x7f070005
 			public const int home = 2131165189;
@@ -2851,9 +2860,6 @@ namespace IOSWeek1.Droid
 			
 			// aapt resource value: 0x7f070068
 			public const int textSpacerNoTitle = 2131165288;
-			
-			// aapt resource value: 0x7f0700a6
-			public const int textView1 = 2131165350;
 			
 			// aapt resource value: 0x7f070097
 			public const int text_input_password_toggle = 2131165335;
