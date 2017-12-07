@@ -58,6 +58,7 @@ These changes made a an obvious difference in the app appearence from the very r
 
 - The **User Interface** was greatly enchanced. Now error messages are displayed when user inputs no string and when user receives no results. Also, user can click on an information icon in the initial screen of the app for information on it's functionality:
 
-// MYND
+![alt text](https://image.ibb.co/dgA9eb/One.png)
+![alt text](https://image.ibb.co/cQMXzb/Info_Alert.png)
 
 In addition to this, now average rating of a movie is now displayed right next to it's genres in movie detail sceen. This is because most potential users that got to try the app when in progress found it imperative to be able to get some idea of the movie quality in movie inspection based apps like mine. Since displaying the average rating required no extra time complexity nor much effort this was added to the detail view for a better user experience.
