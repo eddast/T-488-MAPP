@@ -49,10 +49,11 @@ This tab loads top rated movies from the external web service and initially disp
 ### Some enhancements from the iOS app
 Two major enhancements emerge in the android app: the method of retrieving images and the user interface/user experience.
 - **Glide** was now used to retrieve images (movie posters and movie backdrop images) which increases efficiency greatly as it asynchorniously retrieves images as activity is displayed on screen, thus reducing loading time a bit.
-- **User Interface** was greatly enchanced. In addition to designing a "logo" for the app (used as app logo and launch screen) and using a fixed color pallette for the overall look of the app (thus making user experience better), now error messages are displayed when user inputs no string and when user receives no results. Also, user can click on an information icon in the initial screen of the app for information on it's functionality. See below:
+- **User Interface** was greatly enchanced. In addition to designing a "logo" for the app (used as app logo and launch screen) and using a fixed color pallette for the overall look of the app (shown in logo, thus making user experience better), now error messages are displayed when user inputs no string and when user receives no results. Also, user can click on an information icon in the initial screen of the app for information on it's functionality. See below:
 
 // MYND
 
+In addition to this, now average rating of a movie is now displayed right next to it's genres in movie detail sceen. This is because most potential users I showed my app to when in progress found it imperative to be able to get some idea of the movie quality in movie inspection based apps like mine. Since displaying the average rating required no extra time complexity nor much effort this was added to the detail view for a better user experience.
 
 ### Known Limitations
 //TODO
