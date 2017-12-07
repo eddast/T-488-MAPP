@@ -52,7 +52,7 @@ Three major enhancements emerge in the android app: the method of retrieving ima
 - **Glide** was now used to retrieve images (movie posters and movie backdrop images) which increases efficiency greatly as it asynchorniously retrieves images as activity is displayed on screen, thus reducing loading time a bit.
 - The **User Experience** is much better in the andorid app than in the iOS app. In addition to naming the app a "logo" representing a VHS was designed and used as app logo. Additionally a fixed color pallette was used for the overall look of the app (the color pallette used is included in the logo) and in addition to this a launch screen was provided, conforming to the pallette and including the logo. See launch screen with logo below (pallette is included in the logo):
 
-![alt text](https://image.ibb.co/cz00Kb/Launch_Screen.png)
+![alt text](https://image.ibb.co/kmbqKb/Launch_Screen.png)
 
 These changes made a an obvious difference in the app appearence from the very raw and default look of the iOS app.
 
