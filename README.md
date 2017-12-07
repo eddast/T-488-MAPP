@@ -26,3 +26,33 @@ This tab loads top rated movies from the external web service and initially disp
 ### Known Limitations
 
 Due to lack of time and too specified service model of the external web service's API, the potential cross-platform shareable code of this model could not be placed into the portable class library. This was because the image downloader service (located in the MovieDownload namespace) was included in this service model and could not reside in the PCL due to platform-specific references. I will attempt to seperate the image downloader service from the API service model and solve this before starting week two's Android project. _(Edit: Fixed 03.12.17)_
+
+## Week 2: Xamarin.Droid project - Visual Demonstration and Information
+
+### Application Structure and Purpose
+The application has essentially the same function as week one's iOS app with minor changes: again a tabbed application was created with two tabs whose purpose is to fetch information about movies from an external web service and displays that information appropriately. Toolbar was used to generate the tab bar function and fragments were loaded into each tabs by a main fragment activity.
+
+### First tab: Search
+The first tab is the tab user is automatically navigated to once app launches. The first tab prompts user to write in a query substring of some movie, then displays a button on which the user can click. Once clicked, the tab becomes unclickable - both literally and visually - and a load spinner appears to indicate background process. The screen remains in this state while resources (movie information) are retrieved from the server:
+
+// MYND
+
+Once resources have been retrieved, user is navigated to the next screen (i.e. a new activity starts on top of the fragment activity which can be retracted via back button present on android phones) which includes a list view displaying all movies that matched user query string. Each item (movie) in that list is clickable and navigates user to another screen (again, starts a new activity) which displays images and details of that movie:
+
+// MYND
+
+### Second tab: Top Rated
+This tab loads top rated movies from the external web service and initially displays a load spinner indicating background process. Once resources have been retrieved, an empty list view this fragment contains is filled with movies retrieved. The list items are clickable like in the search view and once clicked show movie details. Everytime a user navigates into the top rated tab the information is retrived again, displaying the fragment's load spinner appropriately:
+
+// MYND
+
+### Some enhancements from the iOS app
+Two major enhancements emerge in the android app: the method of retrieving images and the user interface/user experience.
+- **Glide** was now used to retrieve images (movie posters and movie backdrop images) which increases efficiency greatly as it asynchorniously retrieves images as activity is displayed on screen, thus reducing loading time a bit.
+- **User Interface** was greatly enchanced. In addition to designing a "logo" for the app (used as app logo and launch screen) and using a fixed color pallette for the overall look of the app (thus making user experience better), now error messages are displayed when user inputs no string and when user receives no results. Also, user can click on an information icon in the initial screen of the app for information on it's functionality. See below:
+
+// MYND
+
+
+### Known Limitations
+//TODO
