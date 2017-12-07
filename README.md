@@ -47,13 +47,16 @@ This tab loads top rated movies from the external web service and initially disp
 // MYND
 
 ### Some enhancements from the iOS app
-Two major enhancements emerge in the android app: the method of retrieving images and the user interface/user experience.
+Three major enhancements emerge in the android app: the method of retrieving images, the user interface and the user experience.
 - **Glide** was now used to retrieve images (movie posters and movie backdrop images) which increases efficiency greatly as it asynchorniously retrieves images as activity is displayed on screen, thus reducing loading time a bit.
-- **User Interface** was greatly enchanced. In addition to designing a "logo" for the app (used as app logo and launch screen) and using a fixed color pallette for the overall look of the app (shown in logo, thus making user experience better), now error messages are displayed when user inputs no string and when user receives no results. Also, user can click on an information icon in the initial screen of the app for information on it's functionality. See below:
+- The **User Experience** is much better in the andorid app than in the iOS app. A "logo" was designed for the app used as app logo and launch screen and a fixed color pallette was used for the overall look of the app. The color pallette used is shown in the logo which represents a VHS and in addition to this a launch screen was provided, conforming to the pallette and including the logo. See launch screen and logo below (pallette is included in the logo):
 
 // MYND
 
-In addition to this, now average rating of a movie is now displayed right next to it's genres in movie detail sceen. This is because most potential users I showed my app to when in progress found it imperative to be able to get some idea of the movie quality in movie inspection based apps like mine. Since displaying the average rating required no extra time complexity nor much effort this was added to the detail view for a better user experience.
+These changes made a an obvious difference in the app appearence from the very raw monochromatic look of the iOS app.
 
-### Known Limitations
-//TODO
+- The **User Interface** was greatly enchanced. Now error messages are displayed when user inputs no string and when user receives no results. Also, user can click on an information icon in the initial screen of the app for information on it's functionality:
+
+// MYND
+
+In addition to this, now average rating of a movie is now displayed right next to it's genres in movie detail sceen. This is because most potential users that got to try the app when in progress found it imperative to be able to get some idea of the movie quality in movie inspection based apps like mine. Since displaying the average rating required no extra time complexity nor much effort this was added to the detail view for a better user experience.
