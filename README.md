@@ -36,16 +36,16 @@ The application has essentially the same function as week one's iOS app with min
 ### First tab: Search
 The first tab is the tab user is automatically navigated to once app launches. The first tab prompts user to write in a query substring of some movie, then displays a button on which the user can click. Once clicked, the tab becomes unclickable - both literally and visually - and a load spinner appears to indicate background process. The screen remains in this state while resources (movie information) are retrieved from the server:
 
-// MYND
+![alt text](https://image.ibb.co/chgCXw/Search_Load.jpg)
 
 Once resources have been retrieved, user is navigated to the next screen (i.e. a new activity starts on top of the fragment activity which can be retracted via back button present on android phones) which includes a list view displaying all movies that matched user query string. Each item (movie) in that list is clickable and navigates user to another screen (again, starts a new activity) which displays images and details of that movie:
 
-// MYND
+![alt text](https://image.ibb.co/njnfKb/Search_Res.jpg)
 
 ### Second tab: Top Rated
 This tab loads top rated movies from the external web service and initially displays a load spinner indicating background process. Once resources have been retrieved, an empty list view this fragment contains is filled with movies retrieved. The list items are clickable like in the search view and once clicked show movie details. Everytime a user navigates into the top rated tab the information is retrived again, displaying the fragment's load spinner appropriately:
 
-// MYND
+![alt text](https://image.ibb.co/frEKeb/Top_Rated_Tab.jpg)
 
 ### Some enhancements from the iOS app
 Three major enhancements emerge in the android app: the method of retrieving images, the user interface and the user experience.
@@ -57,7 +57,7 @@ Three major enhancements emerge in the android app: the method of retrieving ima
 These changes made a an obvious difference in the app appearence from the very raw and default look of the iOS app.
 
 - The **User Interface** was greatly enchanced. Now error messages are displayed when user inputs no string and when user receives no results. Also, user can click on an information icon in the initial screen of the app for information on it's functionality:
-
+![alt text](https://image.ibb.co/jFNVKb/No_String_Err.jpg)
 ![alt text](https://image.ibb.co/dgA9eb/One.png)
 ![alt text](https://image.ibb.co/cQMXzb/Info_Alert.png)
 
