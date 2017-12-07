@@ -5,10 +5,10 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="IOSWeek1.Android" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:label="Movie Inspector" android:theme="@style/LightTheme" android:name="md53ef9d89cddce3d9e0fde74d5d6d2ffb6.MainActivity" />
+    <activity android:label="Movie Condo" android:theme="@style/LightTheme" android:name="md53ef9d89cddce3d9e0fde74d5d6d2ffb6.MainActivity" />
     <activity android:label="Movie list" android:theme="@style/LightTheme" android:name="md53ef9d89cddce3d9e0fde74d5d6d2ffb6.MovieListActivity" />
     <activity android:label="Movie Information" android:theme="@style/LightTheme" android:name="md53ef9d89cddce3d9e0fde74d5d6d2ffb6.MovieDetailActivity" />
-    <activity android:icon="@drawable/icon" android:label="Movie Inspector" android:theme="@style/LightTheme.Splash" android:name="md53ef9d89cddce3d9e0fde74d5d6d2ffb6.InitializerActivity">
+    <activity android:icon="@drawable/icon" android:label="Movie Condo" android:theme="@style/LightTheme.Splash" android:name="md53ef9d89cddce3d9e0fde74d5d6d2ffb6.InitializerActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

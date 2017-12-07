@@ -20,18 +20,25 @@ namespace IOSWeek1.Droid
         {
             base.OnCreate(savedInstanceState); // call to base func
 
-            // Set content view to XML layout and extract list view
-            SetContentView(Resource.Layout.SearchResults);
-            _listView = this.FindViewById<ListView>(Resource.Id.listView);
-
             // Extract values passed down via Intent
             var jsonMovies = this.Intent.GetStringExtra("movieList");
             this._movies = JsonConvert.DeserializeObject<List<MovieModel>>(jsonMovies);
-            if (_movies.Count == 0) {
-                
+
+            // Explicit feedback and empty view if no results were found
+            if (_movies == null || _movies.Count == 0) {
+
                 // Feedback provided if no results were found
                 Toast.MakeText(ApplicationContext, "No Results Found", ToastLength.Long).Show();
+                SetContentView(Resource.Layout.EmptyScreen);
+                var noResultsToolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
+                this.SetActionBar(noResultsToolbar);
+                this.ActionBar.Title = "No Results";
+                return;
             }
+
+            // Set content view to XML layout and extract list view
+            SetContentView(Resource.Layout.SearchResults);
+            _listView = this.FindViewById<ListView>(Resource.Id.listView);
 
             // Set listview adapter to movie list adapter that builds up movie list
             // Set toolbar as "action bar" and give it appropriate title

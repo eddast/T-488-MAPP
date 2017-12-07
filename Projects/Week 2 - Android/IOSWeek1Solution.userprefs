@@ -1,19 +1,25 @@
 ﻿<Properties StartupConfiguration="{85DAE571-D44E-45AF-82F8-23D58408394F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="IOSWeek1/IOSWeek1.Android/TopMoviesFragment.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="IOSWeek1/IOSWeek1.Android/MainActivity.cs" Line="23" Column="51" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/MovieSearchFragment.cs" Line="22" Column="39" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListActivity.cs" Line="33" Column="97" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListAdapter.cs" Line="35" Column="82" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MainActivity.cs" Line="57" Column="56" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListActivity.cs" Line="32" Column="48" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MovieListAdapter.cs" Line="12" Column="51" />
       <File FileName="IOSWeek1/IOSWeek1.Android/MovieDetailActivity.cs" Line="40" Column="10" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/Resources/values/styles.xml" Line="28" Column="40" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/InitializerActivity.cs" Line="25" Column="6" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/Resources/values/styles.xml" Line="11" Column="58" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/InitializerActivity.cs" Line="24" Column="10" />
       <File FileName="IOSWeek1/IOSWeek1.Android/Resources/Resource.designer.cs" Line="1" Column="1" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/TopMoviesFragment.cs" Line="19" Column="34" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/TopMoviesFragment.cs" Line="17" Column="45" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/Resources/values/color.xml" Line="16" Column="10" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/Resources/drawable-hdpi/editViewBorder.xml" Line="10" Column="42" />
+      <File FileName="../../../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.0.2-1/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1069" Column="7" />
+      <File FileName="IOSWeek1/IOSWeek1/Services/MovieDBService.cs" Line="1" Column="1" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MovieSearchFragment.cs" Line="38" Column="89" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/Resources/drawable-hdpi/SearchButton.xml" Line="7" Column="34" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/Resources/drawable-hdpi/InfoButton.xml" Line="2" Column="70" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.IOSWeek1.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.IOSWeek1.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.410094cce479a13b" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" relfile="IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" line="19" column="1" />

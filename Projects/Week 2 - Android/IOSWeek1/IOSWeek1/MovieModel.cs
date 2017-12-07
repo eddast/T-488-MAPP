@@ -19,12 +19,13 @@ namespace IOSWeek1
         public string backdropPath;
         public string runtime;
         public string genres;
+        public string popularity;
 
         public MovieModel() { }
 
         public MovieModel ( MovieInfo movie, string cast, string runtime ) {
             
-            this.movie = movie;
+            this.movie = movie; // DEPRICATED for week 2 (still here for iOS dependency problem)
 
             this.title = movie.Title;
             this.year = movie.ReleaseDate.Year.ToString();
@@ -32,6 +33,7 @@ namespace IOSWeek1
             this.cast = cast;
             this.posterPath = movie.PosterPath;
             this.backdropPath = movie.BackdropPath;
+            this.popularity = movie.VoteAverage.ToString();
             this.runtime = runtime;
         }
 

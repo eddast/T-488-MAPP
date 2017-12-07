@@ -31,7 +31,9 @@ namespace IOSWeek1.Droid
             var movieTitle = this.FindViewById<TextView>(Resource.Id.title);
             movieTitle.Text = _movie.title.ToUpper() + " (" + _movie.year + ")";
             movieTitle.SetTypeface(null, Android.Graphics.TypefaceStyle.Bold);
-            this.FindViewById<TextView>(Resource.Id.details).Text = _movie.runtime + " mins | " + _movie.genres;
+            this.FindViewById<TextView>(Resource.Id.details).Text =     _movie.runtime + " mins" + " | " +
+                                                                        _movie.genres + " | " +
+                                                                        "Average score: " + _movie.popularity;
             this.FindViewById<TextView>(Resource.Id.overview).Text = _movie.movie.Overview;
             ImageView posterImage = this.FindViewById<ImageView>(Resource.Id.poster);
             ImageView backdropImage = this.FindViewById<ImageView>(Resource.Id.backdrop);
