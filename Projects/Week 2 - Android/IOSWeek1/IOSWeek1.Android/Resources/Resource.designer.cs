@@ -3877,13 +3877,7 @@ namespace IOSWeek1.Droid
 			public const int LightTheme = 2131296650;
 			
 			// aapt resource value: 0x7f09018b
-			public const int LightTheme_Image = 2131296651;
-			
-			// aapt resource value: 0x7f09018c
-			public const int LightTheme_Splash = 2131296652;
-			
-			// aapt resource value: 0x7f09018d
-			public const int LightTheme_Toolbar = 2131296653;
+			public const int LightTheme_Splash = 2131296651;
 			
 			// aapt resource value: 0x7f09001e
 			public const int Platform_AppCompat = 2131296286;
@@ -3968,12 +3962,6 @@ namespace IOSWeek1.Droid
 			
 			// aapt resource value: 0x7f090038
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131296312;
-			
-			// aapt resource value: 0x7f09018e
-			public const int TabText_Toolbar = 2131296654;
-			
-			// aapt resource value: 0x7f09018f
-			public const int TabTextLayout_Toolbar = 2131296655;
 			
 			// aapt resource value: 0x7f0900cf
 			public const int TextAppearance_AppCompat = 2131296463;
@@ -4310,6 +4298,15 @@ namespace IOSWeek1.Droid
 			
 			// aapt resource value: 0x7f090117
 			public const int ThemeOverlay_AppCompat_Light = 2131296535;
+			
+			// aapt resource value: 0x7f09018c
+			public const int ToolbarTheme = 2131296652;
+			
+			// aapt resource value: 0x7f09018d
+			public const int ToolbarTheme_Text = 2131296653;
+			
+			// aapt resource value: 0x7f09018e
+			public const int ToolbarTheme_TextStyle = 2131296654;
 			
 			// aapt resource value: 0x7f090118
 			public const int Widget_AppCompat_ActionBar = 2131296536;

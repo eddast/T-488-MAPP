@@ -5,6 +5,11 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:id="@+id/searchLayout">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px" />
     <TextView
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"

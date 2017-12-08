@@ -10,7 +10,7 @@ using IOSWeek1.Services;
 
 namespace IOSWeek1.Droid
 {
-    [Activity(Label = "AMDB", Theme = "@style/LightTheme")]
+    [Activity(Label = "AMDb", Theme = "@style/LightTheme")]
     public class MainActivity : FragmentActivity
     {
         // Initialize server model to pass down to fragments that need it
@@ -38,7 +38,7 @@ namespace IOSWeek1.Droid
 
             // Set action bar to toolbar and set title
             var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
-            this.SetActionBar(toolbar); this.ActionBar.Title = "AMDB";
+            this.SetActionBar(toolbar); this.ActionBar.Title = "AMDb";
 
             // Listens to toolbar
             FragmentClickListener(viewPager, fragments);

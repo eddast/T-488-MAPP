@@ -5,12 +5,12 @@ using Android.App;
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle ("IOSWeek1.Android")]
-[assembly: AssemblyDescription ("")]
+[assembly: AssemblyTitle ("AMDb.Android")]
+[assembly: AssemblyDescription ("App Movie DataBase")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("")]
+[assembly: AssemblyCompany ("Reykjavik University")]
 [assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("joe")]
+[assembly: AssemblyCopyright ("Edda Steinunn")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 

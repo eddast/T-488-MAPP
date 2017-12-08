@@ -83,24 +83,26 @@ namespace IOSWeek1.Droid
             };
         }
 
-        // Listenes for click on the information button and if clicked, displays dialog
+        // Listenes for click on the information button and if clicked, displays information dialog
         private void OnClickInfoButton(ImageButton infoButton)
         {
             infoButton.Click += (object sender, EventArgs e) => {
                 
                 AlertDialog.Builder info = new AlertDialog.Builder(this.Context);
-                info.SetTitle("Information");
-                info.SetMessage("WELCOME TO AMDB, your on the go \"Another-Movie-DataBase!\"" +
+                info.SetTitle("Welcome to AMDb");
+
+                info.SetMessage("This is how you use your favorite on-the-go movie database:" +
                                 "\n\n" +
-                                " Browse for your favorite movies:\n" +
-                                "Simply click on the input box and input a substring of some movie title to search for it. " +
-                                "You will be directed to another page displaying the search results." +
+                                "Browsing for your favorite movies:\n" +
+                                "Simply click on the input box and input a substring of some movie title and click the button below to search for it. " +
+                                "You will then be directed to another page displaying the search results after results have been retrieved." +
                                 "\n\n" +
-                                "Discover the best movies:\n" +
-                                "to see top rated movies navigate to the next tab by sliding right or clicking on the tab in the toolbar" +
-                                "The movies will reload each time you navigate to the top rated tab to keep you updated with the best movies! " +
-                                "Once the movies have been retrieved they will be displayed in a list.");
-                var OKbutton = info.SetPositiveButton("OK got it!", (senderAlert, args) => { });
+                                "Discovering new amazing movies:\n" +
+                                "To explore top rated movies navigate to the next tab by sliding right or clicking on the tab on the right in above tool bar. " +
+                                "Each time you navigate to the top rated tab the top rated movie list is reloaded from the database to keep you instantly updated with the best movies! " +
+                                "Once the top movie list has been retrieved they will be displayed in a list in which each movie can be clicked on for details.");
+                
+                var OKbutton = info.SetPositiveButton("OK, got it!", (senderAlert, args) => { });
                 Dialog dialog = info.Create();
                 dialog.Show();
             };
