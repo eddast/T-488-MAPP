@@ -4,6 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minHeight="?android:attr/actionBarSize"
-    android:background="@color/themeLightPurple"
+    android:background="@color/themePurple"
     android:gravity="center_horizontal"
     style="@style/ToolbarTheme" />
