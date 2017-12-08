@@ -32,7 +32,7 @@ namespace IOSWeek1.Droid
                 SetContentView(Resource.Layout.EmptyScreen);
                 var noResultsToolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
                 this.SetActionBar(noResultsToolbar);
-                this.ActionBar.Title = "No Results";
+                this.ActionBar.Title = "No Results".ToUpper();
                 return;
             }
 
@@ -45,7 +45,7 @@ namespace IOSWeek1.Droid
             _listView.Adapter = new MovieListAdapter(this, this._movies);
             var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
             this.SetActionBar(toolbar);
-            this.ActionBar.Title = "Movie Search";
+            this.ActionBar.Title = "Search Results".ToUpper();
 
             // Listens to cell click and "redirects" user to detail page
             ListenToCellClicks();

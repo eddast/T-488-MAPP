@@ -19,6 +19,7 @@ namespace IOSWeek1
         public string backdropPath;
         public string runtime;
         public string genres;
+        public string overview;
         public double vote_rate;
 
         public MovieModel() { }
@@ -31,6 +32,7 @@ namespace IOSWeek1
             this.year = movie.ReleaseDate.Year.ToString();
             this.genres = get_movie_genres(movie);
             this.cast = cast;
+            this.overview = movie.Overview;
             this.posterPath = movie.PosterPath;
             this.backdropPath = movie.BackdropPath;
             this.vote_rate = movie.VoteAverage;

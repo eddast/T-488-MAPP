@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{85DAE571-D44E-45AF-82F8-23D58408394F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IOSWeek1/IOSWeek1.Android/MovieDetailActivity.cs">
+    <Files>
+      <File FileName="IOSWeek1/IOSWeek1/Services/MovieDBService.cs" Line="4" Column="24" />
+      <File FileName="IOSWeek1/IOSWeek1/MovieDBSettings.cs" Line="8" Column="19" />
+      <File FileName="IOSWeek1/IOSWeek1/MovieModel.cs" Line="8" Column="19" />
+      <File FileName="IOSWeek1/IOSWeek1.Android/MovieDetailActivity.cs" Line="24" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.IOSWeek1.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.410094cce479a13b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" relfile="IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" line="19" column="1" />
+      <Breakpoint enabled="false" file="/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" relfile="IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" line="29" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.IOSWeek1.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.00112EC6-41A8-483A-B2D9-554A28018B66" />
+</Properties>
