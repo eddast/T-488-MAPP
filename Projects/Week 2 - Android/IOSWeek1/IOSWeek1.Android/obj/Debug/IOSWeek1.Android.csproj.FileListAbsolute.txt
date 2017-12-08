@@ -88,10 +88,6 @@ C:/Users/Edda Steinunn/Documents/Visual Studio 2017/Projects/T-488-MAPP/Projects
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/layout/main.xml
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/values/strings.xml
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/drawable-hdpi/icon.png
-/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/drawable-mdpi/icon.png
-/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/drawable-xhdpi/icon.png
-/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/drawable-xxhdpi/icon.png
-/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/drawable-xxxhdpi/icon.png
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/values/styles.xml
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/layout/movieitem.xml
 /Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/res/values/color.xml
