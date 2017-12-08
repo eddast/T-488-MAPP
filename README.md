@@ -48,19 +48,19 @@ This tab loads top rated movies from the external web service and initially disp
 ![alt text](https://image.ibb.co/dNmdNw/Top_Rated_Tab.jpg)
 
 ### Some enhancements from the iOS app
-Three major enhancements emerge in the android app: the method of retrieving images, the user interface and the user experience.
+Four major enhancements emerge in the android app: the method of retrieving images, the user interface, the user experience and code sharing.
+
 - **Glide** was now used to retrieve images (movie posters and movie backdrop images) which increases efficiency greatly as it asynchorniously retrieves images as activity is displayed on screen, thus reducing loading time a bit.
-- The **User Experience** is much better in the andorid app than in the iOS app. In addition to naming the app a "logo" representing a VHS was designed and used as app logo. Additionally a fixed color pallette was used for the overall look of the app (the color pallette used is included in the logo) and in addition to this a launch screen was provided, conforming to the pallette and including the logo. See launch screen with logo below (pallette is included in the logo):
+
+- The **User Experience** is much better in the andorid app than in the iOS app. In addition to naming the app **AMDb** for **App Movie DataBase** a "logo" for the app was designed. Moreover a fixed color pallette was used for the overall look of the app and a launch screen was provided, conforming to the pallette and including the logo. These changes made a an obvious difference in the app appearence from the raw and default look of the iOS app. See launch screen:
 
 ![alt text](https://image.ibb.co/hqxnXw/launchscreen.jpg)
-
-These changes made a an obvious difference in the app appearence from the very raw and default look of the iOS app.
 
 - The **User Interface** was greatly enchanced. Now error messages are displayed when user inputs no string and when user receives no results. Also, user can now click on an information icon in the initial screen of the app for information on it's functionality:
 ![alt text](https://image.ibb.co/mCH4Cw/UIexp1.jpg)
 ![alt text](https://image.ibb.co/cJKZCw/UIexp2.jpg)
 ![alt text](https://image.ibb.co/i19Ueb/UIexp3.jpg)
 
-- In addition to this to enhance the UI, now average rating of a movie is now displayed below title in the form of stars and numeric rate. This is because most potential users that got to try the app when in progress found it imperative to be able to get some idea of the movie quality in movie inspection based apps like mine. Since displaying the average rating required no extra time complexity nor too much work this was added to the detail view for a better user experience.
+- In addition to this to enhance the UI, now **average rating** of a movie is now displayed below title in the form of stars and numeric rate. This is because most potential users that got to try the app when in progress found it imperative to be able to get some idea of the movie quality in movie inspection based apps like mine. Since displaying the average rating required no extra time complexity nor too much work this was added to the detail view for a better user experience.
 
-- This week's app also provides a **base for a better MovieModel object** in the PCL. This is because the iOS version of the MovieModel depended greatly on a MovieInfo object it took in which I realized made my MovieModel overbloated and less efficient. Therefore, the MovieModel now isolates all factors it needs from the MovieInfo object it takes in and uses those factors in isolation when needed. Please note that although my intention was to entirely remove the MovieInfo property from the MovieModel class, it remains due to the iOS part of the project needing to compile. Therefore only a base of a better model was provided.
+- This week's app provides a better **Code sharing**. First of all the known limitation for the iOS app was fixed (service not being in the portable class library). In addition to this, this week's project provides a base for a better MovieModel object in the PCL. This is because the iOS version of the MovieModel depended greatly on a MovieInfo object it took in which I realized made my MovieModel overbloated and less efficient. Therefore, the MovieModel now isolates all factors it needs from the MovieInfo object it takes in and uses those factors in isolation when needed. The android portion of the project never depends on the MovieModel's MovieInfo property. Please note that although my intention was to entirely remove the MovieInfo property from the MovieModel class, it remains due to the iOS part of the project needing to compile.
