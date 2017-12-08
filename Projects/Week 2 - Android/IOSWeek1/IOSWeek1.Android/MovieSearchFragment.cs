@@ -89,9 +89,9 @@ namespace IOSWeek1.Droid
             infoButton.Click += (object sender, EventArgs e) => {
                 
                 AlertDialog.Builder info = new AlertDialog.Builder(this.Context);
-                info.SetTitle("Welcome to AMDb");
+                info.SetTitle("Welcome to AMDb!");
 
-                info.SetMessage("This is how you use your favorite on-the-go movie database:" +
+                info.SetMessage("This is how you use your favorite on-the-go movie database the App Movie DataBase!" +
                                 "\n\n" +
                                 "Browsing for your favorite movies:\n" +
                                 "Simply click on the input box and input a substring of some movie title and click the button below to search for it. " +

@@ -9,8 +9,9 @@
 	<color name="themePurple">#5b4869</color>
 	<color name="themeYellow">#FFBB4E</color>
 
-	<!-- non-pallette colors -->
+	<!-- normal non-pallette colors -->
     <color name="gray">#c6c4c4</color>
+	<color name="lightGray">#d3d1d1</color>
 	<color name="white">#ffffff</color>
 	
 </resources>
