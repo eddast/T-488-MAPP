@@ -10,15 +10,13 @@ namespace IOSWeek1.Droid
     public class InitializerActivity : Activity
     {
         // Initializes service model of the external API
-        // Bundles it and passes it into main activity (the toolbar setup)
+        // Field-injects it into main activity (the toolbar setup)
         // Then launches application and terminates itself
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState); // call base initially
-
-            // Field injection of dependency (movieDB server) into main activiy
-            MainActivity.server = new MovieDBService();
-            var intent = new Intent(this, typeof(MainActivity));
+            ToolbarFragmentActivity.server = new MovieDBService();
+            var intent = new Intent(this, typeof(ToolbarFragmentActivity));
             this.StartActivity(intent); this.Finish();
         }
     }

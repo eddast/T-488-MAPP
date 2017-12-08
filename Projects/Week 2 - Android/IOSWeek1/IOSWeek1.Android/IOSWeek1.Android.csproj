@@ -128,23 +128,23 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\ToolbarMain.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
     <AndroidResource Include="Resources\values\styles.xml" />
-    <AndroidResource Include="Resources\layout\MovieItem.xml" />
+    <AndroidResource Include="Resources\layout\MovieItem.axml" />
     <AndroidResource Include="Resources\values\color.xml" />
-    <AndroidResource Include="Resources\layout\MovieDetail.xml" />
+    <AndroidResource Include="Resources\layout\MovieDetail.axml" />
     <AndroidResource Include="Resources\drawable-hdpi\SearchButton.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\LaunchScreen.png" />
     <AndroidResource Include="Resources\drawable-mdpi\LaunchScreen.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\editViewBorder.xml" />
-    <AndroidResource Include="Resources\layout\toolbar.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\InputBox.xml" />
+    <AndroidResource Include="Resources\layout\toolbar.axml" />
     <AndroidResource Include="Resources\layout\MovieSearch.axml" />
-    <AndroidResource Include="Resources\layout\TopRatedMovies.xml" />
-    <AndroidResource Include="Resources\layout\SearchResults.xml" />
-    <AndroidResource Include="Resources\drawable-hdpi\filmIcon.png" />
-    <AndroidResource Include="Resources\layout\EmptyScreen.xml" />
+    <AndroidResource Include="Resources\layout\TopRatedMovies.axml" />
+    <AndroidResource Include="Resources\layout\SearchResults.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\FilmIcon.png" />
+    <AndroidResource Include="Resources\layout\EmptyScreen.axml" />
     <AndroidResource Include="Resources\drawable-hdpi\InfoButton.xml" />
   </ItemGroup>
   <ItemGroup>

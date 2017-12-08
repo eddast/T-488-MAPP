@@ -5,7 +5,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="AMDb.Android" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:label="AMDb" android:theme="@style/LightTheme" android:name="md53ef9d89cddce3d9e0fde74d5d6d2ffb6.MainActivity" />
+    <activity android:label="AMDb" android:theme="@style/LightTheme" android:name="md53ef9d89cddce3d9e0fde74d5d6d2ffb6.ToolbarFragmentActivity" />
     <activity android:label="Movie list" android:theme="@style/LightTheme" android:name="md53ef9d89cddce3d9e0fde74d5d6d2ffb6.MovieListActivity" />
     <activity android:label="Movie Information" android:theme="@style/LightTheme" android:name="md53ef9d89cddce3d9e0fde74d5d6d2ffb6.MovieDetailActivity" />
     <activity android:icon="@drawable/icon" android:label="AMDb" android:theme="@style/LightTheme.Splash" android:name="md53ef9d89cddce3d9e0fde74d5d6d2ffb6.InitializerActivity">

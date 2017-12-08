@@ -11,7 +11,7 @@ using IOSWeek1.Services;
 namespace IOSWeek1.Droid
 {
     [Activity(Label = "AMDb", Theme = "@style/LightTheme")]
-    public class MainActivity : FragmentActivity
+    public class ToolbarFragmentActivity : FragmentActivity
     {
         // Initialize server model to pass down to fragments that need it
         public static MovieDBService server;
@@ -22,7 +22,7 @@ namespace IOSWeek1.Droid
 
             // Set our view from the "main" layout resource
             // Initiate tab fragments and their titles
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.ToolbarMain);
             var fragments = new Fragment[] {    new MovieSearchFragment(server),
                                                 new TopMoviesFragment(server)  };
             var titles = CharSequence.ArrayFromStringArray(new[] {  "Movie Search",

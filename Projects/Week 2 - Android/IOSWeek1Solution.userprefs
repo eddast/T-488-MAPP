@@ -1,18 +1,7 @@
 ﻿<Properties StartupConfiguration="{85DAE571-D44E-45AF-82F8-23D58408394F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="IOSWeek1/IOSWeek1.Android/Resources/values/color.xml">
-    <Files>
-      <File FileName="IOSWeek1/IOSWeek1.Android/InitializerActivity.cs" Line="20" Column="42" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="IOSWeek1/IOSWeek1/MovieModel.cs" Line="30" Column="38" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/MovieSearchFragment.cs" Line="35" Column="80" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/Properties/AssemblyInfo.cs" Line="19" Column="35" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/Resources/values/color.xml" Line="9" Column="35" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/MovieDetailActivity.cs" Line="44" Column="24" />
-      <File FileName="IOSWeek1/IOSWeek1.Android/Resources/values/styles.xml" Line="19" Column="52" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.IOSWeek1.Android PreferredExecutionTarget="Android.410094cce479a13b" />
+  <MonoDevelop.Ide.ItemProperties.IOSWeek1.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.410094cce479a13b" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" relfile="IOSWeek1/IOSWeek1.iOS/Controllers/TopMoviesController.cs" line="19" column="1" />

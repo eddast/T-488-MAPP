@@ -50,12 +50,12 @@
         android:padding="10dp"
         android:textSize="13dp"
         android:id="@+id/movieField"
-        android:drawableStart="@drawable/filmIcon"
+        android:drawableStart="@drawable/FilmIcon"
         android:drawablePadding="4dip"
         android:shadowColor="@color/themeBlue"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:background="@drawable/editViewBorder"
+        android:background="@drawable/InputBox"
         android:layout_marginTop="5dp"
         android:layout_below="@id/promptLabel" />
     <Button
