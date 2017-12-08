@@ -16,10 +16,9 @@ namespace IOSWeek1.Droid
         {
             base.OnCreate(savedInstanceState); // call base initially
 
+            // Field injection of dependency (movieDB server) into main activiy
+            MainActivity.server = new MovieDBService();
             var intent = new Intent(this, typeof(MainActivity));
-            MovieDBService server = new MovieDBService();
-            intent.PutExtra("movieDBservice", JsonConvert.SerializeObject(server));
-
             this.StartActivity(intent); this.Finish();
         }
     }

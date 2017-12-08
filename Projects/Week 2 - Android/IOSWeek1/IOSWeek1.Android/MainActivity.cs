@@ -14,7 +14,7 @@ namespace IOSWeek1.Droid
     public class MainActivity : FragmentActivity
     {
         // Initialize server model to pass down to fragments that need it
-        public MovieDBService server = new MovieDBService();
+        public static MovieDBService server;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
