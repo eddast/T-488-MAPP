@@ -90,7 +90,7 @@ namespace IOSWeek1.Droid
                 
                 AlertDialog.Builder info = new AlertDialog.Builder(this.Context);
                 info.SetTitle("Information");
-                info.SetMessage("WELCOME TO AMDB, yet Another Movie DataBase!" +
+                info.SetMessage("WELCOME TO AMDB, your on the go \"Another-Movie-DataBase!\"" +
                                 "\n\n" +
                                 " Browse for your favorite movies:\n" +
                                 "Simply click on the input box and input a substring of some movie title to search for it. " +
