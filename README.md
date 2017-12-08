@@ -62,3 +62,6 @@ These changes made a an obvious difference in the app appearence from the very r
 ![alt text](https://image.ibb.co/cQMXzb/Info_Alert.png)
 
 In addition to this, now average rating of a movie is now displayed right next to it's genres in movie detail sceen. This is because most potential users that got to try the app when in progress found it imperative to be able to get some idea of the movie quality in movie inspection based apps like mine. Since displaying the average rating required no extra time complexity nor much effort this was added to the detail view for a better user experience.
+
+### Known Limitations
+I thought it would be relatively easy renaming namespaces and project files of a project in Visual Studio and therefore I left that for last. Little did I know. After hours of googling I deem this task impossible given the time I have before the project is due. Therefore my android project of week two has the unfortunate name of "IOSWeek1".
