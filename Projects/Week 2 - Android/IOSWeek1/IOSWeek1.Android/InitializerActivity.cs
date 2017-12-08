@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace IOSWeek1.Droid
 {
-    [Activity(Label = "Movie Condo", Theme = "@style/LightTheme.Splash", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "AMDB", Theme = "@style/LightTheme.Splash", MainLauncher = true, Icon = "@drawable/icon")]
     public class InitializerActivity : Activity
     {
         // Initializes service model of the external API

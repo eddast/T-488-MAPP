@@ -19,7 +19,8 @@ namespace IOSWeek1
         public string backdropPath;
         public string runtime;
         public string genres;
-        public string popularity;
+        public string vote_rate;
+        public string vote_count;
 
         public MovieModel() { }
 
@@ -33,16 +34,17 @@ namespace IOSWeek1
             this.cast = cast;
             this.posterPath = movie.PosterPath;
             this.backdropPath = movie.BackdropPath;
-            this.popularity = movie.VoteAverage.ToString();
+            this.vote_rate = movie.VoteAverage.ToString();
+            this.vote_count = movie.VoteCount.ToString();
             this.runtime = runtime;
         }
 
         private string get_movie_genres(MovieInfo _movie)
         {
-            var genres = _movie.Genres;
+            var listgenres = _movie.Genres;
             string Genres = ""; int iteration = 0;
 
-            foreach (DM.MovieApi.MovieDb.Genres.Genre genre in genres)
+            foreach (DM.MovieApi.MovieDb.Genres.Genre genre in listgenres)
             {
                 if (iteration != 0) { Genres = Genres + ", " + genre.Name; }
                 else { Genres = Genres + genre.Name; }
