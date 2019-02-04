@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/searchLayout">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/heading"
+        android:text="MOVIE SEARCH"
+        android:fontFamily="BanglaSangamMN-Bold"
+        android:textSize="30dp"
+        android:textColor="@color/themeBlue"
+        android:layout_marginTop="35dp" />
+    <ImageButton
+        android:background="@drawable/InfoButton"
+        android:src="@android:drawable/ic_menu_info_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:id="@+id/infoButton"
+        android:layout_below="@id/heading" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/promptLabel"
+        android:text="Enter words in a movie title:"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:fontFamily="BanglaSangamMN"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/infoButton" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:textSize="13dp"
+        android:id="@+id/movieField"
+        android:drawableStart="@drawable/FilmIcon"
+        android:drawablePadding="4dip"
+        android:shadowColor="@color/themeBlue"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/InputBox"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/promptLabel" />
+    <Button
+        android:background="@drawable/SearchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getMovieButton"
+        android:text="GET MOVIE"
+        android:textSize="15dp"
+        android:fontFamily="BanglaSangamMN"
+        android:textColor="@color/white"
+        android:layout_below="@id/movieField"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/spinner"
+        android:layout_below="@id/getMovieButton" />
+</RelativeLayout>

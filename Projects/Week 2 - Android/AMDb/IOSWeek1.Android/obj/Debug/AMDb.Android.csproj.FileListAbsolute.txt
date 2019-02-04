@@ -1,0 +1,2 @@
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/AMDb.Android.csprojResolveAssemblyReference.cache
+/Users/eddarunarsdottir/Documents/Skólinn/T-488-MAPP/Projects/Week 2 - Android/IOSWeek1/IOSWeek1.Android/obj/Debug/AMDb.Android.csproj.CoreCompileInputs.cache

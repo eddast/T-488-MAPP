@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<resources>
+	
+    <style name="LightTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:colorPrimary">@color/themeLightPurple</item>
+	</style>
+	
+    <style name="LightTheme.Splash" parent ="Theme.AppCompat.Light">
+        <item name="android:windowBackground">@drawable/LaunchScreen</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+		
+	<style name="ToolbarTheme" parent="Widget.Design.TabLayout">
+        <item name="tabGravity">fill</item>
+        <item name="tabMaxWidth">0dp</item>
+		<item name="android:background">@color/themeLightPurple</item> 
+        <item name="tabIndicatorColor">@color/themeYellow</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabTextAppearance">@style/ToolbarTheme.Text</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+    </style>
+
+    <style name="ToolbarTheme.Text" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">8dp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/gray</item>
+        <item name="android:textAppearance">@style/ToolbarTheme.TextStyle</item>
+        <item name="textAllCaps">true</item>
+    </style>
+		
+    <style name="ToolbarTheme.TextStyle" parent="android:TextAppearance">
+        <item name="android:fontFamily">BanglaSangamMN-Bold</item>
+    </style>
+
+	<style name="RatingBarStyle" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/themeYellow</item>
+        <item name="colorControlActivated">@color/themeYellow</item>
+    </style>
+	
+</resources>
